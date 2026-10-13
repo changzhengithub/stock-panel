@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>观市 · UI 主题预览</title><link rel="stylesheet" href="/themes/themes.css"></head>
+<body data-theme="light">
+<section class="studio" aria-label="主题选择">
+  <div class="studio-title"><span>观市 / DESIGN STUDIO</span><a href="/market">返回当前页面 ↗</a></div>
+  <div class="theme-options">
+    <button data-theme="classic" aria-pressed="false"><i class="swatch classic"></i><span><strong>01 经典黑金</strong><small>紧凑 · 高密度 · 终端感</small></span></button>
+    <button data-theme="dark" aria-pressed="false"><i class="swatch dark"></i><span><strong>02 现代深色</strong><small>炭灰 · 橙色强调 · 分区清晰</small></span></button>
+    <button data-theme="light" aria-pressed="true"><i class="swatch light"></i><span><strong>03 清爽浅色 <em>推荐</em></strong><small>白底 · 蓝色导航 · 易于浏览</small></span></button>
+    <button data-theme="paper" aria-pressed="false"><i class="swatch paper"></i><span><strong>04 柔和灰白</strong><small>低对比 · 宽松 · 研究阅读</small></span></button>
+  </div>
+  <p id="design-note">蓝色只用于导航和筛选，红绿专门表达涨跌。适合白天浏览板块和比较公司。</p>
+</section>
+<div class="terminal">
+  <header class="app-header"><a class="brand" href="/themes/index.html"><span class="brand-symbol">观</span>观市<span class="brand-sub">A 股行情</span></a><span class="workspace-name">市场总览</span><div class="header-right"><span class="local-dot"></span><span id="quote-date">读取行情日期…</span><span class="preview-label">主题预览</span></div></header>
+  <div class="app-body">
+    <aside class="industries"><div class="rail-title">行业板块 <span>SW2021 一级</span></div><div id="industry-list" class="industry-list"></div><div class="rail-foot">沪 · 深 · 北<br><span>盘后数据 / 本机缓存</span></div></aside>
+    <main>
+      <div class="market-toolbar"><div class="market-tabs" role="group" aria-label="股票范围"><button data-view="representatives" class="active">行业代表股</button><button data-view="all">全部股票</button><button data-view="pct_desc">涨幅榜</button><button data-view="pct_asc">跌幅榜</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" placeholder="代码 / 名称" aria-label="搜索股票"></label></div>
+      <div class="filter-line"><div><strong id="industry-title">全部行业</strong><span id="result-count">加载中</span></div><div class="filter-controls"><select id="board" aria-label="上市板块"><option value="">全部上市板块</option><option>沪市主板</option><option>深市主板</option><option>创业板</option><option>科创板</option><option>北交所</option></select><select id="sort" aria-label="排序"><option value="default">默认排序</option><option value="market_cap_desc">市值从高到低</option><option value="pct_desc">涨幅从高到低</option><option value="pct_asc">跌幅从高到低</option></select></div></div>
+      <div class="content-grid"><section class="quotes" aria-label="股票行情"><div class="table-scroll"><table><thead><tr><th class="ordinal">#</th><th>股票 / 代码</th><th>行业</th><th class="numeric">收盘价</th><th class="numeric">涨跌幅</th><th class="numeric">成交额</th><th class="numeric">总市值</th></tr></thead><tbody id="rows"></tbody></table><p id="list-message" role="status"></p></div><footer class="pagination"><span>每页 20 只 · 点击股票查看右侧资料</span><div><button id="prev" aria-label="上一页">←</button><span id="page-label">1 / 1</span><button id="next" aria-label="下一页">→</button></div></footer></section>
+      <aside class="stock-panel" id="stock-panel"><p class="muted">请选择一只股票</p></aside></div>
+    </main>
+  </div>
+  <footer class="terminal-status"><span id="source">正在读取数据状态</span><span>红涨绿跌 <i class="dot up-bg"></i><i class="dot down-bg"></i></span></footer>
+</div>
+<footer class="studio-footer">主题设计预览 · 行情来自本机数据库 · 保留现有功能范围 <span>布局参考 <a href="https://news.10jqka.com.cn/thsrm_list/" target="_blank" rel="noreferrer">同花顺</a> / <a href="https://www.futunn.com/download" target="_blank" rel="noreferrer">富途牛牛</a></span></footer>
+<script src="/themes/themes.js" defer></script>
+</body></html>

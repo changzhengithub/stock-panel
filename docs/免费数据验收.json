@@ -1,0 +1,127 @@
+{
+  "recorded_at": "2026-10-09T16:16:09.206172+08:00",
+  "coverage": {
+    "创业板": 1409,
+    "北交所": 349,
+    "沪市主板": 1702,
+    "深市主板": 1495,
+    "科创板": 618
+  },
+  "unclassified": {
+    "BSE": 349,
+    "SSE": 1,
+    "SZSE": 3
+  },
+  "representatives": {
+    "交通运输": 3,
+    "传媒": 3,
+    "公用事业": 3,
+    "农林牧渔": 3,
+    "医药生物": 3,
+    "商贸零售": 3,
+    "国防军工": 3,
+    "基础化工": 3,
+    "家用电器": 3,
+    "建筑材料": 3,
+    "建筑装饰": 3,
+    "房地产": 3,
+    "有色金属": 3,
+    "机械设备": 3,
+    "汽车": 3,
+    "煤炭": 3,
+    "环保": 3,
+    "电力设备": 3,
+    "电子": 3,
+    "石油石化": 3,
+    "社会服务": 3,
+    "纺织服饰": 3,
+    "综合": 2,
+    "美容护理": 3,
+    "计算机": 3,
+    "轻工制造": 3,
+    "通信": 3,
+    "钢铁": 3,
+    "银行": 3,
+    "非银金融": 3,
+    "食品饮料": 3
+  },
+  "duplicate_quotes": 0,
+  "samples": [
+    {
+      "code": "600519.SH",
+      "name": "贵州茅台",
+      "date": "20261009",
+      "source": "腾讯公开行情",
+      "values": {
+        "close": 1263.0,
+        "pct_chg": 0.57,
+        "amount": 4453223189.0,
+        "market_cap": 1578853000000.0
+      },
+      "quote_matches": true,
+      "history_points": 243,
+      "history_complete": true,
+      "basis_date": "20261009"
+    },
+    {
+      "code": "000001.SZ",
+      "name": "平安银行",
+      "date": "20261009",
+      "source": "腾讯公开行情",
+      "values": {
+        "close": 11.59,
+        "pct_chg": -1.61,
+        "amount": 1259717108.0,
+        "market_cap": 224915000000.0
+      },
+      "quote_matches": true,
+      "history_points": 243,
+      "history_complete": true,
+      "basis_date": "20261009"
+    },
+    {
+      "code": "920000.BJ",
+      "name": "安徽凤凰",
+      "date": "20261009",
+      "source": "腾讯公开行情",
+      "values": {
+        "close": 14.19,
+        "pct_chg": 2.09,
+        "amount": 9923736.0,
+        "market_cap": 1301000000.0
+      },
+      "quote_matches": true,
+      "history_points": 243,
+      "history_complete": true,
+      "basis_date": "20261009"
+    }
+  ],
+  "status": {
+    "available": true,
+    "trade_date": "20261009",
+    "expected_date": "20261009",
+    "stale": false,
+    "stock_count": 5573,
+    "unclassified_count": 353,
+    "source": "免费公开数据 · 腾讯 / AKShare",
+    "industry_source": "SW2021 一级行业",
+    "missing_quote_count": 14,
+    "missing_cap_count": 0,
+    "history": {
+      "complete": false,
+      "expected_days": 5573,
+      "published_days": 345,
+      "missing_days": [],
+      "start_date": "20251008",
+      "unit": "stock"
+    },
+    "last_run": {
+      "state": "running",
+      "started_at": "2026-10-09T08:12:44.882084+00:00",
+      "ended_at": null,
+      "progress": "历史回填 261/5454：岳阳兴长 000819",
+      "error": null,
+      "warnings": []
+    }
+  }
+}

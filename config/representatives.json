@@ -1,0 +1,745 @@
+{
+  "reviewed_at": "2026-10-09",
+  "classification": "SW2021 L1",
+  "verification": "2026-10-09：92 个候选通过 AKShare SW2021 官方网站 最新行业归属和上市状态校验；名单由人工编排，非自动排名。公司网站业务说明尚未全部逐页核验，详见 docs/验收记录.md。",
+  "industries": [
+    {
+      "industry": "农林牧渔",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002714.SZ",
+          "name": "牧原股份",
+          "reason": "通过生猪养殖业务认识畜牧产业链。",
+          "source_url": "https://www.muyuanfoods.com/"
+        },
+        {
+          "code": "300498.SZ",
+          "name": "温氏股份",
+          "reason": "以畜禽养殖为观察入口，了解养殖企业的经营模式。",
+          "source_url": "https://www.wens.com.cn/"
+        },
+        {
+          "code": "002311.SZ",
+          "name": "海大集团",
+          "reason": "从饲料及配套养殖服务认识农牧产业。",
+          "source_url": "https://www.haid.com.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "基础化工",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600309.SH",
+          "name": "万华化学",
+          "reason": "以聚氨酯和化工材料业务观察化工制造。",
+          "source_url": "https://www.whchem.com/"
+        },
+        {
+          "code": "600426.SH",
+          "name": "华鲁恒升",
+          "reason": "从化工原料和新材料业务认识一体化化工生产。",
+          "source_url": "https://www.hl-hengsheng.com/"
+        },
+        {
+          "code": "000792.SZ",
+          "name": "盐湖股份",
+          "reason": "以钾肥及盐湖资源开发认识资源型化工。",
+          "source_url": "https://www.qhyhgf.com/"
+        }
+      ]
+    },
+    {
+      "industry": "钢铁",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600019.SH",
+          "name": "宝钢股份",
+          "reason": "从板材业务认识钢铁制造与下游工业需求。",
+          "source_url": "https://www.baosteel.com/"
+        },
+        {
+          "code": "000708.SZ",
+          "name": "中信特钢",
+          "reason": "以特殊钢业务了解工业材料的细分市场。",
+          "source_url": "https://www.citicsteel.com/"
+        },
+        {
+          "code": "000932.SZ",
+          "name": "华菱钢铁",
+          "reason": "通过钢铁生产与产品结构观察传统制造业。",
+          "source_url": "https://www.valin.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "有色金属",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601899.SH",
+          "name": "紫金矿业",
+          "reason": "从铜、金等矿产资源开发认识矿业公司。",
+          "source_url": "https://www.zjky.cn/"
+        },
+        {
+          "code": "603993.SH",
+          "name": "洛阳钼业",
+          "reason": "以多金属矿产业务认识全球资源开发。",
+          "source_url": "https://www.cmoc.com/"
+        },
+        {
+          "code": "600547.SH",
+          "name": "山东黄金",
+          "reason": "以黄金开采和加工业务认识贵金属行业。",
+          "source_url": "https://www.sdhjgf.com.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "电子",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002475.SZ",
+          "name": "立讯精密",
+          "reason": "通过连接器与电子制造业务认识消费电子供应链。",
+          "source_url": "https://www.luxshare-ict.com/"
+        },
+        {
+          "code": "601138.SH",
+          "name": "工业富联",
+          "reason": "从通信网络设备和云计算设备制造认识电子产业。",
+          "source_url": "https://www.fii-foxconn.com/"
+        },
+        {
+          "code": "688981.SH",
+          "name": "中芯国际",
+          "reason": "以晶圆代工业务认识半导体制造环节。",
+          "source_url": "https://www.smics.com/"
+        }
+      ]
+    },
+    {
+      "industry": "汽车",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002594.SZ",
+          "name": "比亚迪",
+          "reason": "从新能源汽车整车业务认识汽车产业转型。",
+          "source_url": "https://www.byd.com/cn"
+        },
+        {
+          "code": "600104.SH",
+          "name": "上汽集团",
+          "reason": "通过整车及相关业务认识大型汽车集团。",
+          "source_url": "https://www.saicmotor.com/"
+        },
+        {
+          "code": "600660.SH",
+          "name": "福耀玻璃",
+          "reason": "以汽车玻璃认识汽车零部件细分产业。",
+          "source_url": "https://www.fuyaogroup.com/"
+        }
+      ]
+    },
+    {
+      "industry": "家用电器",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000333.SZ",
+          "name": "美的集团",
+          "reason": "从多品类家电业务认识家电制造与品牌经营。",
+          "source_url": "https://www.midea.com.cn/"
+        },
+        {
+          "code": "000651.SZ",
+          "name": "格力电器",
+          "reason": "以空调业务观察家电产品、渠道与制造。",
+          "source_url": "https://www.gree.com/"
+        },
+        {
+          "code": "600690.SH",
+          "name": "海尔智家",
+          "reason": "通过家电及智慧家庭业务认识品牌全球化。",
+          "source_url": "https://smart-home.haier.com/"
+        }
+      ]
+    },
+    {
+      "industry": "食品饮料",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600519.SH",
+          "name": "贵州茅台",
+          "reason": "以酱香型白酒业务认识品牌消费品。",
+          "source_url": "https://www.moutaichina.com/"
+        },
+        {
+          "code": "000858.SZ",
+          "name": "五粮液",
+          "reason": "从浓香型白酒业务了解酒类消费行业。",
+          "source_url": "https://www.wuliangye.com.cn/"
+        },
+        {
+          "code": "600887.SH",
+          "name": "伊利股份",
+          "reason": "以乳制品业务认识大众食品的生产与渠道。",
+          "source_url": "https://www.yili.com/"
+        }
+      ]
+    },
+    {
+      "industry": "纺织服饰",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000726.SZ",
+          "name": "鲁泰A",
+          "reason": "从面料与衬衫生产认识纺织制造。",
+          "source_url": "https://www.lttc.com.cn/"
+        },
+        {
+          "code": "600177.SH",
+          "name": "雅戈尔",
+          "reason": "以服装品牌业务认识服饰企业的经营。",
+          "source_url": "https://www.youngor.com/"
+        },
+        {
+          "code": "002563.SZ",
+          "name": "森马服饰",
+          "reason": "通过成人休闲服饰与童装认识品牌零售。",
+          "source_url": "https://www.semir.com/"
+        }
+      ]
+    },
+    {
+      "industry": "轻工制造",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603833.SH",
+          "name": "欧派家居",
+          "reason": "从定制家居业务认识家装消费与制造。",
+          "source_url": "https://www.oppein.com/"
+        },
+        {
+          "code": "603816.SH",
+          "name": "顾家家居",
+          "reason": "以软体家具业务认识家居产品与渠道。",
+          "source_url": "https://www.kukahome.com/"
+        },
+        {
+          "code": "002078.SZ",
+          "name": "太阳纸业",
+          "reason": "通过制浆造纸业务认识纸品制造。",
+          "source_url": "https://www.sunpapergroup.com/"
+        }
+      ]
+    },
+    {
+      "industry": "医药生物",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600276.SH",
+          "name": "恒瑞医药",
+          "reason": "以药物研发与生产认识制药企业。",
+          "source_url": "https://www.hengrui.com/"
+        },
+        {
+          "code": "300760.SZ",
+          "name": "迈瑞医疗",
+          "reason": "从医疗设备业务认识医疗器械产业。",
+          "source_url": "https://www.mindray.com/cn"
+        },
+        {
+          "code": "603259.SH",
+          "name": "药明康德",
+          "reason": "通过医药研发与生产服务认识研发外包产业。",
+          "source_url": "https://www.wuxiapptec.com.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "公用事业",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600900.SH",
+          "name": "长江电力",
+          "reason": "以水力发电业务认识电力运营。",
+          "source_url": "https://www.cypc.com.cn/"
+        },
+        {
+          "code": "600886.SH",
+          "name": "国投电力",
+          "reason": "从电源投资与运营认识综合电力企业。",
+          "source_url": "https://www.sdicpower.com/"
+        },
+        {
+          "code": "600011.SH",
+          "name": "华能国际",
+          "reason": "以发电业务观察公用事业经营。",
+          "source_url": "https://www.hpi.com.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "交通运输",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601816.SH",
+          "name": "京沪高铁",
+          "reason": "通过高速铁路运营认识客运基础设施。",
+          "source_url": "https://www.cr-jh.cn/"
+        },
+        {
+          "code": "601006.SH",
+          "name": "大秦铁路",
+          "reason": "从铁路货运业务认识大宗货物运输。",
+          "source_url": "https://www.daqintielu.com/"
+        },
+        {
+          "code": "002352.SZ",
+          "name": "顺丰控股",
+          "reason": "以快递物流业务认识现代物流网络。",
+          "source_url": "https://www.sf-express.com/"
+        }
+      ]
+    },
+    {
+      "industry": "房地产",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600048.SH",
+          "name": "保利发展",
+          "reason": "通过房地产开发业务认识住宅开发企业。",
+          "source_url": "https://www.polycn.com/"
+        },
+        {
+          "code": "000002.SZ",
+          "name": "万科A",
+          "reason": "从开发及经营服务业务认识房地产企业。",
+          "source_url": "https://www.vanke.com/"
+        },
+        {
+          "code": "001979.SZ",
+          "name": "招商蛇口",
+          "reason": "以开发、园区等业务认识城市空间运营。",
+          "source_url": "https://www.cmsk1979.com/"
+        }
+      ]
+    },
+    {
+      "industry": "商贸零售",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601888.SH",
+          "name": "中国中免",
+          "reason": "以免税商品经营认识旅游消费零售。",
+          "source_url": "https://www.ctgdutyfree.com.cn/"
+        },
+        {
+          "code": "601933.SH",
+          "name": "永辉超市",
+          "reason": "通过连锁超市业务认识食品与日用品零售。",
+          "source_url": "https://www.yonghui.com.cn/"
+        },
+        {
+          "code": "600415.SH",
+          "name": "小商品城",
+          "reason": "以专业市场运营认识商品贸易服务。",
+          "source_url": "https://www.cccgroup.com.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "社会服务",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600138.SH",
+          "name": "中青旅",
+          "reason": "从旅游及景区业务认识旅游服务。",
+          "source_url": "https://www.aoyou.com/"
+        },
+        {
+          "code": "300144.SZ",
+          "name": "宋城演艺",
+          "reason": "以旅游演艺业务认识文旅体验消费。",
+          "source_url": "https://www.songcn.com/"
+        },
+        {
+          "code": "600754.SH",
+          "name": "锦江酒店",
+          "reason": "通过酒店经营与管理认识住宿服务。",
+          "source_url": "https://www.jinjianghotels.com.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "综合",
+      "exception_reason": "综合类跨主业差异较大，初版选择两例，待实时成分核对后评估扩充。",
+      "stocks": [
+        {
+          "code": "600770.SH",
+          "name": "综艺股份",
+          "reason": "作为多业务经营样本，理解综合类公司的业务结构差异。",
+          "source_url": "https://www.zongyi.com.cn/"
+        },
+        {
+          "code": "600805.SH",
+          "name": "悦达投资",
+          "reason": "以产业投资和多业务经营认识综合类企业。",
+          "source_url": "https://www.yuedainvest.com/"
+        }
+      ]
+    },
+    {
+      "industry": "建筑材料",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600585.SH",
+          "name": "海螺水泥",
+          "reason": "以水泥制造认识基础建材产业。",
+          "source_url": "https://www.conch.cn/"
+        },
+        {
+          "code": "000786.SZ",
+          "name": "北新建材",
+          "reason": "通过石膏板等建材业务认识建筑装修材料。",
+          "source_url": "https://www.bnbm.com.cn/"
+        },
+        {
+          "code": "002271.SZ",
+          "name": "东方雨虹",
+          "reason": "以建筑防水业务认识功能性建材。",
+          "source_url": "https://www.yuhong.com.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "建筑装饰",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601668.SH",
+          "name": "中国建筑",
+          "reason": "从房建与基础设施建设认识建筑工程企业。",
+          "source_url": "https://www.cscec.com/"
+        },
+        {
+          "code": "601390.SH",
+          "name": "中国中铁",
+          "reason": "以交通基础设施建设认识工程承包。",
+          "source_url": "https://www.crec.cn/"
+        },
+        {
+          "code": "601800.SH",
+          "name": "中国交建",
+          "reason": "通过交通基础设施业务认识工程建设产业。",
+          "source_url": "https://www.ccccltd.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "电力设备",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300750.SZ",
+          "name": "宁德时代",
+          "reason": "以动力与储能电池认识电池产业。",
+          "source_url": "https://www.catl.com/"
+        },
+        {
+          "code": "601012.SH",
+          "name": "隆基绿能",
+          "reason": "从光伏产品认识太阳能制造产业链。",
+          "source_url": "https://www.longi.com/cn/"
+        },
+        {
+          "code": "300274.SZ",
+          "name": "阳光电源",
+          "reason": "以逆变器和储能系统认识电力电子设备。",
+          "source_url": "https://www.sungrowpower.com/"
+        }
+      ]
+    },
+    {
+      "industry": "国防军工",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600760.SH",
+          "name": "中航沈飞",
+          "reason": "通过航空产品制造认识航空装备产业。",
+          "source_url": "https://www.sac.avic.com/"
+        },
+        {
+          "code": "000768.SZ",
+          "name": "中航西飞",
+          "reason": "以航空产品制造认识飞机制造产业链。",
+          "source_url": "https://www.xac.com.cn/"
+        },
+        {
+          "code": "600893.SH",
+          "name": "航发动力",
+          "reason": "从航空发动机业务认识动力装备制造。",
+          "source_url": "https://www.aecc.com.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "计算机",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603019.SH",
+          "name": "中科曙光",
+          "reason": "以服务器等计算设备认识算力基础设施。",
+          "source_url": "https://www.sugon.com/"
+        },
+        {
+          "code": "688111.SH",
+          "name": "金山办公",
+          "reason": "通过办公软件认识基础软件与订阅服务。",
+          "source_url": "https://www.wps.cn/"
+        },
+        {
+          "code": "002230.SZ",
+          "name": "科大讯飞",
+          "reason": "以智能语音及人工智能应用认识软件服务。",
+          "source_url": "https://www.iflytek.com/"
+        }
+      ]
+    },
+    {
+      "industry": "传媒",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002027.SZ",
+          "name": "分众传媒",
+          "reason": "从生活圈媒体业务认识广告传播。",
+          "source_url": "https://www.focusmedia.cn/"
+        },
+        {
+          "code": "300413.SZ",
+          "name": "芒果超媒",
+          "reason": "通过视频与内容业务认识数字媒体。",
+          "source_url": "https://www.mgtv.com/"
+        },
+        {
+          "code": "002555.SZ",
+          "name": "三七互娱",
+          "reason": "以游戏业务认识互动娱乐内容产业。",
+          "source_url": "https://www.37wan.net/"
+        }
+      ]
+    },
+    {
+      "industry": "通信",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000063.SZ",
+          "name": "中兴通讯",
+          "reason": "从通信设备业务认识网络基础设施。",
+          "source_url": "https://www.zte.com.cn/china/"
+        },
+        {
+          "code": "300308.SZ",
+          "name": "中际旭创",
+          "reason": "以光模块业务认识数据通信器件。",
+          "source_url": "https://www.zj-innolight.com/"
+        },
+        {
+          "code": "300502.SZ",
+          "name": "新易盛",
+          "reason": "通过光模块业务认识光通信产业。",
+          "source_url": "https://www.eoptolink.com/"
+        }
+      ]
+    },
+    {
+      "industry": "银行",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601398.SH",
+          "name": "工商银行",
+          "reason": "通过大型商业银行业务认识银行业经营。",
+          "source_url": "https://www.icbc.com.cn/"
+        },
+        {
+          "code": "600036.SH",
+          "name": "招商银行",
+          "reason": "以商业银行和零售金融业务认识金融服务。",
+          "source_url": "https://www.cmbchina.com/"
+        },
+        {
+          "code": "601939.SH",
+          "name": "建设银行",
+          "reason": "从商业银行业务认识信贷与综合金融服务。",
+          "source_url": "https://www.ccb.com/"
+        }
+      ]
+    },
+    {
+      "industry": "非银金融",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601318.SH",
+          "name": "中国平安",
+          "reason": "以保险及综合金融业务认识非银金融。",
+          "source_url": "https://www.pingan.com/"
+        },
+        {
+          "code": "600030.SH",
+          "name": "中信证券",
+          "reason": "通过证券经纪、投行等业务认识证券行业。",
+          "source_url": "https://www.cs.ecitic.com/"
+        },
+        {
+          "code": "300059.SZ",
+          "name": "东方财富",
+          "reason": "从证券与金融信息服务认识互联网金融服务。",
+          "source_url": "https://about.eastmoney.com/"
+        }
+      ]
+    },
+    {
+      "industry": "煤炭",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601088.SH",
+          "name": "中国神华",
+          "reason": "以煤炭及相关能源业务认识煤炭产业链。",
+          "source_url": "https://www.csec.com/"
+        },
+        {
+          "code": "601225.SH",
+          "name": "陕西煤业",
+          "reason": "通过煤炭开采与销售认识资源企业。",
+          "source_url": "https://www.shxcoal.com/"
+        },
+        {
+          "code": "600188.SH",
+          "name": "兖矿能源",
+          "reason": "从煤炭及能源业务认识综合能源经营。",
+          "source_url": "https://www.ykenergy.com/"
+        }
+      ]
+    },
+    {
+      "industry": "石油石化",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601857.SH",
+          "name": "中国石油",
+          "reason": "以油气勘探、生产和销售认识石油产业链。",
+          "source_url": "https://www.petrochina.com.cn/"
+        },
+        {
+          "code": "600028.SH",
+          "name": "中国石化",
+          "reason": "通过炼油与化工等业务认识石化产业。",
+          "source_url": "https://www.sinopec.com/"
+        },
+        {
+          "code": "600938.SH",
+          "name": "中国海油",
+          "reason": "以海上油气勘探开发认识上游能源。",
+          "source_url": "https://www.cnoocltd.com/"
+        }
+      ]
+    },
+    {
+      "industry": "环保",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300070.SZ",
+          "name": "碧水源",
+          "reason": "从水处理业务认识环境治理。",
+          "source_url": "https://www.originwater.com/"
+        },
+        {
+          "code": "603568.SH",
+          "name": "伟明环保",
+          "reason": "以垃圾处理及相关业务认识固废治理。",
+          "source_url": "https://www.cnweiming.com/"
+        },
+        {
+          "code": "603588.SH",
+          "name": "高能环境",
+          "reason": "通过环境治理与资源化业务认识环保服务。",
+          "source_url": "https://www.bgechina.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "美容护理",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603605.SH",
+          "name": "珀莱雅",
+          "reason": "以护肤及美妆品牌业务认识化妆品消费。",
+          "source_url": "https://www.proya-group.com/en/about"
+        },
+        {
+          "code": "300957.SZ",
+          "name": "贝泰妮",
+          "reason": "通过皮肤护理产品认识功效护肤市场。",
+          "source_url": "https://www.botanee.com.cn/"
+        },
+        {
+          "code": "600315.SH",
+          "name": "上海家化",
+          "reason": "以日化及个人护理品牌认识日常消费品。",
+          "source_url": "https://www.jahwa.com.cn/"
+        }
+      ]
+    },
+    {
+      "industry": "机械设备",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600031.SH",
+          "name": "三一重工",
+          "reason": "以工程机械认识装备制造及建设需求。",
+          "source_url": "https://www.sany.com.cn/"
+        },
+        {
+          "code": "000425.SZ",
+          "name": "徐工机械",
+          "reason": "通过工程机械业务认识工业装备制造。",
+          "source_url": "https://www.xcmg.com/"
+        },
+        {
+          "code": "601100.SH",
+          "name": "恒立液压",
+          "reason": "以液压元件及系统认识机械核心零部件。",
+          "source_url": "https://www.henglihydraulic.com/"
+        }
+      ]
+    }
+  ]
+}

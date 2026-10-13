@@ -1,0 +1,819 @@
+{
+  "checked_at": "2026-10-09T07:11:55.280460+00:00",
+  "scope": "仅核对公开网站可达性及页面标题，不代替业务内容与实时行业归属审阅。",
+  "results": [
+    {
+      "code": "002714.SZ",
+      "name": "牧原股份",
+      "source_url": "https://www.muyuanfoods.com/",
+      "industry": "农林牧渔",
+      "status": 200,
+      "final_url": "https://www.muyuanfoods.com/",
+      "title": "牧原食品集团股份有限公司"
+    },
+    {
+      "code": "300498.SZ",
+      "name": "温氏股份",
+      "source_url": "https://www.wens.com.cn/",
+      "industry": "农林牧渔",
+      "status": 200,
+      "final_url": "https://www.wens.com.cn/",
+      "title": "温氏食品集团股份有限公司"
+    },
+    {
+      "code": "002311.SZ",
+      "name": "海大集团",
+      "source_url": "https://www.haid.com.cn/",
+      "industry": "农林牧渔",
+      "status": 521,
+      "final_url": "https://www.haid.com.cn/",
+      "title": ""
+    },
+    {
+      "code": "600309.SH",
+      "name": "万华化学",
+      "source_url": "https://www.whchem.com/",
+      "industry": "基础化工",
+      "status": 200,
+      "final_url": "https://www.whchem.com/",
+      "title": "万华化学集团|化学，让生活更美好"
+    },
+    {
+      "code": "600426.SH",
+      "name": "华鲁恒升",
+      "source_url": "https://www.hl-hengsheng.com/",
+      "industry": "基础化工",
+      "status": 200,
+      "final_url": "https://www.hl-hengsheng.com/",
+      "title": "山东华鲁恒升集团有限公司"
+    },
+    {
+      "code": "000792.SZ",
+      "name": "盐湖股份",
+      "source_url": "https://www.qhyhgf.com/",
+      "industry": "基础化工",
+      "status": 200,
+      "final_url": "https://www.qhyhgf.com/",
+      "title": "青海盐湖工业股份有限公司"
+    },
+    {
+      "code": "600019.SH",
+      "name": "宝钢股份",
+      "source_url": "https://www.baosteel.com/",
+      "industry": "钢铁",
+      "status": 200,
+      "final_url": "https://www.baosteel.com/",
+      "title": "宝钢股份"
+    },
+    {
+      "code": "000708.SZ",
+      "name": "中信特钢",
+      "source_url": "https://www.citicsteel.com/",
+      "industry": "钢铁",
+      "status": null,
+      "error": "TooManyRedirects"
+    },
+    {
+      "code": "000932.SZ",
+      "name": "华菱钢铁",
+      "source_url": "https://www.valin.cn/",
+      "industry": "钢铁",
+      "status": null,
+      "error": "ConnectError"
+    },
+    {
+      "code": "601899.SH",
+      "name": "紫金矿业",
+      "source_url": "https://www.zjky.cn/",
+      "industry": "有色金属",
+      "status": 200,
+      "final_url": "https://www.zjky.cn/",
+      "title": "首页-紫金矿业"
+    },
+    {
+      "code": "603993.SH",
+      "name": "洛阳钼业",
+      "source_url": "https://www.cmoc.com/",
+      "industry": "有色金属",
+      "status": 200,
+      "final_url": "https://www.cmoc.com/",
+      "title": "洛阳栾川钼业集团股份有限公司"
+    },
+    {
+      "code": "600547.SH",
+      "name": "山东黄金",
+      "source_url": "https://www.sdhjgf.com.cn/",
+      "industry": "有色金属",
+      "status": 200,
+      "final_url": "https://www.sdhjgf.com.cn/",
+      "title": ""
+    },
+    {
+      "code": "002475.SZ",
+      "name": "立讯精密",
+      "source_url": "https://www.luxshare-ict.com/",
+      "industry": "电子",
+      "status": 200,
+      "final_url": "https://www.luxshare-ict.com/",
+      "title": "立讯精密-以科技连接未来"
+    },
+    {
+      "code": "601138.SH",
+      "name": "工业富联",
+      "source_url": "https://www.fii-foxconn.com/",
+      "industry": "电子",
+      "status": 200,
+      "final_url": "https://www.fii-foxconn.com/",
+      "title": "fii"
+    },
+    {
+      "code": "688981.SH",
+      "name": "中芯国际",
+      "source_url": "https://www.smics.com/",
+      "industry": "电子",
+      "status": 200,
+      "final_url": "https://www.smics.com/",
+      "title": "中芯国际-首页"
+    },
+    {
+      "code": "002594.SZ",
+      "name": "比亚迪",
+      "source_url": "https://www.byd.com/cn",
+      "industry": "汽车",
+      "status": 200,
+      "final_url": "https://www.byd.com/cn",
+      "title": "比亚迪汽车官方网站首页 - 新能源汽车世界冠军"
+    },
+    {
+      "code": "600104.SH",
+      "name": "上汽集团",
+      "source_url": "https://www.saicmotor.com/",
+      "industry": "汽车",
+      "status": 200,
+      "final_url": "https://www.saicmotor.com/",
+      "title": "上汽集团官网"
+    },
+    {
+      "code": "600660.SH",
+      "name": "福耀玻璃",
+      "source_url": "https://www.fuyaogroup.com/",
+      "industry": "汽车",
+      "status": 200,
+      "final_url": "https://www.fuyaogroup.com/",
+      "title": "福耀集团"
+    },
+    {
+      "code": "000333.SZ",
+      "name": "美的集团",
+      "source_url": "https://www.midea.com.cn/",
+      "industry": "家用电器",
+      "status": 200,
+      "final_url": "https://www.midea.com.cn/en",
+      "title": "English"
+    },
+    {
+      "code": "000651.SZ",
+      "name": "格力电器",
+      "source_url": "https://www.gree.com/",
+      "industry": "家用电器",
+      "status": 200,
+      "final_url": "https://www.gree.com/",
+      "title": "珠海格力电器股份有限公司网站"
+    },
+    {
+      "code": "600690.SH",
+      "name": "海尔智家",
+      "source_url": "https://smart-home.haier.com/",
+      "industry": "家用电器",
+      "status": 200,
+      "final_url": "https://smart-home.haier.com/",
+      "title": "Home | Haier"
+    },
+    {
+      "code": "600519.SH",
+      "name": "贵州茅台",
+      "source_url": "https://www.moutaichina.com/",
+      "industry": "食品饮料",
+      "status": 200,
+      "final_url": "https://www.moutaichina.com/",
+      "title": "入网口"
+    },
+    {
+      "code": "000858.SZ",
+      "name": "五粮液",
+      "source_url": "https://www.wuliangye.com.cn/",
+      "industry": "食品饮料",
+      "status": 200,
+      "final_url": "https://www.wuliangye.com.cn/",
+      "title": "五粮液集团"
+    },
+    {
+      "code": "600887.SH",
+      "name": "伊利股份",
+      "source_url": "https://www.yili.com/",
+      "industry": "食品饮料",
+      "status": 200,
+      "final_url": "https://www.yili.com/",
+      "title": "伊利官网"
+    },
+    {
+      "code": "000726.SZ",
+      "name": "鲁泰A",
+      "source_url": "https://www.lttc.com.cn/",
+      "industry": "纺织服饰",
+      "status": null,
+      "error": "ConnectError"
+    },
+    {
+      "code": "600177.SH",
+      "name": "雅戈尔",
+      "source_url": "https://www.youngor.com/",
+      "industry": "纺织服饰",
+      "status": 200,
+      "final_url": "https://www.youngor.com/",
+      "title": "雅戈尔"
+    },
+    {
+      "code": "002563.SZ",
+      "name": "森马服饰",
+      "source_url": "https://www.semir.com/",
+      "industry": "纺织服饰",
+      "status": 200,
+      "final_url": "https://www.semir.com/new/",
+      "title": "森马集团 semir官方网站"
+    },
+    {
+      "code": "603833.SH",
+      "name": "欧派家居",
+      "source_url": "https://www.oppein.com/",
+      "industry": "轻工制造",
+      "status": 200,
+      "final_url": "https://www.oppein.com/cn/",
+      "title": "欧派家居官网-有家 有爱 有欧派"
+    },
+    {
+      "code": "603816.SH",
+      "name": "顾家家居",
+      "source_url": "https://www.kukahome.com/",
+      "industry": "轻工制造",
+      "status": 200,
+      "final_url": "https://www.kukahome.com/",
+      "title": "顾家官方商城"
+    },
+    {
+      "code": "002078.SZ",
+      "name": "太阳纸业",
+      "source_url": "https://www.sunpapergroup.com/",
+      "industry": "轻工制造",
+      "status": null,
+      "error": "ReadTimeout"
+    },
+    {
+      "code": "600276.SH",
+      "name": "恒瑞医药",
+      "source_url": "https://www.hengrui.com/",
+      "industry": "医药生物",
+      "status": 200,
+      "final_url": "https://www.hengrui.com/",
+      "title": "Request Rejected"
+    },
+    {
+      "code": "300760.SZ",
+      "name": "迈瑞医疗",
+      "source_url": "https://www.mindray.com/cn",
+      "industry": "医药生物",
+      "status": 200,
+      "final_url": "https://www.mindray.com/cn",
+      "title": "生命科技如此亲近 - 迈瑞医疗"
+    },
+    {
+      "code": "603259.SH",
+      "name": "药明康德",
+      "source_url": "https://www.wuxiapptec.com.cn/",
+      "industry": "医药生物",
+      "status": 200,
+      "final_url": "https://www.wuxiapptec.cn/",
+      "title": "首页 | 药明康德"
+    },
+    {
+      "code": "600900.SH",
+      "name": "长江电力",
+      "source_url": "https://www.cypc.com.cn/",
+      "industry": "公用事业",
+      "status": 200,
+      "final_url": "https://www.cypc.com.cn/",
+      "title": "中国长江电力股份有限公司"
+    },
+    {
+      "code": "600886.SH",
+      "name": "国投电力",
+      "source_url": "https://www.sdicpower.com/",
+      "industry": "公用事业",
+      "status": 200,
+      "final_url": "https://www.sdicpower.com/gtdln/index.htm",
+      "title": "国投电力控股股份有限公司"
+    },
+    {
+      "code": "600011.SH",
+      "name": "华能国际",
+      "source_url": "https://www.hpi.com.cn/",
+      "industry": "公用事业",
+      "status": 200,
+      "final_url": "https://www.hpi.com.cn/Pages/default.aspx",
+      "title": "华能国际"
+    },
+    {
+      "code": "601816.SH",
+      "name": "京沪高铁",
+      "source_url": "https://www.cr-jh.cn/",
+      "industry": "交通运输",
+      "status": 200,
+      "final_url": "https://www.cr-jh.cn/index;jsessionid=92F098E903DD77AA16C57D2450D14398",
+      "title": "京沪高铁公司官网"
+    },
+    {
+      "code": "601006.SH",
+      "name": "大秦铁路",
+      "source_url": "https://www.daqintielu.com/",
+      "industry": "交通运输",
+      "status": 200,
+      "final_url": "https://www.daqintielu.com/",
+      "title": "大秦铁路股份有限公司(Limited by Share Ltd, the Dat"
+    },
+    {
+      "code": "002352.SZ",
+      "name": "顺丰控股",
+      "source_url": "https://www.sf-express.com/",
+      "industry": "交通运输",
+      "status": 200,
+      "final_url": "https://www.sf-express.com/",
+      "title": ""
+    },
+    {
+      "code": "600048.SH",
+      "name": "保利发展",
+      "source_url": "https://www.polycn.com/",
+      "industry": "房地产",
+      "status": null,
+      "error": "ConnectError"
+    },
+    {
+      "code": "000002.SZ",
+      "name": "万科A",
+      "source_url": "https://www.vanke.com/",
+      "industry": "房地产",
+      "status": 200,
+      "final_url": "https://www.vanke.com/",
+      "title": ""
+    },
+    {
+      "code": "001979.SZ",
+      "name": "招商蛇口",
+      "source_url": "https://www.cmsk1979.com/",
+      "industry": "房地产",
+      "status": 200,
+      "final_url": "https://www.cmsk1979.com/",
+      "title": "招商蛇口"
+    },
+    {
+      "code": "601888.SH",
+      "name": "中国中免",
+      "source_url": "https://www.ctgdutyfree.com.cn/",
+      "industry": "商贸零售",
+      "status": 200,
+      "final_url": "https://www.ctgdutyfree.com.cn/",
+      "title": "中国旅游集团中免股份有限公司"
+    },
+    {
+      "code": "601933.SH",
+      "name": "永辉超市",
+      "source_url": "https://www.yonghui.com.cn/",
+      "industry": "商贸零售",
+      "status": 200,
+      "final_url": "https://www.yonghui.com.cn/",
+      "title": "永辉超市官方网站"
+    },
+    {
+      "code": "600415.SH",
+      "name": "小商品城",
+      "source_url": "https://www.cccgroup.com.cn/",
+      "industry": "商贸零售",
+      "status": 200,
+      "final_url": "https://www.cccgroup.com.cn/",
+      "title": "小商品城集团股份有限公司"
+    },
+    {
+      "code": "600138.SH",
+      "name": "中青旅",
+      "source_url": "https://www.aoyou.com/",
+      "industry": "社会服务",
+      "status": 200,
+      "final_url": "https://www.aoyou.com/",
+      "title": "中青旅遨游网 - 旅游度假线路_酒店预订_签证办理_海外移民_旅游攻略"
+    },
+    {
+      "code": "300144.SZ",
+      "name": "宋城演艺",
+      "source_url": "https://www.songcn.com/",
+      "industry": "社会服务",
+      "status": 200,
+      "final_url": "https://www.songcn.com/",
+      "title": "宋城集团|宋城演艺|宋城景区|宋城千古情|三亚千古情|丽江千古情|九寨千古情|杭"
+    },
+    {
+      "code": "600754.SH",
+      "name": "锦江酒店",
+      "source_url": "https://www.jinjianghotels.com.cn/",
+      "industry": "社会服务",
+      "status": 200,
+      "final_url": "https://www.jinjianghotels.com.cn/",
+      "title": "锦江酒店(中国区)官网"
+    },
+    {
+      "code": "600770.SH",
+      "name": "综艺股份",
+      "source_url": "https://www.zongyi.com.cn/",
+      "industry": "综合",
+      "status": null,
+      "error": "ConnectError"
+    },
+    {
+      "code": "600805.SH",
+      "name": "悦达投资",
+      "source_url": "https://www.yuedainvest.com/",
+      "industry": "综合",
+      "status": null,
+      "error": "ConnectError"
+    },
+    {
+      "code": "600585.SH",
+      "name": "海螺水泥",
+      "source_url": "https://www.conch.cn/",
+      "industry": "建筑材料",
+      "status": 200,
+      "final_url": "https://www.conch.cn/",
+      "title": ""
+    },
+    {
+      "code": "000786.SZ",
+      "name": "北新建材",
+      "source_url": "https://www.bnbm.com.cn/",
+      "industry": "建筑材料",
+      "status": 200,
+      "final_url": "https://www.bnbm.com.cn/",
+      "title": "首页-北新建材地址"
+    },
+    {
+      "code": "002271.SZ",
+      "name": "东方雨虹",
+      "source_url": "https://www.yuhong.com.cn/",
+      "industry": "建筑材料",
+      "status": 200,
+      "final_url": "https://www.yuhong.com.cn/",
+      "title": "东方雨虹"
+    },
+    {
+      "code": "601668.SH",
+      "name": "中国建筑",
+      "source_url": "https://www.cscec.com/",
+      "industry": "建筑装饰",
+      "status": 200,
+      "final_url": "https://www.cscec.com/",
+      "title": "中国建筑"
+    },
+    {
+      "code": "601390.SH",
+      "name": "中国中铁",
+      "source_url": "https://www.crec.cn/",
+      "industry": "建筑装饰",
+      "status": 200,
+      "final_url": "https://www.crec.cn/",
+      "title": "中国中铁 | 中国中铁股份有限公司"
+    },
+    {
+      "code": "601800.SH",
+      "name": "中国交建",
+      "source_url": "https://www.ccccltd.cn/",
+      "industry": "建筑装饰",
+      "status": 521,
+      "final_url": "https://www.ccccltd.cn/",
+      "title": ""
+    },
+    {
+      "code": "300750.SZ",
+      "name": "宁德时代",
+      "source_url": "https://www.catl.com/",
+      "industry": "电力设备",
+      "status": 200,
+      "final_url": "https://www.catl.com/",
+      "title": "宁德时代·CATL"
+    },
+    {
+      "code": "601012.SH",
+      "name": "隆基绿能",
+      "source_url": "https://www.longi.com/cn/",
+      "industry": "电力设备",
+      "status": 200,
+      "final_url": "https://www.longi.com/cn/",
+      "title": "成为全球最具价值的太阳能科技公司 - 隆基绿能"
+    },
+    {
+      "code": "300274.SZ",
+      "name": "阳光电源",
+      "source_url": "https://www.sungrowpower.com/",
+      "industry": "电力设备",
+      "status": 200,
+      "final_url": "https://www.sungrowpower.com/",
+      "title": "SUNGROW - 阳光电源 - 让人人享用清洁电力"
+    },
+    {
+      "code": "600760.SH",
+      "name": "中航沈飞",
+      "source_url": "https://www.sac.avic.com/",
+      "industry": "国防军工",
+      "status": 200,
+      "final_url": "https://www.sac.avic.com/",
+      "title": "中航沈飞股份有限公司"
+    },
+    {
+      "code": "000768.SZ",
+      "name": "中航西飞",
+      "source_url": "https://www.xac.com.cn/",
+      "industry": "国防军工",
+      "status": null,
+      "error": "ConnectError"
+    },
+    {
+      "code": "600893.SH",
+      "name": "航发动力",
+      "source_url": "https://www.aecc.com.cn/",
+      "industry": "国防军工",
+      "status": null,
+      "error": "ConnectError"
+    },
+    {
+      "code": "603019.SH",
+      "name": "中科曙光",
+      "source_url": "https://www.sugon.com/",
+      "industry": "计算机",
+      "status": 200,
+      "final_url": "https://www.sugon.com/",
+      "title": "中科曙光 曙光很近 理想不远"
+    },
+    {
+      "code": "688111.SH",
+      "name": "金山办公",
+      "source_url": "https://www.wps.cn/",
+      "industry": "计算机",
+      "status": 200,
+      "final_url": "https://www.wps.cn/",
+      "title": "WPS-支持多人在线协作编辑Word、Excel和PPT文档_WPS官方网站"
+    },
+    {
+      "code": "002230.SZ",
+      "name": "科大讯飞",
+      "source_url": "https://www.iflytek.com/",
+      "industry": "计算机",
+      "status": 200,
+      "final_url": "https://www.iflytek.com/",
+      "title": "科大讯飞 - 用人工智能建设美好世界"
+    },
+    {
+      "code": "002027.SZ",
+      "name": "分众传媒",
+      "source_url": "https://www.focusmedia.cn/",
+      "industry": "传媒",
+      "status": 200,
+      "final_url": "https://www.focusmedia.cn/",
+      "title": "分众传媒"
+    },
+    {
+      "code": "300413.SZ",
+      "name": "芒果超媒",
+      "source_url": "https://www.mgtv.com/",
+      "industry": "传媒",
+      "status": 200,
+      "final_url": "https://www.mgtv.com/",
+      "title": "芒果TV-天生青春"
+    },
+    {
+      "code": "002555.SZ",
+      "name": "三七互娱",
+      "source_url": "https://www.37wan.net/",
+      "industry": "传媒",
+      "status": 200,
+      "final_url": "https://www.37wan.net/",
+      "title": "三七互娱官方网站_三七互娱，玩心创造世界"
+    },
+    {
+      "code": "000063.SZ",
+      "name": "中兴通讯",
+      "source_url": "https://www.zte.com.cn/china/",
+      "industry": "通信",
+      "status": 200,
+      "final_url": "https://www.zte.com.cn/china/",
+      "title": "ZTE - 中兴通讯官网 | 全球领先的ICT解决方案提供商"
+    },
+    {
+      "code": "300308.SZ",
+      "name": "中际旭创",
+      "source_url": "https://www.zj-innolight.com/",
+      "industry": "通信",
+      "status": 200,
+      "final_url": "https://www.zj-innolight.com/",
+      "title": "Zhongji InnoLight"
+    },
+    {
+      "code": "300502.SZ",
+      "name": "新易盛",
+      "source_url": "https://www.eoptolink.com/",
+      "industry": "通信",
+      "status": 406,
+      "final_url": "https://www.eoptolink.com/",
+      "title": "Not Acceptable!"
+    },
+    {
+      "code": "601398.SH",
+      "name": "工商银行",
+      "source_url": "https://www.icbc.com.cn/",
+      "industry": "银行",
+      "status": 200,
+      "final_url": "https://www.icbc.com.cn/",
+      "title": "中国工商银行中国网站"
+    },
+    {
+      "code": "600036.SH",
+      "name": "招商银行",
+      "source_url": "https://www.cmbchina.com/",
+      "industry": "银行",
+      "status": 200,
+      "final_url": "https://www.cmbchina.com/",
+      "title": "一网通主页 -- 招商银行官方网站"
+    },
+    {
+      "code": "601939.SH",
+      "name": "建设银行",
+      "source_url": "https://www.ccb.com/",
+      "industry": "银行",
+      "status": null,
+      "error": "ConnectError"
+    },
+    {
+      "code": "601318.SH",
+      "name": "中国平安",
+      "source_url": "https://www.pingan.com/",
+      "industry": "非银金融",
+      "status": 200,
+      "final_url": "https://www.pingan.com/",
+      "title": "中国平安保险集团官网_平安保险·平安车险·平安健康险·平安信用卡·投资理财一站式"
+    },
+    {
+      "code": "600030.SH",
+      "name": "中信证券",
+      "source_url": "https://www.cs.ecitic.com/",
+      "industry": "非银金融",
+      "status": 200,
+      "final_url": "https://www.cs.ecitic.com/newsite/",
+      "title": "中信证券 CITIC Securities"
+    },
+    {
+      "code": "300059.SZ",
+      "name": "东方财富",
+      "source_url": "https://about.eastmoney.com/",
+      "industry": "非银金融",
+      "status": 200,
+      "final_url": "https://about.eastmoney.com/",
+      "title": "关于我们首页_东方财富网"
+    },
+    {
+      "code": "601088.SH",
+      "name": "中国神华",
+      "source_url": "https://www.csec.com/",
+      "industry": "煤炭",
+      "status": null,
+      "error": "ConnectError"
+    },
+    {
+      "code": "601225.SH",
+      "name": "陕西煤业",
+      "source_url": "https://www.shxcoal.com/",
+      "industry": "煤炭",
+      "status": 412,
+      "final_url": "https://www.shxcoal.com/",
+      "title": ""
+    },
+    {
+      "code": "600188.SH",
+      "name": "兖矿能源",
+      "source_url": "https://www.ykenergy.com/",
+      "industry": "煤炭",
+      "status": 200,
+      "final_url": "https://www.ykenergy.com/",
+      "title": "兖矿能源"
+    },
+    {
+      "code": "601857.SH",
+      "name": "中国石油",
+      "source_url": "https://www.petrochina.com.cn/",
+      "industry": "石油石化",
+      "status": 412,
+      "final_url": "https://www.petrochina.com.cn/",
+      "title": ""
+    },
+    {
+      "code": "600028.SH",
+      "name": "中国石化",
+      "source_url": "https://www.sinopec.com/",
+      "industry": "石油石化",
+      "status": null,
+      "error": "ConnectError"
+    },
+    {
+      "code": "600938.SH",
+      "name": "中国海油",
+      "source_url": "https://www.cnoocltd.com/",
+      "industry": "石油石化",
+      "status": 200,
+      "final_url": "https://www.cnoocltd.com/",
+      "title": "中国海洋石油有限公司"
+    },
+    {
+      "code": "300070.SZ",
+      "name": "碧水源",
+      "source_url": "https://www.originwater.com/",
+      "industry": "环保",
+      "status": null,
+      "error": "ConnectError"
+    },
+    {
+      "code": "603568.SH",
+      "name": "伟明环保",
+      "source_url": "https://www.cnweiming.com/",
+      "industry": "环保",
+      "status": 200,
+      "final_url": "https://www.cnweiming.com/",
+      "title": "浙江伟明环保股份有限公司"
+    },
+    {
+      "code": "603588.SH",
+      "name": "高能环境",
+      "source_url": "https://www.bgechina.cn/",
+      "industry": "环保",
+      "status": null,
+      "error": "ReadTimeout"
+    },
+    {
+      "code": "603605.SH",
+      "name": "珀莱雅",
+      "source_url": "https://www.proya-group.com/en/about",
+      "industry": "美容护理",
+      "status": 200,
+      "final_url": "https://www.proya-group.com/en/about",
+      "title": ""
+    },
+    {
+      "code": "300957.SZ",
+      "name": "贝泰妮",
+      "source_url": "https://www.botanee.com.cn/",
+      "industry": "美容护理",
+      "status": 200,
+      "final_url": "https://www.botanee.com.cn/",
+      "title": "贝泰妮集团官方网站"
+    },
+    {
+      "code": "600315.SH",
+      "name": "上海家化",
+      "source_url": "https://www.jahwa.com.cn/",
+      "industry": "美容护理",
+      "status": 200,
+      "final_url": "https://www.jahwa.com.cn/",
+      "title": "上海家化联合股份有限公司"
+    },
+    {
+      "code": "600031.SH",
+      "name": "三一重工",
+      "source_url": "https://www.sany.com.cn/",
+      "industry": "机械设备",
+      "status": 200,
+      "final_url": "https://www.sany.com.cn/",
+      "title": "三一集团 | 三一重工-品质改变世界"
+    },
+    {
+      "code": "000425.SZ",
+      "name": "徐工机械",
+      "source_url": "https://www.xcmg.com/",
+      "industry": "机械设备",
+      "status": 200,
+      "final_url": "https://www.xcmg.com/",
+      "title": "徐工集团工程机械股份有限公司,徐工机械,起重机,挖掘机,装载机,压路机,旋挖钻,"
+    },
+    {
+      "code": "601100.SH",
+      "name": "恒立液压",
+      "source_url": "https://www.henglihydraulic.com/",
+      "industry": "机械设备",
+      "status": null,
+      "error": "ConnectError"
+    }
+  ]
+}

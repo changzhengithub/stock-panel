@@ -1,0 +1,2515 @@
+{
+  "reviewed_at": "2026-10-10",
+  "classification": "SW2021 L2",
+  "verification": "262 个观察样本的代码、上市状态、二级行业归属已与本机 SW2021 官方网站分类同步结果核对；名单为人工挑选的认识行业样本，未对各公司具体业务来源逐项审核，不代表指数权重、市值排名、投资评级或逐笔实时数据。",
+  "industry_source_updated_at": "2026-09-29",
+  "industries": [
+    {
+      "industry_id": "801016.SI",
+      "industry_name": "种植业",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600598.SH",
+          "name": "北大荒",
+          "reason": "依据 SW2021 二级行业归属，选作认识种植业的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000998.SZ",
+          "name": "隆平高科",
+          "reason": "依据 SW2021 二级行业归属，选作认识种植业的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801015.SI",
+      "industry_name": "渔业",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000798.SZ",
+          "name": "中水渔业",
+          "reason": "依据 SW2021 二级行业归属，选作认识渔业的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600467.SH",
+          "name": "好当家",
+          "reason": "依据 SW2021 二级行业归属，选作认识渔业的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801011.SI",
+      "industry_name": "林业Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000663.SZ",
+          "name": "永安林业",
+          "reason": "依据 SW2021 二级行业归属，选作认识林业Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002679.SZ",
+          "name": "福建金森",
+          "reason": "依据 SW2021 二级行业归属，选作认识林业Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801014.SI",
+      "industry_name": "饲料",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002311.SZ",
+          "name": "海大集团",
+          "reason": "依据 SW2021 二级行业归属，选作认识饲料的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000876.SZ",
+          "name": "新 希 望",
+          "reason": "依据 SW2021 二级行业归属，选作认识饲料的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801012.SI",
+      "industry_name": "农产品加工",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300999.SZ",
+          "name": "金龙鱼",
+          "reason": "依据 SW2021 二级行业归属，选作认识农产品加工的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600737.SH",
+          "name": "中粮糖业",
+          "reason": "依据 SW2021 二级行业归属，选作认识农产品加工的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801017.SI",
+      "industry_name": "养殖业",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002714.SZ",
+          "name": "牧原股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识养殖业的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "300498.SZ",
+          "name": "温氏股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识养殖业的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801018.SI",
+      "industry_name": "动物保健Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600201.SH",
+          "name": "生物股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识动物保健Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "300119.SZ",
+          "name": "瑞普生物",
+          "reason": "依据 SW2021 二级行业归属，选作认识动物保健Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801019.SI",
+      "industry_name": "农业综合Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002556.SZ",
+          "name": "辉隆股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识农业综合Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "300021.SZ",
+          "name": "大禹节水",
+          "reason": "依据 SW2021 二级行业归属，选作认识农业综合Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801033.SI",
+      "industry_name": "化学原料",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600989.SH",
+          "name": "宝丰能源",
+          "reason": "依据 SW2021 二级行业归属，选作认识化学原料的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002648.SZ",
+          "name": "卫星化学",
+          "reason": "依据 SW2021 二级行业归属，选作认识化学原料的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801034.SI",
+      "industry_name": "化学制品",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600309.SH",
+          "name": "万华化学",
+          "reason": "依据 SW2021 二级行业归属，选作认识化学制品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002001.SZ",
+          "name": "新 和 成",
+          "reason": "依据 SW2021 二级行业归属，选作认识化学制品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801032.SI",
+      "industry_name": "化学纤维",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002064.SZ",
+          "name": "华峰化学",
+          "reason": "依据 SW2021 二级行业归属，选作认识化学纤维的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "603225.SH",
+          "name": "新凤鸣",
+          "reason": "依据 SW2021 二级行业归属，选作认识化学纤维的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801036.SI",
+      "industry_name": "塑料",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600143.SH",
+          "name": "金发科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识塑料的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601208.SH",
+          "name": "东材科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识塑料的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801037.SI",
+      "industry_name": "橡胶",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603650.SH",
+          "name": "彤程新材",
+          "reason": "依据 SW2021 二级行业归属，选作认识橡胶的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "605183.SH",
+          "name": "确成股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识橡胶的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801038.SI",
+      "industry_name": "农化制品",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000792.SZ",
+          "name": "盐湖股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识农化制品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600096.SH",
+          "name": "云天化",
+          "reason": "依据 SW2021 二级行业归属，选作认识农化制品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801039.SI",
+      "industry_name": "非金属材料Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "688300.SH",
+          "name": "联瑞新材",
+          "reason": "依据 SW2021 二级行业归属，选作认识非金属材料Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "603688.SH",
+          "name": "石英股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识非金属材料Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801043.SI",
+      "industry_name": "冶钢原料",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "001203.SZ",
+          "name": "大中矿业",
+          "reason": "依据 SW2021 二级行业归属，选作认识冶钢原料的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000629.SZ",
+          "name": "钒钛股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识冶钢原料的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801044.SI",
+      "industry_name": "普钢",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600019.SH",
+          "name": "宝钢股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识普钢的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000932.SZ",
+          "name": "华菱钢铁",
+          "reason": "依据 SW2021 二级行业归属，选作认识普钢的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801045.SI",
+      "industry_name": "特钢Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000708.SZ",
+          "name": "中信特钢",
+          "reason": "依据 SW2021 二级行业归属，选作认识特钢Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002318.SZ",
+          "name": "久立特材",
+          "reason": "依据 SW2021 二级行业归属，选作认识特钢Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801051.SI",
+      "industry_name": "金属新材料",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300748.SZ",
+          "name": "金力永磁",
+          "reason": "依据 SW2021 二级行业归属，选作认识金属新材料的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "300811.SZ",
+          "name": "铂科新材",
+          "reason": "依据 SW2021 二级行业归属，选作认识金属新材料的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801055.SI",
+      "industry_name": "工业金属",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601899.SH",
+          "name": "紫金矿业",
+          "reason": "依据 SW2021 二级行业归属，选作认识工业金属的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601600.SH",
+          "name": "中国铝业",
+          "reason": "依据 SW2021 二级行业归属，选作认识工业金属的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801053.SI",
+      "industry_name": "贵金属",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600547.SH",
+          "name": "山东黄金",
+          "reason": "依据 SW2021 二级行业归属，选作认识贵金属的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600489.SH",
+          "name": "中金黄金",
+          "reason": "依据 SW2021 二级行业归属，选作认识贵金属的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801054.SI",
+      "industry_name": "小金属",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600111.SH",
+          "name": "北方稀土",
+          "reason": "依据 SW2021 二级行业归属，选作认识小金属的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600549.SH",
+          "name": "厦门钨业",
+          "reason": "依据 SW2021 二级行业归属，选作认识小金属的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801056.SI",
+      "industry_name": "能源金属",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002460.SZ",
+          "name": "赣锋锂业",
+          "reason": "依据 SW2021 二级行业归属，选作认识能源金属的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002466.SZ",
+          "name": "天齐锂业",
+          "reason": "依据 SW2021 二级行业归属，选作认识能源金属的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801081.SI",
+      "industry_name": "半导体",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "688981.SH",
+          "name": "中芯国际",
+          "reason": "依据 SW2021 二级行业归属，选作认识半导体的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "688041.SH",
+          "name": "海光信息",
+          "reason": "依据 SW2021 二级行业归属，选作认识半导体的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801083.SI",
+      "industry_name": "元件",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600183.SH",
+          "name": "生益科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识元件的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002916.SZ",
+          "name": "深南电路",
+          "reason": "依据 SW2021 二级行业归属，选作认识元件的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801084.SI",
+      "industry_name": "光学光电子",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000725.SZ",
+          "name": "京东方Ａ",
+          "reason": "依据 SW2021 二级行业归属，选作认识光学光电子的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000100.SZ",
+          "name": "TCL科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识光学光电子的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801082.SI",
+      "industry_name": "其他电子Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002859.SZ",
+          "name": "洁美科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识其他电子Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000062.SZ",
+          "name": "深圳华强",
+          "reason": "依据 SW2021 二级行业归属，选作认识其他电子Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801085.SI",
+      "industry_name": "消费电子",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002475.SZ",
+          "name": "立讯精密",
+          "reason": "依据 SW2021 二级行业归属，选作认识消费电子的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601138.SH",
+          "name": "工业富联",
+          "reason": "依据 SW2021 二级行业归属，选作认识消费电子的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801086.SI",
+      "industry_name": "电子化学品Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300054.SZ",
+          "name": "鼎龙股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识电子化学品Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "688019.SH",
+          "name": "安集科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识电子化学品Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801093.SI",
+      "industry_name": "汽车零部件",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000338.SZ",
+          "name": "潍柴动力",
+          "reason": "依据 SW2021 二级行业归属，选作认识汽车零部件的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600660.SH",
+          "name": "福耀玻璃",
+          "reason": "依据 SW2021 二级行业归属，选作认识汽车零部件的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801092.SI",
+      "industry_name": "汽车服务",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601965.SH",
+          "name": "中国汽研",
+          "reason": "依据 SW2021 二级行业归属，选作认识汽车服务的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600335.SH",
+          "name": "国机汽车",
+          "reason": "依据 SW2021 二级行业归属，选作认识汽车服务的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801881.SI",
+      "industry_name": "摩托车及其他",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603129.SH",
+          "name": "春风动力",
+          "reason": "依据 SW2021 二级行业归属，选作认识摩托车及其他的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "689009.SH",
+          "name": "九号公司",
+          "reason": "依据 SW2021 二级行业归属，选作认识摩托车及其他的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801095.SI",
+      "industry_name": "乘用车",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002594.SZ",
+          "name": "比亚迪",
+          "reason": "依据 SW2021 二级行业归属，选作认识乘用车的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601633.SH",
+          "name": "长城汽车",
+          "reason": "依据 SW2021 二级行业归属，选作认识乘用车的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801096.SI",
+      "industry_name": "商用车",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600066.SH",
+          "name": "宇通客车",
+          "reason": "依据 SW2021 二级行业归属，选作认识商用车的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000800.SZ",
+          "name": "一汽解放",
+          "reason": "依据 SW2021 二级行业归属，选作认识商用车的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801111.SI",
+      "industry_name": "白色家电",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000333.SZ",
+          "name": "美的集团",
+          "reason": "依据 SW2021 二级行业归属，选作认识白色家电的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600690.SH",
+          "name": "海尔智家",
+          "reason": "依据 SW2021 二级行业归属，选作认识白色家电的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801112.SI",
+      "industry_name": "黑色家电",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600060.SH",
+          "name": "海信视像",
+          "reason": "依据 SW2021 二级行业归属，选作认识黑色家电的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600839.SH",
+          "name": "四川长虹",
+          "reason": "依据 SW2021 二级行业归属，选作认识黑色家电的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801113.SI",
+      "industry_name": "小家电",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002032.SZ",
+          "name": "苏 泊 尔",
+          "reason": "依据 SW2021 二级行业归属，选作认识小家电的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "688169.SH",
+          "name": "石头科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识小家电的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801114.SI",
+      "industry_name": "厨卫电器",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002508.SZ",
+          "name": "老板电器",
+          "reason": "依据 SW2021 二级行业归属，选作认识厨卫电器的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002543.SZ",
+          "name": "万和电气",
+          "reason": "依据 SW2021 二级行业归属，选作认识厨卫电器的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801115.SI",
+      "industry_name": "照明设备Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603515.SH",
+          "name": "欧普照明",
+          "reason": "依据 SW2021 二级行业归属，选作认识照明设备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000541.SZ",
+          "name": "佛山照明",
+          "reason": "依据 SW2021 二级行业归属，选作认识照明设备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801116.SI",
+      "industry_name": "家电零部件Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002050.SZ",
+          "name": "三花智控",
+          "reason": "依据 SW2021 二级行业归属，选作认识家电零部件Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002011.SZ",
+          "name": "盾安环境",
+          "reason": "依据 SW2021 二级行业归属，选作认识家电零部件Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801117.SI",
+      "industry_name": "其他家电Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002614.SZ",
+          "name": "奥佳华",
+          "reason": "依据 SW2021 二级行业归属，选作认识其他家电Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "603579.SH",
+          "name": "荣泰健康",
+          "reason": "依据 SW2021 二级行业归属，选作认识其他家电Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801124.SI",
+      "industry_name": "食品加工",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000895.SZ",
+          "name": "双汇发展",
+          "reason": "依据 SW2021 二级行业归属，选作认识食品加工的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "603345.SH",
+          "name": "安井食品",
+          "reason": "依据 SW2021 二级行业归属，选作认识食品加工的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801125.SI",
+      "industry_name": "白酒Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600519.SH",
+          "name": "贵州茅台",
+          "reason": "依据 SW2021 二级行业归属，选作认识白酒Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000858.SZ",
+          "name": "五 粮 液",
+          "reason": "依据 SW2021 二级行业归属，选作认识白酒Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801126.SI",
+      "industry_name": "非白酒",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600600.SH",
+          "name": "青岛啤酒",
+          "reason": "依据 SW2021 二级行业归属，选作认识非白酒的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000729.SZ",
+          "name": "燕京啤酒",
+          "reason": "依据 SW2021 二级行业归属，选作认识非白酒的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801127.SI",
+      "industry_name": "饮料乳品",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600887.SH",
+          "name": "伊利股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识饮料乳品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "605499.SH",
+          "name": "东鹏饮料",
+          "reason": "依据 SW2021 二级行业归属，选作认识饮料乳品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801128.SI",
+      "industry_name": "休闲食品",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002847.SZ",
+          "name": "盐津铺子",
+          "reason": "依据 SW2021 二级行业归属，选作认识休闲食品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002557.SZ",
+          "name": "洽洽食品",
+          "reason": "依据 SW2021 二级行业归属，选作认识休闲食品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801129.SI",
+      "industry_name": "调味发酵品Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603288.SH",
+          "name": "海天味业",
+          "reason": "依据 SW2021 二级行业归属，选作认识调味发酵品Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600298.SH",
+          "name": "安琪酵母",
+          "reason": "依据 SW2021 二级行业归属，选作认识调味发酵品Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801131.SI",
+      "industry_name": "纺织制造",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300979.SZ",
+          "name": "华利集团",
+          "reason": "依据 SW2021 二级行业归属，选作认识纺织制造的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002003.SZ",
+          "name": "伟星股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识纺织制造的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801132.SI",
+      "industry_name": "服装家纺",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600398.SH",
+          "name": "海澜之家",
+          "reason": "依据 SW2021 二级行业归属，选作认识服装家纺的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002563.SZ",
+          "name": "森马服饰",
+          "reason": "依据 SW2021 二级行业归属，选作认识服装家纺的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801133.SI",
+      "industry_name": "饰品",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600612.SH",
+          "name": "老凤祥",
+          "reason": "依据 SW2021 二级行业归属，选作认识饰品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002867.SZ",
+          "name": "周大生",
+          "reason": "依据 SW2021 二级行业归属，选作认识饰品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801143.SI",
+      "industry_name": "造纸",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002078.SZ",
+          "name": "太阳纸业",
+          "reason": "依据 SW2021 二级行业归属，选作认识造纸的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "603733.SH",
+          "name": "仙鹤股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识造纸的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801141.SI",
+      "industry_name": "包装印刷",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002831.SZ",
+          "name": "裕同科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识包装印刷的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002701.SZ",
+          "name": "奥瑞金",
+          "reason": "依据 SW2021 二级行业归属，选作认识包装印刷的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801142.SI",
+      "industry_name": "家居用品",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603816.SH",
+          "name": "顾家家居",
+          "reason": "依据 SW2021 二级行业归属，选作认识家居用品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "603833.SH",
+          "name": "欧派家居",
+          "reason": "依据 SW2021 二级行业归属，选作认识家居用品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801145.SI",
+      "industry_name": "文娱用品",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603899.SH",
+          "name": "晨光股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识文娱用品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002301.SZ",
+          "name": "齐心集团",
+          "reason": "依据 SW2021 二级行业归属，选作认识文娱用品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801151.SI",
+      "industry_name": "化学制药",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600276.SH",
+          "name": "恒瑞医药",
+          "reason": "依据 SW2021 二级行业归属，选作认识化学制药的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "688235.SH",
+          "name": "百济神州",
+          "reason": "依据 SW2021 二级行业归属，选作认识化学制药的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801155.SI",
+      "industry_name": "中药Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000538.SZ",
+          "name": "云南白药",
+          "reason": "依据 SW2021 二级行业归属，选作认识中药Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600436.SH",
+          "name": "片仔癀",
+          "reason": "依据 SW2021 二级行业归属，选作认识中药Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801152.SI",
+      "industry_name": "生物制品",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "688331.SH",
+          "name": "荣昌生物",
+          "reason": "依据 SW2021 二级行业归属，选作认识生物制品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "603087.SH",
+          "name": "甘李药业",
+          "reason": "依据 SW2021 二级行业归属，选作认识生物制品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801154.SI",
+      "industry_name": "医药商业",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601607.SH",
+          "name": "上海医药",
+          "reason": "依据 SW2021 二级行业归属，选作认识医药商业的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "603939.SH",
+          "name": "益丰药房",
+          "reason": "依据 SW2021 二级行业归属，选作认识医药商业的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801153.SI",
+      "industry_name": "医疗器械",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300760.SZ",
+          "name": "迈瑞医疗",
+          "reason": "依据 SW2021 二级行业归属，选作认识医疗器械的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "688271.SH",
+          "name": "联影医疗",
+          "reason": "依据 SW2021 二级行业归属，选作认识医疗器械的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801156.SI",
+      "industry_name": "医疗服务",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603259.SH",
+          "name": "药明康德",
+          "reason": "依据 SW2021 二级行业归属，选作认识医疗服务的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "300015.SZ",
+          "name": "爱尔眼科",
+          "reason": "依据 SW2021 二级行业归属，选作认识医疗服务的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801161.SI",
+      "industry_name": "电力",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600900.SH",
+          "name": "长江电力",
+          "reason": "依据 SW2021 二级行业归属，选作认识电力的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601985.SH",
+          "name": "中国核电",
+          "reason": "依据 SW2021 二级行业归属，选作认识电力的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801163.SI",
+      "industry_name": "燃气Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600803.SH",
+          "name": "新奥股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识燃气Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601139.SH",
+          "name": "深圳燃气",
+          "reason": "依据 SW2021 二级行业归属，选作认识燃气Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801178.SI",
+      "industry_name": "物流",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002352.SZ",
+          "name": "顺丰控股",
+          "reason": "依据 SW2021 二级行业归属，选作认识物流的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600233.SH",
+          "name": "圆通速递",
+          "reason": "依据 SW2021 二级行业归属，选作认识物流的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801179.SI",
+      "industry_name": "铁路公路",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601816.SH",
+          "name": "京沪高铁",
+          "reason": "依据 SW2021 二级行业归属，选作认识铁路公路的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601006.SH",
+          "name": "大秦铁路",
+          "reason": "依据 SW2021 二级行业归属，选作认识铁路公路的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801991.SI",
+      "industry_name": "航空机场",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601111.SH",
+          "name": "中国国航",
+          "reason": "依据 SW2021 二级行业归属，选作认识航空机场的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600009.SH",
+          "name": "上海机场",
+          "reason": "依据 SW2021 二级行业归属，选作认识航空机场的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801992.SI",
+      "industry_name": "航运港口",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601919.SH",
+          "name": "中远海控",
+          "reason": "依据 SW2021 二级行业归属，选作认识航运港口的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601872.SH",
+          "name": "招商轮船",
+          "reason": "依据 SW2021 二级行业归属，选作认识航运港口的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801181.SI",
+      "industry_name": "房地产开发",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "001979.SZ",
+          "name": "招商蛇口",
+          "reason": "依据 SW2021 二级行业归属，选作认识房地产开发的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600048.SH",
+          "name": "保利发展",
+          "reason": "依据 SW2021 二级行业归属，选作认识房地产开发的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801183.SI",
+      "industry_name": "房地产服务",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "001914.SZ",
+          "name": "招商积余",
+          "reason": "依据 SW2021 二级行业归属，选作认识房地产服务的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000560.SZ",
+          "name": "我爱我家",
+          "reason": "依据 SW2021 二级行业归属，选作认识房地产服务的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801202.SI",
+      "industry_name": "贸易Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601061.SH",
+          "name": "中信金属",
+          "reason": "依据 SW2021 二级行业归属，选作认识贸易Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600710.SH",
+          "name": "苏美达",
+          "reason": "依据 SW2021 二级行业归属，选作认识贸易Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801203.SI",
+      "industry_name": "一般零售",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600415.SH",
+          "name": "小商品城",
+          "reason": "依据 SW2021 二级行业归属，选作认识一般零售的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601933.SH",
+          "name": "永辉超市",
+          "reason": "依据 SW2021 二级行业归属，选作认识一般零售的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801204.SI",
+      "industry_name": "专业连锁Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "301078.SZ",
+          "name": "孩子王",
+          "reason": "依据 SW2021 二级行业归属，选作认识专业连锁Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000829.SZ",
+          "name": "天音控股",
+          "reason": "依据 SW2021 二级行业归属，选作认识专业连锁Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801206.SI",
+      "industry_name": "互联网电商",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603613.SH",
+          "name": "国联股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识互联网电商的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002315.SZ",
+          "name": "焦点科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识互联网电商的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801207.SI",
+      "industry_name": "旅游零售Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601888.SH",
+          "name": "中国中免",
+          "reason": "依据 SW2021 二级行业归属，选作认识旅游零售Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600185.SH",
+          "name": "珠免集团",
+          "reason": "依据 SW2021 二级行业归属，选作认识旅游零售Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801216.SI",
+      "industry_name": "体育Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600158.SH",
+          "name": "中体产业",
+          "reason": "依据 SW2021 二级行业归属，选作认识体育Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002858.SZ",
+          "name": "力盛体育",
+          "reason": "依据 SW2021 二级行业归属，选作认识体育Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801217.SI",
+      "industry_name": "本地生活服务Ⅱ",
+      "exception_reason": "当前 SW2021 二级行业无上市股票，暂无可维护代表股。",
+      "stocks": []
+    },
+    {
+      "industry_id": "801218.SI",
+      "industry_name": "专业服务",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300012.SZ",
+          "name": "华测检测",
+          "reason": "依据 SW2021 二级行业归属，选作认识专业服务的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002967.SZ",
+          "name": "广电计量",
+          "reason": "依据 SW2021 二级行业归属，选作认识专业服务的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801219.SI",
+      "industry_name": "酒店餐饮",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600754.SH",
+          "name": "锦江酒店",
+          "reason": "依据 SW2021 二级行业归属，选作认识酒店餐饮的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600258.SH",
+          "name": "首旅酒店",
+          "reason": "依据 SW2021 二级行业归属，选作认识酒店餐饮的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801993.SI",
+      "industry_name": "旅游及景区",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300144.SZ",
+          "name": "宋城演艺",
+          "reason": "依据 SW2021 二级行业归属，选作认识旅游及景区的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600054.SH",
+          "name": "黄山旅游",
+          "reason": "依据 SW2021 二级行业归属，选作认识旅游及景区的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801994.SI",
+      "industry_name": "教育",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002607.SZ",
+          "name": "中公教育",
+          "reason": "依据 SW2021 二级行业归属，选作认识教育的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "300192.SZ",
+          "name": "科德教育",
+          "reason": "依据 SW2021 二级行业归属，选作认识教育的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801782.SI",
+      "industry_name": "国有大型银行Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601398.SH",
+          "name": "工商银行",
+          "reason": "依据 SW2021 二级行业归属，选作认识国有大型银行Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601288.SH",
+          "name": "农业银行",
+          "reason": "依据 SW2021 二级行业归属，选作认识国有大型银行Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801783.SI",
+      "industry_name": "股份制银行Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600036.SH",
+          "name": "招商银行",
+          "reason": "依据 SW2021 二级行业归属，选作认识股份制银行Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601166.SH",
+          "name": "兴业银行",
+          "reason": "依据 SW2021 二级行业归属，选作认识股份制银行Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801784.SI",
+      "industry_name": "城商行Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002142.SZ",
+          "name": "宁波银行",
+          "reason": "依据 SW2021 二级行业归属，选作认识城商行Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600919.SH",
+          "name": "江苏银行",
+          "reason": "依据 SW2021 二级行业归属，选作认识城商行Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801785.SI",
+      "industry_name": "农商行Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601825.SH",
+          "name": "沪农商行",
+          "reason": "依据 SW2021 二级行业归属，选作认识农商行Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601128.SH",
+          "name": "常熟银行",
+          "reason": "依据 SW2021 二级行业归属，选作认识农商行Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801786.SI",
+      "industry_name": "其他银行Ⅱ",
+      "exception_reason": "当前 SW2021 二级行业无上市股票，暂无可维护代表股。",
+      "stocks": []
+    },
+    {
+      "industry_id": "801193.SI",
+      "industry_name": "证券Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600030.SH",
+          "name": "中信证券",
+          "reason": "依据 SW2021 二级行业归属，选作认识证券Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "300059.SZ",
+          "name": "东方财富",
+          "reason": "依据 SW2021 二级行业归属，选作认识证券Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801194.SI",
+      "industry_name": "保险Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601628.SH",
+          "name": "中国人寿",
+          "reason": "依据 SW2021 二级行业归属，选作认识保险Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601318.SH",
+          "name": "中国平安",
+          "reason": "依据 SW2021 二级行业归属，选作认识保险Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801191.SI",
+      "industry_name": "多元金融",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600901.SH",
+          "name": "江苏金租",
+          "reason": "依据 SW2021 二级行业归属，选作认识多元金融的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000987.SZ",
+          "name": "越秀资本",
+          "reason": "依据 SW2021 二级行业归属，选作认识多元金融的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801231.SI",
+      "industry_name": "综合Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600673.SH",
+          "name": "东阳光",
+          "reason": "依据 SW2021 二级行业归属，选作认识综合Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000833.SZ",
+          "name": "粤桂股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识综合Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801711.SI",
+      "industry_name": "水泥",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600585.SH",
+          "name": "海螺水泥",
+          "reason": "依据 SW2021 二级行业归属，选作认识水泥的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600801.SH",
+          "name": "华新建材",
+          "reason": "依据 SW2021 二级行业归属，选作认识水泥的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801712.SI",
+      "industry_name": "玻璃玻纤",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600176.SH",
+          "name": "中国巨石",
+          "reason": "依据 SW2021 二级行业归属，选作认识玻璃玻纤的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002080.SZ",
+          "name": "中材科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识玻璃玻纤的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801713.SI",
+      "industry_name": "装修建材",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000786.SZ",
+          "name": "北新建材",
+          "reason": "依据 SW2021 二级行业归属，选作认识装修建材的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002271.SZ",
+          "name": "东方雨虹",
+          "reason": "依据 SW2021 二级行业归属，选作认识装修建材的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801721.SI",
+      "industry_name": "房屋建设Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601668.SH",
+          "name": "中国建筑",
+          "reason": "依据 SW2021 二级行业归属，选作认识房屋建设Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600170.SH",
+          "name": "上海建工",
+          "reason": "依据 SW2021 二级行业归属，选作认识房屋建设Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801722.SI",
+      "industry_name": "装修装饰Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601886.SH",
+          "name": "江河集团",
+          "reason": "依据 SW2021 二级行业归属，选作认识装修装饰Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002081.SZ",
+          "name": "金 螳 螂",
+          "reason": "依据 SW2021 二级行业归属，选作认识装修装饰Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801723.SI",
+      "industry_name": "基础建设",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601390.SH",
+          "name": "中国中铁",
+          "reason": "依据 SW2021 二级行业归属，选作认识基础建设的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601800.SH",
+          "name": "中国交建",
+          "reason": "依据 SW2021 二级行业归属，选作认识基础建设的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801724.SI",
+      "industry_name": "专业工程",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601117.SH",
+          "name": "中国化学",
+          "reason": "依据 SW2021 二级行业归属，选作认识专业工程的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600970.SH",
+          "name": "中材国际",
+          "reason": "依据 SW2021 二级行业归属，选作认识专业工程的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801726.SI",
+      "industry_name": "工程咨询服务Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600629.SH",
+          "name": "华建集团",
+          "reason": "依据 SW2021 二级行业归属，选作认识工程咨询服务Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600720.SH",
+          "name": "中交设计",
+          "reason": "依据 SW2021 二级行业归属，选作认识工程咨询服务Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801731.SI",
+      "industry_name": "电机Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600580.SH",
+          "name": "卧龙电驱",
+          "reason": "依据 SW2021 二级行业归属，选作认识电机Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "603728.SH",
+          "name": "鸣志电器",
+          "reason": "依据 SW2021 二级行业归属，选作认识电机Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801733.SI",
+      "industry_name": "其他电源设备Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600875.SH",
+          "name": "东方电气",
+          "reason": "依据 SW2021 二级行业归属，选作认识其他电源设备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601727.SH",
+          "name": "上海电气",
+          "reason": "依据 SW2021 二级行业归属，选作认识其他电源设备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801735.SI",
+      "industry_name": "光伏设备",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300274.SZ",
+          "name": "阳光电源",
+          "reason": "依据 SW2021 二级行业归属，选作认识光伏设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601012.SH",
+          "name": "隆基绿能",
+          "reason": "依据 SW2021 二级行业归属，选作认识光伏设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801736.SI",
+      "industry_name": "风电设备",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002202.SZ",
+          "name": "金风科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识风电设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "688349.SH",
+          "name": "三一重能",
+          "reason": "依据 SW2021 二级行业归属，选作认识风电设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801737.SI",
+      "industry_name": "电池",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300750.SZ",
+          "name": "宁德时代",
+          "reason": "依据 SW2021 二级行业归属，选作认识电池的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "300014.SZ",
+          "name": "亿纬锂能",
+          "reason": "依据 SW2021 二级行业归属，选作认识电池的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801738.SI",
+      "industry_name": "电网设备",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600406.SH",
+          "name": "国电南瑞",
+          "reason": "依据 SW2021 二级行业归属，选作认识电网设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002028.SZ",
+          "name": "思源电气",
+          "reason": "依据 SW2021 二级行业归属，选作认识电网设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801072.SI",
+      "industry_name": "通用设备",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300567.SZ",
+          "name": "精测电子",
+          "reason": "依据 SW2021 二级行业归属，选作认识通用设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "301377.SZ",
+          "name": "鼎泰高科",
+          "reason": "依据 SW2021 二级行业归属，选作认识通用设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801074.SI",
+      "industry_name": "专用设备",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002353.SZ",
+          "name": "杰瑞股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识专用设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002837.SZ",
+          "name": "英维克",
+          "reason": "依据 SW2021 二级行业归属，选作认识专用设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801076.SI",
+      "industry_name": "轨交设备Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601766.SH",
+          "name": "中国中车",
+          "reason": "依据 SW2021 二级行业归属，选作认识轨交设备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "688187.SH",
+          "name": "时代电气",
+          "reason": "依据 SW2021 二级行业归属，选作认识轨交设备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801077.SI",
+      "industry_name": "工程机械",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600031.SH",
+          "name": "三一重工",
+          "reason": "依据 SW2021 二级行业归属，选作认识工程机械的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000425.SZ",
+          "name": "徐工机械",
+          "reason": "依据 SW2021 二级行业归属，选作认识工程机械的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801078.SI",
+      "industry_name": "自动化设备",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300124.SZ",
+          "name": "汇川技术",
+          "reason": "依据 SW2021 二级行业归属，选作认识自动化设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000988.SZ",
+          "name": "华工科技",
+          "reason": "依据 SW2021 二级行业归属，选作认识自动化设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801741.SI",
+      "industry_name": "航天装备Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601698.SH",
+          "name": "中国卫通",
+          "reason": "依据 SW2021 二级行业归属，选作认识航天装备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600118.SH",
+          "name": "中国卫星",
+          "reason": "依据 SW2021 二级行业归属，选作认识航天装备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801742.SI",
+      "industry_name": "航空装备Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600760.SH",
+          "name": "中航沈飞",
+          "reason": "依据 SW2021 二级行业归属，选作认识航空装备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600893.SH",
+          "name": "航发动力",
+          "reason": "依据 SW2021 二级行业归属，选作认识航空装备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801743.SI",
+      "industry_name": "地面兵装Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600967.SH",
+          "name": "内蒙一机",
+          "reason": "依据 SW2021 二级行业归属，选作认识地面兵装Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000519.SZ",
+          "name": "中兵红箭",
+          "reason": "依据 SW2021 二级行业归属，选作认识地面兵装Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801744.SI",
+      "industry_name": "航海装备Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600150.SH",
+          "name": "中国船舶",
+          "reason": "依据 SW2021 二级行业归属，选作认识航海装备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600685.SH",
+          "name": "中船防务",
+          "reason": "依据 SW2021 二级行业归属，选作认识航海装备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801745.SI",
+      "industry_name": "军工电子Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002179.SZ",
+          "name": "中航光电",
+          "reason": "依据 SW2021 二级行业归属，选作认识军工电子Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002414.SZ",
+          "name": "高德红外",
+          "reason": "依据 SW2021 二级行业归属，选作认识军工电子Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801101.SI",
+      "industry_name": "计算机设备",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002415.SZ",
+          "name": "海康威视",
+          "reason": "依据 SW2021 二级行业归属，选作认识计算机设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000977.SZ",
+          "name": "浪潮信息",
+          "reason": "依据 SW2021 二级行业归属，选作认识计算机设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801103.SI",
+      "industry_name": "IT服务Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000938.SZ",
+          "name": "紫光股份",
+          "reason": "依据 SW2021 二级行业归属，选作认识IT服务Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600845.SH",
+          "name": "宝信软件",
+          "reason": "依据 SW2021 二级行业归属，选作认识IT服务Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801104.SI",
+      "industry_name": "软件开发",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "688111.SH",
+          "name": "金山办公",
+          "reason": "依据 SW2021 二级行业归属，选作认识软件开发的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002230.SZ",
+          "name": "科大讯飞",
+          "reason": "依据 SW2021 二级行业归属，选作认识软件开发的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801764.SI",
+      "industry_name": "游戏Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002602.SZ",
+          "name": "世纪华通",
+          "reason": "依据 SW2021 二级行业归属，选作认识游戏Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002555.SZ",
+          "name": "三七互娱",
+          "reason": "依据 SW2021 二级行业归属，选作认识游戏Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801765.SI",
+      "industry_name": "广告营销",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "002027.SZ",
+          "name": "分众传媒",
+          "reason": "依据 SW2021 二级行业归属，选作认识广告营销的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "300058.SZ",
+          "name": "蓝色光标",
+          "reason": "依据 SW2021 二级行业归属，选作认识广告营销的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801766.SI",
+      "industry_name": "影视院线",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300251.SZ",
+          "name": "光线传媒",
+          "reason": "依据 SW2021 二级行业归属，选作认识影视院线的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600977.SH",
+          "name": "中国电影",
+          "reason": "依据 SW2021 二级行业归属，选作认识影视院线的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801767.SI",
+      "industry_name": "数字媒体",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300413.SZ",
+          "name": "芒果超媒",
+          "reason": "依据 SW2021 二级行业归属，选作认识数字媒体的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000681.SZ",
+          "name": "视觉中国",
+          "reason": "依据 SW2021 二级行业归属，选作认识数字媒体的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801768.SI",
+      "industry_name": "社交Ⅱ",
+      "exception_reason": "当前 SW2021 二级行业无上市股票，暂无可维护代表股。",
+      "stocks": []
+    },
+    {
+      "industry_id": "801769.SI",
+      "industry_name": "出版",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601928.SH",
+          "name": "凤凰传媒",
+          "reason": "依据 SW2021 二级行业归属，选作认识出版的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601098.SH",
+          "name": "中南传媒",
+          "reason": "依据 SW2021 二级行业归属，选作认识出版的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801995.SI",
+      "industry_name": "电视广播Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600637.SH",
+          "name": "东方明珠",
+          "reason": "依据 SW2021 二级行业归属，选作认识电视广播Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "000156.SZ",
+          "name": "华数传媒",
+          "reason": "依据 SW2021 二级行业归属，选作认识电视广播Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801223.SI",
+      "industry_name": "通信服务",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600941.SH",
+          "name": "中国移动",
+          "reason": "依据 SW2021 二级行业归属，选作认识通信服务的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600050.SH",
+          "name": "中国联通",
+          "reason": "依据 SW2021 二级行业归属，选作认识通信服务的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801102.SI",
+      "industry_name": "通信设备",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300308.SZ",
+          "name": "中际旭创",
+          "reason": "依据 SW2021 二级行业归属，选作认识通信设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "300502.SZ",
+          "name": "新易盛",
+          "reason": "依据 SW2021 二级行业归属，选作认识通信设备的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801951.SI",
+      "industry_name": "煤炭开采",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601088.SH",
+          "name": "中国神华",
+          "reason": "依据 SW2021 二级行业归属，选作认识煤炭开采的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "601225.SH",
+          "name": "陕西煤业",
+          "reason": "依据 SW2021 二级行业归属，选作认识煤炭开采的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801952.SI",
+      "industry_name": "焦炭Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000723.SZ",
+          "name": "美锦能源",
+          "reason": "依据 SW2021 二级行业归属，选作认识焦炭Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600740.SH",
+          "name": "山西焦化",
+          "reason": "依据 SW2021 二级行业归属，选作认识焦炭Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801961.SI",
+      "industry_name": "油气开采Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "600938.SH",
+          "name": "中国海油",
+          "reason": "依据 SW2021 二级行业归属，选作认识油气开采Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600777.SH",
+          "name": "新潮能源",
+          "reason": "依据 SW2021 二级行业归属，选作认识油气开采Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801962.SI",
+      "industry_name": "油服工程",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601808.SH",
+          "name": "中海油服",
+          "reason": "依据 SW2021 二级行业归属，选作认识油服工程的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600583.SH",
+          "name": "海油工程",
+          "reason": "依据 SW2021 二级行业归属，选作认识油服工程的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801963.SI",
+      "industry_name": "炼化及贸易",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "601857.SH",
+          "name": "中国石油",
+          "reason": "依据 SW2021 二级行业归属，选作认识炼化及贸易的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600028.SH",
+          "name": "中国石化",
+          "reason": "依据 SW2021 二级行业归属，选作认识炼化及贸易的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801971.SI",
+      "industry_name": "环境治理",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603568.SH",
+          "name": "伟明环保",
+          "reason": "依据 SW2021 二级行业归属，选作认识环境治理的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600323.SH",
+          "name": "瀚蓝环境",
+          "reason": "依据 SW2021 二级行业归属，选作认识环境治理的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801972.SI",
+      "industry_name": "环保设备Ⅱ",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "000967.SZ",
+          "name": "盈峰环境",
+          "reason": "依据 SW2021 二级行业归属，选作认识环保设备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "600388.SH",
+          "name": "紫金龙净",
+          "reason": "依据 SW2021 二级行业归属，选作认识环保设备Ⅱ的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801981.SI",
+      "industry_name": "个护用品",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300888.SZ",
+          "name": "稳健医疗",
+          "reason": "依据 SW2021 二级行业归属，选作认识个护用品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "002511.SZ",
+          "name": "中顺洁柔",
+          "reason": "依据 SW2021 二级行业归属，选作认识个护用品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801982.SI",
+      "industry_name": "化妆品",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "603605.SH",
+          "name": "珀莱雅",
+          "reason": "依据 SW2021 二级行业归属，选作认识化妆品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "300957.SZ",
+          "name": "贝泰妮",
+          "reason": "依据 SW2021 二级行业归属，选作认识化妆品的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    },
+    {
+      "industry_id": "801983.SI",
+      "industry_name": "医疗美容",
+      "exception_reason": null,
+      "stocks": [
+        {
+          "code": "300896.SZ",
+          "name": "爱美客",
+          "reason": "依据 SW2021 二级行业归属，选作认识医疗美容的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        },
+        {
+          "code": "688363.SH",
+          "name": "华熙生物",
+          "reason": "依据 SW2021 二级行业归属，选作认识医疗美容的上市公司观察样本；非权威排名或投资评级。",
+          "source_url": "https://www.swsresearch.com/swindex/pdf/SwClass2021/StockClassifyUse_stock.xls"
+        }
+      ]
+    }
+  ]
+}
