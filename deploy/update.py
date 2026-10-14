@@ -105,7 +105,7 @@ class SSH:
         )
 
 
-def publish(ssh, directory, release, digest):
+def publish(ssh, directory, release, digest, migrate=False):
     unit = f"stock-panel-update-{release}"
     remote = f"/var/lib/stock-panel-deploy/{release}"
     log = f"/var/log/{unit}.log"
@@ -144,6 +144,7 @@ def publish(ssh, directory, release, digest):
             "--sha256",
             digest,
         ]
+        + (["--migrate"] if migrate else [])
     )
     print("服务器正在安装并检查新版本；SSH 断开后服务器任务仍会继续。", flush=True)
     try:
@@ -171,7 +172,9 @@ def publish(ssh, directory, release, digest):
             if state.get("ActiveState") == "failed" or (
                 state.get("ActiveState") == "inactive" and attempt >= 3
             ):
-                raise RuntimeError("服务器更新失败，请查看以下日志确认是否已恢复旧版本。")
+                raise RuntimeError(
+                    "服务器更新失败，请按日志确认服务与数据库状态；迁移发布失败不会自动回退。"
+                )
             if attempt % 6 == 0:
                 ssh.command(["sudo", "-n", "tail", "-n", "4", log])
             time.sleep(5)
@@ -191,6 +194,11 @@ def main():
     parser.add_argument("--host", default="ubuntu@43.129.204.116", help="SSH 用户@地址或 SSH 别名")
     parser.add_argument("--port", type=int, default=22)
     parser.add_argument("--identity", help="可选 SSH 私钥路径；不传时使用 SSH 配置/密钥或密码")
+    parser.add_argument(
+        "--migrate",
+        action="store_true",
+        help="副本演练后停服迁移数据库；正式迁移失败会保持停服，不强制回退旧库",
+    )
     parser.add_argument(
         "--prepare-only", action="store_true", help="仅测试、构建和打包，不连接服务器"
     )
@@ -241,7 +249,7 @@ def main():
             print(f"发布包已生成：{directory}", flush=True)
             if args.prepare_only:
                 return
-            publish(ssh, directory, release, digest)
+            publish(ssh, directory, release, digest, migrate=args.migrate)
             try:
                 with urllib.request.urlopen("https://guanshi.shop/", timeout=20) as response:
                     if response.read() != (ROOT / "frontend/dist/index.html").read_bytes():

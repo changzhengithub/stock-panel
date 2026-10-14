@@ -18,7 +18,9 @@ from sqlalchemy.orm import sessionmaker
 
 
 @pytest.fixture
-def sessions(tmp_path):
+def sessions(tmp_path, monkeypatch):
+    # Maintenance locks and caches must be isolated along with the fixture database.
+    monkeypatch.setenv("STOCK_DB_PATH", str(tmp_path / "test.sqlite3"))
     engine = make_engine(tmp_path / "test.sqlite3")
     Base.metadata.create_all(engine)
     factory = sessionmaker(engine, expire_on_commit=False)

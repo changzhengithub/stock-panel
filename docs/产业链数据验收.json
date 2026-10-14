@@ -1,0 +1,46 @@
+{
+  "verified_at": "2026-10-13T18:16:25.252180+08:00",
+  "layer": "本机真实数据库与 HTTP API；非生产验收",
+  "chains": [
+    {
+      "id": "photovoltaic",
+      "revision_id": "a78b415fe4b74c87836ce335f6e66cb7",
+      "nodes": 8,
+      "edges": 8,
+      "registered_links": 11,
+      "visible_companies": 6,
+      "unmatched_companies": 0,
+      "filtered_companies": 0,
+      "leader_count": 0,
+      "sources": 8
+    },
+    {
+      "id": "power-battery",
+      "revision_id": "09e7e2b2ded8416394b401e523b56311",
+      "nodes": 10,
+      "edges": 11,
+      "registered_links": 11,
+      "visible_companies": 9,
+      "unmatched_companies": 0,
+      "filtered_companies": 0,
+      "leader_count": 1,
+      "sources": 11
+    },
+    {
+      "id": "semiconductor",
+      "revision_id": "24d97fa040c7426ca5c4aaf18a558cf1",
+      "nodes": 7,
+      "edges": 7,
+      "registered_links": 7,
+      "visible_companies": 7,
+      "unmatched_companies": 0,
+      "filtered_companies": 0,
+      "leader_count": 0,
+      "sources": 9
+    }
+  ],
+  "unique_stock_count": 21,
+  "reviewer": "Codex（公开资料核对）",
+  "independent_human_review": false,
+  "backup": "data/stock-panel-before-industry-chains-20261013.sqlite3"
+}

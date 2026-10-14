@@ -1,0 +1,267 @@
+{
+  "verified_at": "2026-10-13",
+  "environment": "local real-source read, independent from test fixtures",
+  "rankings_and_boards": {
+    "industry:today": {
+      "total": 496,
+      "date": "20261013",
+      "source_as_of": "2026-10-13T15:39:30+08:00",
+      "sample": [
+        {
+          "code": "BK1340",
+          "name": "印制电路板",
+          "net_amount": 2087754496.0,
+          "net_rate": 2.49,
+          "pct_change": 6.08,
+          "extra_large": 768375296.0,
+          "large": 1319379200.0,
+          "medium": -699081728.0,
+          "small": -1363525632.0,
+          "lead_stock": "沪电股份",
+          "lead_code": "002463",
+          "source_as_of": "2026-10-13T15:39:30+08:00",
+          "trade_date": "20261013",
+          "source_rank": 1
+        }
+      ]
+    },
+    "industry:5d": {
+      "total": 496,
+      "date": "20261013",
+      "source_as_of": "2026-10-13T15:39:30+08:00",
+      "sample": [
+        {
+          "code": "BK1033",
+          "name": "电池",
+          "net_amount": 4004838144.0,
+          "net_rate": 1.05,
+          "pct_change": 1.54,
+          "extra_large": 1860372736.0,
+          "large": 2144465408.0,
+          "medium": -2250320384.0,
+          "small": -1598808320.0,
+          "lead_stock": "宁德时代",
+          "lead_code": "300750",
+          "source_as_of": "2026-10-13T15:39:30+08:00",
+          "trade_date": "20261013",
+          "source_rank": 1
+        }
+      ]
+    },
+    "industry:10d": {
+      "total": 496,
+      "date": "20261013",
+      "source_as_of": "2026-10-13T15:39:30+08:00",
+      "sample": [
+        {
+          "code": "BK1033",
+          "name": "电池",
+          "net_amount": 2996834000.0,
+          "net_rate": 0.49,
+          "pct_change": 0.06,
+          "extra_large": 1442068432.0,
+          "large": 1554765568.0,
+          "medium": -4229289472.0,
+          "small": 1430468608.0,
+          "lead_stock": "宁德时代",
+          "lead_code": "300750",
+          "source_as_of": "2026-10-13T15:39:30+08:00",
+          "trade_date": "20261013",
+          "source_rank": 1
+        }
+      ]
+    },
+    "concept:today": {
+      "total": 506,
+      "date": "20261013",
+      "source_as_of": "2026-10-13T15:39:30+08:00",
+      "sample": [
+        {
+          "code": "BK1136",
+          "name": "光通信模块",
+          "net_amount": 3532180992.0,
+          "net_rate": 1.9,
+          "pct_change": 2.42,
+          "extra_large": 1723933440.0,
+          "large": 1808247552.0,
+          "medium": 738324480.0,
+          "small": -4146672640.0,
+          "lead_stock": "N粤芯-U",
+          "lead_code": "301660",
+          "source_as_of": "2026-10-13T15:39:30+08:00",
+          "trade_date": "20261013",
+          "source_rank": 1
+        }
+      ]
+    },
+    "concept:5d": {
+      "total": 506,
+      "date": "20261013",
+      "source_as_of": "2026-10-13T15:39:30+08:00",
+      "sample": [
+        {
+          "code": "BK0834",
+          "name": "乡村振兴",
+          "net_amount": 3783520512.0,
+          "net_rate": 2.15,
+          "pct_change": 1.09,
+          "extra_large": 2913693440.0,
+          "large": 869827072.0,
+          "medium": -1949671168.0,
+          "small": -1855881728.0,
+          "lead_stock": "贵州茅台",
+          "lead_code": "600519",
+          "source_as_of": "2026-10-13T15:39:30+08:00",
+          "trade_date": "20261013",
+          "source_rank": 1
+        }
+      ]
+    },
+    "concept:10d": {
+      "total": 506,
+      "date": "20261013",
+      "source_as_of": "2026-10-13T15:39:30+08:00",
+      "sample": [
+        {
+          "code": "BK1092",
+          "name": "麒麟电池",
+          "net_amount": 3131368608.0,
+          "net_rate": 2.4,
+          "pct_change": -8.74,
+          "extra_large": 324645088.0,
+          "large": 2806723520.0,
+          "medium": -2196719456.0,
+          "small": -934649184.0,
+          "lead_stock": "宁德时代",
+          "lead_code": "300750",
+          "source_as_of": "2026-10-13T15:39:30+08:00",
+          "trade_date": "20261013",
+          "source_rank": 1
+        }
+      ]
+    },
+    "industry:BK1340": {
+      "history": 121,
+      "start": "20260414",
+      "end": "20261013",
+      "stocks": {
+        "today": {
+          "total": 48,
+          "date": "20261013"
+        },
+        "5d": {
+          "total": 48,
+          "date": "20261013"
+        },
+        "10d": {
+          "total": 48,
+          "date": "20261013"
+        }
+      }
+    },
+    "industry:BK1329": {
+      "history": 121,
+      "start": "20260414",
+      "end": "20261013",
+      "stocks": {
+        "today": {
+          "total": 9,
+          "date": "20261013"
+        },
+        "5d": {
+          "total": 9,
+          "date": "20261013"
+        },
+        "10d": {
+          "total": 9,
+          "date": "20261013"
+        }
+      }
+    },
+    "industry:BK1204": {
+      "history": 121,
+      "start": "20260414",
+      "end": "20261013",
+      "stocks": {
+        "today": {
+          "total": 141,
+          "date": "20261013"
+        },
+        "5d": {
+          "total": 141,
+          "date": "20261013"
+        },
+        "10d": {
+          "total": 141,
+          "date": "20261013"
+        }
+      }
+    },
+    "concept:BK1136": {
+      "history": 121,
+      "start": "20260414",
+      "end": "20261013",
+      "stocks": {
+        "today": {
+          "total": 121,
+          "date": "20261013"
+        },
+        "5d": {
+          "total": 121,
+          "date": "20261013"
+        },
+        "10d": {
+          "total": 121,
+          "date": "20261013"
+        }
+      }
+    },
+    "concept:BK1667": {
+      "history": 121,
+      "start": "20260414",
+      "end": "20261013",
+      "stocks": {
+        "today": {
+          "total": 365,
+          "date": "20261013"
+        },
+        "5d": {
+          "total": 365,
+          "date": "20261013"
+        },
+        "10d": {
+          "total": 365,
+          "date": "20261013"
+        }
+      }
+    },
+    "concept:BK1721": {
+      "history": 49,
+      "start": "20260729",
+      "end": "20261013",
+      "stocks": {
+        "today": {
+          "total": 100,
+          "date": "20261013"
+        },
+        "5d": {
+          "total": 100,
+          "date": "20261013"
+        },
+        "10d": {
+          "total": 100,
+          "date": "20261013"
+        }
+      }
+    }
+  },
+  "production_source_check": {
+    "status": "not_verified",
+    "reason": "existing SSH authentication unavailable; no remote code or database changes"
+  },
+  "limits": [
+    "cross-trading-day observation not performed",
+    "window start not provided by source",
+    "today history is provisional"
+  ]
+}

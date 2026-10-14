@@ -2,6 +2,8 @@ import { computed, shallowRef, watch, type Ref } from "vue";
 import { get, type Prices } from "../api";
 import type { CandlePeriod } from "../components/stock/candlePeriods";
 import type { ChartRange } from "./useChartPreferences";
+import { useAutoRefresh } from "./useAutoRefresh";
+import { updateData } from "../utils/updateData";
 export function usePriceHistory(
   id: Ref<number>,
   period: Ref<CandlePeriod>,
@@ -29,8 +31,10 @@ export function usePriceHistory(
         c.abort();
         clearTimeout(timer);
       });
-      chartError.value = "";
-      if (!old || old[0] !== stockId || old[2] !== adjust) prices.value = null;
+      if (!old || old[0] !== stockId || old[2] !== adjust) {
+        prices.value = null;
+        chartError.value = "";
+      }
       async function fetchHistory(attempt = 0) {
         try {
           const result = await get<Prices>(
@@ -38,8 +42,9 @@ export function usePriceHistory(
             c.signal,
           );
           if (c.signal.aborted) return;
+          chartError.value = "";
           if (result.points.length || !prices.value?.points.length)
-            prices.value = result;
+            updateData(prices, result);
           else
             prices.value = {
               ...prices.value,
@@ -62,5 +67,6 @@ export function usePriceHistory(
     },
     { immediate: true },
   );
+  useAutoRefresh(() => revision.value++);
   return { prices, chartError, retryHistory: () => revision.value++ };
 }

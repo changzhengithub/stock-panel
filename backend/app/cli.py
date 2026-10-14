@@ -96,6 +96,9 @@ def main():
         "command",
         choices=[
             "migrate",
+            "collect-business", "build-industry-chains", "publish-chain-batch",
+            "update-industry-chains", "doctor-chain-updates",
+            "validate-chain", "import-chain", "review-chain", "publish-chain", "doctor-chain",
             "doctor",
             "bootstrap",
             "sync",
@@ -104,6 +107,9 @@ def main():
             "sync-concepts",
             "sync-concepts-em",
             "backup",
+            "refresh-quotes",
+            "doctor-fund-flow",
+            "sync-fund-flow",
         ],
     )
     parser.add_argument("--start", type=valid_date)
@@ -114,11 +120,69 @@ def main():
     parser.add_argument("--history-limit", type=int, help="限制本次历史回填股票数，0 只更新行情")
     parser.add_argument("--codes", help="历史回填指定代码，以逗号分隔，例如 600519.SH,920000.BJ")
     parser.add_argument("--concept", help="只同步指定名称的概念板块，例如 固态电池")
+    parser.add_argument("--fund-kind", choices=["all", "concept", "industry"], default="all")
+    parser.add_argument("--fund-period", choices=["all", "today", "5d", "10d"], default="all")
+    parser.add_argument("--fund-board", help="同步同源板块历史和成分资金，例如 EM-concept-BK1136")
+    parser.add_argument("--chain-file", help="产业链 JSON 内容包路径")
+    parser.add_argument("--chain-revision", help="产业链内容版本 ID")
+    parser.add_argument("--chain-reviewer", help="资料核验人（如实填写）")
+    parser.add_argument("--chain-review-note", help="资料核验范围、依据及缺口说明")
+    parser.add_argument("--direct-network", action="store_true", help="公开业务接口直连，不使用环境代理")
     args = parser.parse_args()
+    if args.command in ("update-industry-chains", "doctor-chain-updates"):
+        from app.chain_updates import status, update
+        migrate()
+        if args.command == "doctor-chain-updates":
+            with Session() as s:
+                report(status(s))
+            return 0
+        result = update(Session, force=args.force, direct=args.direct_network)
+        # Snapshot selections are internal audit data, not CLI output.
+        report(result)
+        return 1 if result["state"] in ("failed", "busy") else 0
+    if args.command in ("collect-business", "build-industry-chains", "publish-chain-batch"):
+        migrate()
+        if args.command == "collect-business":
+            from app.jobs.business_collection import collect
+            report(collect(Session, direct=args.direct_network, refresh=args.force))
+        elif args.command == "publish-chain-batch":
+            from app.jobs.chain_supplement import publish_batch
+            report(publish_batch(Session, args.chain_file, args.chain_reviewer, args.chain_review_note))
+        else:
+            from app.jobs.chain_supplement import build_all
+            report(build_all(Session))
+        return 0
+    if args.command.endswith("-chain"):
+        from app.jobs.industry_chains import maintain
+        try:
+            if args.command != "validate-chain":
+                migrate()
+            report(maintain(args.command, Session, args.chain_file, args.chain_revision, args.chain_reviewer, args.chain_review_note))
+            return 0
+        except (ValueError, OSError) as exc:
+            report({"ok": False, "error": str(exc)})
+            return 1
     if args.history_limit is not None and args.history_limit < 0:
         parser.error("--history-limit 不能为负数")
     provider_class = FreeProvider if args.provider == "free" else Tushare
     last_date = free_cutoff if args.provider == "free" else cutoff
+    if args.command == "doctor-fund-flow":
+        from app.providers.fund_flow import FundFlowProvider
+
+        fund_provider = FundFlowProvider()
+        checks = []
+        try:
+            for kind in ("concept", "industry") if args.fund_kind == "all" else (args.fund_kind,):
+                for period in ("today", "5d", "10d") if args.fund_period == "all" else (args.fund_period,):
+                    data = fund_provider.listing(kind, period)
+                    checks.append({"kind": kind, "period": period, "rows": data["total"], "trade_date": data["trade_date"], "source_as_of": data["source_as_of"]})
+            report({"ok": True, "checks": checks})
+            return 0
+        except Exception as exc:
+            report({"ok": False, "error": str(exc) if isinstance(exc, ProviderError) else type(exc).__name__, "checks": checks})
+            return 1
+        finally:
+            fund_provider.close()
     if args.command == "doctor":
         try:
             provider = provider_class()
@@ -132,10 +196,6 @@ def main():
         except ProviderError as exc:
             report({"ok": False, "error": str(exc)})
             return 1
-        return 0
-    migrate()
-    if args.command == "migrate":
-        report({"ok": True})
         return 0
     if args.command == "backup":
         if not args.output:
@@ -151,6 +211,41 @@ def main():
             source.backup(target)
         report({"backup": str(destination)})
         return 0
+    migrate()
+    if args.command == "migrate":
+        report({"ok": True})
+        return 0
+    if args.command == "sync-fund-flow":
+        from app.fund_flow import collect
+        from app.models import FundBoard
+
+        results = []
+        periods = ("today", "5d", "10d") if args.fund_period == "all" else (args.fund_period,)
+        if args.fund_board:
+            with Session() as session:
+                fund_board = session.get(FundBoard, args.fund_board)
+                if not fund_board:
+                    report({"ok": False, "error": "板块尚未注册，请先同步排行"})
+                    return 1
+                kind, code = fund_board.kind, fund_board.code
+            results.append(collect(kind, "daily", code, "history", force=args.force))
+            results.extend(collect(kind, p, code, "stocks", force=args.force) for p in periods)
+        else:
+            for kind in ("concept", "industry") if args.fund_kind == "all" else (args.fund_kind,):
+                results.extend(collect(kind, p, force=args.force) for p in periods)
+        ok = not any(r.get("error") for r in results)
+        report({"ok": ok, "results": results})
+        return 0 if ok else 1
+    if args.command == "refresh-quotes":
+        from app.realtime import refresh
+
+        try:
+            value = refresh()
+            report({"ok": True, **{k: v for k, v in (value or {}).items() if k != "quotes"}})
+            return 0
+        except ProviderError as exc:
+            report({"ok": False, "error": str(exc)})
+            return 1
     provider, run_id = None, None
     try:
         with sync_lock():

@@ -30,6 +30,7 @@ from app.models import (
     SyncRun,
 )
 from app.providers.free import SOURCE, free_cutoff
+from app.realtime import cache_stale, current_bar, overlay, read_cache, snapshot_for
 from app.schemas import ConceptInfo, DataStatus, IndustryInfo, PriceSeries, StockInfo, StockList
 from app.settings import data_provider
 from app.universe import visible_stock
@@ -47,14 +48,14 @@ def latest(session):
     return session.scalar(select(func.max(Publication.trade_date)))
 
 
-def item(row, representative_level=1, fallback_to_l1=False):
+def item(row, representative_level=1, fallback_to_l1=False, live=None):
     stock, industry, industry_l2, quote, representative_l1, representative_l2 = row
     representative = representative_l2 if representative_level == 2 else representative_l1
     if fallback_to_l1 and representative is None:
         representative = representative_l1
     actual_level = 2 if representative is representative_l2 and representative is not None else 1
     name_st = "ST" in stock.name.upper()
-    return dict(
+    result = dict(
         id=stock.id,
         code=stock.symbol,
         ts_code=stock.ts_code,
@@ -82,6 +83,14 @@ def item(row, representative_level=1, fallback_to_l1=False):
         total_shares=quote.total_shares if quote else None,
         float_shares=quote.float_shares if quote else None,
         quote_date=quote.trade_date if quote and quote.status != "unavailable" else None,
+        quote_time=None,
+        quote_mode="daily",
+        quote_source=None,
+        quote_stale=False,
+        **{
+            key: getattr(quote, key, None) if quote else None
+            for key in ("open", "high", "low", "volume", "pre_close")
+        },
         status=quote.status if quote else "unavailable",
         is_st=quote.is_st if quote and quote.is_st is not None else name_st,
         st_source=quote.st_source if quote and quote.is_st is not None else "current_name",
@@ -95,6 +104,65 @@ def item(row, representative_level=1, fallback_to_l1=False):
             industry_level=actual_level,
         ),
     )
+    return overlay(result, live)
+
+
+def current_stock_list(
+    session, query, live, industry_level, sort, page, page_size, neighbor_of, group_by, filters
+):
+    """Sort the entire filtered live universe before pagination, never just one page."""
+    values = [
+        item(r, industry_level, fallback_to_l1=True, live=live)
+        for r in session.execute(query).all()
+    ]
+    if sort.startswith("pct_"):
+        values = [v for v in values if v["status"] == "trading" and v["pct_chg"] is not None]
+    if sort != "default":
+        field, direction = sort.rsplit("_", 1)
+        key = {"pct": "pct_chg", "turnover": "turnover_rate"}.get(field, field)
+        sign = -1 if direction == "desc" else 1
+        values.sort(key=lambda v: (v[key] is None, sign * (v[key] or 0), v["code"], v["exchange"]))
+    total = len(values)
+    result = dict(
+        items=[],
+        groups=[],
+        total=total,
+        matched_stocks=total,
+        pagination_unit="stock",
+        page=page,
+        page_size=page_size,
+        trade_date=live["trade_date"],
+    )
+    if neighbor_of is not None:
+        ids = [v["id"] for v in values]
+        position = ids.index(neighbor_of) if neighbor_of in ids else -1
+        result["navigation"] = dict(
+            previous_id=ids[position - 1] if position > 0 else None,
+            next_id=ids[position + 1] if 0 <= position < total - 1 else None,
+            position=position + 1,
+            total=total,
+        )
+    elif group_by == "industry":
+        counts = session.execute(
+            select(Industry.id, Industry.name, func.count(Stock.id))
+            .join(Stock, Stock.industry_id == Industry.id)
+            .where(*filters)
+            .group_by(Industry.id)
+            .order_by(Industry.id)
+        ).all()
+        result.update(total=len(counts), pagination_unit="industry")
+        result["groups"] = [
+            dict(
+                id=identity,
+                name=name,
+                stock_count=count,
+                items=[v for v in values if v["industry_id"] == identity],
+            )
+            for identity, name, count in counts[(page - 1) * page_size : page * page_size]
+        ]
+    else:
+        result["items"] = values[(page - 1) * page_size : page * page_size]
+    return result
 
 
 def base_query(date):
@@ -117,7 +185,7 @@ def base_query(date):
     )
 
 
-def market_filters(exchange, board):
+def market_filters(exchange, board, session=None):
     board_exchange = {
         "沪市主板": "SSE",
         "科创板": "SSE",
@@ -127,7 +195,7 @@ def market_filters(exchange, board):
     }
     if exchange and board and board_exchange[board] != exchange:
         raise HTTPException(422, "上市板块与交易所市场不匹配")
-    filters = [visible_stock()]
+    filters = [visible_stock(session)]
     if exchange:
         filters.append(Stock.exchange == exchange)
     if board:
@@ -142,7 +210,7 @@ def industries(
     board: Literal["沪市主板", "深市主板", "创业板", "科创板", "北交所"] | None = None,
     session: DBSession = Depends(database),
 ):
-    stock_filters = market_filters(exchange, board)
+    stock_filters = market_filters(exchange, board, session)
     if level == 2 and not session.get(IndustrySnapshot, 1):
         return []
     stock_industry = Stock.industry_id if level == 1 else Stock.industry_l2_id
@@ -207,7 +275,7 @@ def concepts(
     board: Literal["沪市主板", "深市主板", "创业板", "科创板", "北交所"] | None = None,
     session: DBSession = Depends(database),
 ):
-    filters = market_filters(exchange, board)
+    filters = market_filters(exchange, board, session)
     rows = session.execute(
         select(Concept, func.count(Stock.id))
         .outerjoin(ConceptMember, ConceptMember.concept_id == Concept.id)
@@ -218,10 +286,9 @@ def concepts(
     available = {}
     for concept, count in rows:
         previous = available.get(concept.name)
-        if previous is None or (
-            bool(concept.fetched_at), concept.id.startswith("TDX:")
-        ) > (
-            bool(previous[0].fetched_at), previous[0].id.startswith("TDX:")
+        if previous is None or (bool(concept.fetched_at), concept.id.startswith("TDX:")) > (
+            bool(previous[0].fetched_at),
+            previous[0].id.startswith("TDX:"),
         ):
             available[concept.name] = (concept, count)
     ordered = sorted(available.values(), key=lambda row: (not bool(row[0].fetched_at), row[0].name))
@@ -274,7 +341,8 @@ def stocks(
     ):
         raise HTTPException(422, "行业分组仅支持一级代表股默认排序")
     date = latest(session)
-    filters = market_filters(exchange, board)
+    live = snapshot_for(session)
+    filters = market_filters(exchange, board, session)
     if industry_id:
         if industry_level == 2 and industry_id == "unclassified-l2":
             filters.append(Stock.industry_l2_id.is_(None))
@@ -297,7 +365,9 @@ def stocks(
             )
             raise HTTPException(503, detail)
         filters.append(
-            Stock.id.in_(select(ConceptMember.stock_id).where(ConceptMember.concept_id == concept_id))
+            Stock.id.in_(
+                select(ConceptMember.stock_id).where(ConceptMember.concept_id == concept_id)
+            )
         )
         if scope == "representatives":
             raise HTTPException(422, "概念板块不支持龙头股筛选")
@@ -314,7 +384,7 @@ def stocks(
     if scope == "representatives":
         representative = Representative if industry_level == 1 else RepresentativeL2
         query = query.where(representative.stock_id.is_not(None))
-    if sort.startswith("pct_"):
+    if sort.startswith("pct_") and not live:
         query = query.where(Quote.status == "trading", Quote.pct_chg.is_not(None))
     ordering = [Stock.symbol, Stock.exchange]
     if sort == "pct_desc":
@@ -343,6 +413,19 @@ def stocks(
         ordering = [
             case({code: i for i, code in enumerate(codes.split(","))}, value=Stock.ts_code)
         ] + ordering
+    if live:
+        return current_stock_list(
+            session,
+            query.order_by(*ordering),
+            live,
+            industry_level,
+            sort,
+            page,
+            page_size,
+            neighbor_of,
+            group_by,
+            filters,
+        )
     total = session.scalar(select(func.count()).select_from(query.subquery()))
     if neighbor_of is not None:
         ordered_ids = list(session.scalars(query.with_only_columns(Stock.id).order_by(*ordering)))
@@ -432,7 +515,8 @@ def industry_summary(
     session: DBSession = Depends(database),
 ):
     date = latest(session)
-    filters = market_filters(exchange, board)
+    live = snapshot_for(session)
+    filters = market_filters(exchange, board, session)
     industry = session.get(Industry, industry_id) if industry_id else None
     if industry_id:
         if industry_id == "unclassified-l2" and industry_level == 2:
@@ -448,7 +532,9 @@ def industry_summary(
         if not concept or not concept.fetched_at:
             raise HTTPException(503, "概念成分尚未同步")
         filters.append(
-            Stock.id.in_(select(ConceptMember.stock_id).where(ConceptMember.concept_id == concept_id))
+            Stock.id.in_(
+                select(ConceptMember.stock_id).where(ConceptMember.concept_id == concept_id)
+            )
         )
     rows = session.execute(
         select(Quote.status, Quote.pct_chg)
@@ -456,8 +542,21 @@ def industry_summary(
         .outerjoin(Quote, (Stock.id == Quote.stock_id) & (Quote.trade_date == date))
         .where(*filters)
     ).all()
+    if live:
+        codes = session.scalars(select(Stock.ts_code).where(*filters)).all()
+        rows = [
+            ("trading", live["quotes"][code]["pct_chg"])
+            if code in live["quotes"]
+            else ("unavailable", None)
+            for code in codes
+        ]
+        date = live["trade_date"]
     valid = [pct for state, pct in rows if state == "trading" and pct is not None]
-    index = session.get(IndustryIndexQuote, (industry_id, date)) if industry and date and not concept_id else None
+    index = (
+        session.get(IndustryIndexQuote, (industry_id, date))
+        if industry and date and not concept_id
+        else None
+    )
     pending = False
     if industry and date and not concept_id and industry_id[:6].isdigit():
         recent = (
@@ -496,11 +595,11 @@ def stock_detail(
     session: DBSession = Depends(database),
 ):
     row = session.execute(
-        base_query(latest(session)).where(Stock.id == stock_id, visible_stock())
+        base_query(latest(session)).where(Stock.id == stock_id, visible_stock(session))
     ).first()
     if not row:
         raise HTTPException(404, "股票不存在")
-    result = item(row, industry_level, fallback_to_l1=True)
+    result = item(row, industry_level, fallback_to_l1=True, live=snapshot_for(session))
     publication = session.get(Publication, latest(session)) if latest(session) else None
     if (
         publication
@@ -522,7 +621,7 @@ def prices(
     adjustment: Literal["qfq", "none"] = "qfq",
     session: DBSession = Depends(database),
 ):
-    stock = session.scalar(select(Stock).where(Stock.id == stock_id, visible_stock()))
+    stock = session.scalar(select(Stock).where(Stock.id == stock_id, visible_stock(session)))
     if not stock:
         raise HTTPException(404, "股票不存在")
     end = latest(session)
@@ -545,7 +644,9 @@ def prices(
     start = max(start, stock.list_date)
     publication = session.get(Publication, end)
     if publication.source.startswith("免费公开数据"):
-        return free_prices(session, stock, start, end, background_tasks, adjustment)
+        return current_bar(
+            free_prices(session, stock, start, end, background_tasks, adjustment), session, stock
+        )
     anchor = session.get(Factor, (stock_id, end))
     if adjustment == "qfq" and (not anchor or anchor.value <= 0):
         return {
@@ -622,15 +723,19 @@ def prices(
         messages.append("历史 K 线数据尚有缺口，断点处不补造价格")
     if volume_missing:
         messages.append("部分交易日成交量尚未同步，缺失量不补造")
-    return {
-        "points": points,
-        "basis_date": end,
-        "adjustment": adjustment,
-        "start_date": start,
-        "complete": bool(dates) and not missing,
-        "missing_days": missing,
-        "message": "；".join(messages) if messages else None,
-    }
+    return current_bar(
+        {
+            "points": points,
+            "basis_date": end,
+            "adjustment": adjustment,
+            "start_date": start,
+            "complete": bool(dates) and not missing,
+            "missing_days": missing,
+            "message": "；".join(messages) if messages else None,
+        },
+        session,
+        stock,
+    )
 
 
 def free_prices(session, stock, start, end, background_tasks, adjustment="qfq"):
@@ -762,11 +867,11 @@ def data_status(session: DBSession = Depends(database)):
     )
     published = set(session.scalars(select(Publication.trade_date)))
     missing = [d for d in expected if d not in published]
-    count = session.scalar(select(func.count()).select_from(Stock).where(visible_stock()))
+    count = session.scalar(select(func.count()).select_from(Stock).where(visible_stock(session)))
     unclassified = session.scalar(
         select(func.count())
         .select_from(Stock)
-        .where(visible_stock(), Stock.industry_id == "unclassified")
+        .where(visible_stock(session), Stock.industry_id == "unclassified")
     )
     industry_snapshot = session.get(IndustrySnapshot, 1)
     level2_count = session.scalar(
@@ -775,7 +880,7 @@ def data_status(session: DBSession = Depends(database)):
     level2_unclassified = session.scalar(
         select(func.count())
         .select_from(Stock)
-        .where(visible_stock(), Stock.industry_l2_id.is_(None))
+        .where(visible_stock(session), Stock.industry_l2_id.is_(None))
     )
     industry_synced_date = (
         datetime.fromisoformat(industry_snapshot.fetched_at)
@@ -810,7 +915,7 @@ def data_status(session: DBSession = Depends(database)):
     if free:
         eligible = list(
             session.scalars(
-                select(Stock).where(visible_stock(), Stock.list_date <= (date or end))
+                select(Stock).where(visible_stock(session), Stock.list_date <= (date or end))
             )
         )
         imports = {r.stock_id: r for r in session.scalars(select(HistoryImport))}
@@ -830,7 +935,8 @@ def data_status(session: DBSession = Depends(database)):
             "start_date": start,
             "unit": "stock",
         }
-    return {
+    result = {
+        "daily_trade_date": date,
         "available": bool(date),
         "trade_date": date,
         "expected_date": max(expected) if expected else None,
@@ -857,3 +963,27 @@ def data_status(session: DBSession = Depends(database)):
         "history": history_info,
         "last_run": run_data,
     }
+
+    live = snapshot_for(session)
+    state = read_cache(session)
+    result["quote_error"] = state.get("error")
+    if live:
+        eligible_codes = session.scalars(select(Stock.ts_code).where(visible_stock(session))).all()
+        valid = [live["quotes"][code] for code in eligible_codes if code in live["quotes"]]
+        result.update(
+            available=True,
+            trade_date=live["trade_date"],
+            expected_date=live.get("expected_date"),
+            stale=cache_stale(live),
+            source=live["source"],
+            quote_mode="live",
+            quote_time=live["latest_time"],
+            quote_oldest_time=live["oldest_time"],
+            quote_fetched_at=live["fetched_at"],
+            quote_coverage=live["coverage"],
+            missing_quote_count=len(eligible_codes) - len(valid),
+            missing_cap_count=sum(row.get("market_cap") is None for row in valid),
+        )
+    elif state.get("error"):
+        result["stale"] = True
+    return result

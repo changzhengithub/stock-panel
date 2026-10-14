@@ -1,0 +1,1094 @@
+{
+  "schema_version": 1,
+  "id": "power-battery",
+  "name": "动力电池",
+  "aliases": [
+    "锂电池",
+    "电池",
+    "新能源汽车",
+    "新能源"
+  ],
+  "industry_ids": [
+    "801737.SI",
+    "801730.SI"
+  ],
+  "scope": "锂离子动力电池的主要材料、制造、装车应用与回收；辅助环节按范围展示。",
+  "summary": "从资源和材料进入电芯制造，再经系统集成用于车辆。材料配方、良率和终端订单共同影响经营。",
+  "demand": "车辆电动化及动力电池装配需求。",
+  "focus": [
+    "原材料成本与合同定价",
+    "电芯良率与利用率",
+    "终端装车需求",
+    "回收料来源与经济性"
+  ],
+  "content_as_of": "2026-10-13",
+  "change_note": "首版公开资料样板：逐项登记官方或协会依据，补充核心节点公司；未知数值和排名留空。",
+  "gaps": [
+    "不同来源报告期各自标明；业务介绍页未注明披露日时不推定发布日期。",
+    "未取得同口径财务或排名的环节不填数值，不强制选出龙头。"
+  ],
+  "sources": [
+    {
+      "id": "doe",
+      "title": "DOE 电池供应链四年回顾（2024）",
+      "url": "https://www.energy.gov/sites/default/files/2024-12/20212024-Four%20Year%20Review%20of%20Supply%20Chains%20for%20the%20Advanced%20Batteries%20Sector.pdf",
+      "retrieved_on": "2026-10-13",
+      "report_period": "2024",
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "catl-report",
+      "title": "宁德时代 2025 年年度报告（英文）",
+      "url": "https://www.catl.com/en/uploads/1/file/public/202603/20260310105310_46xjbwckvn.pdf",
+      "retrieved_on": "2026-10-13",
+      "report_period": "2025-FY",
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "catl-news",
+      "title": "宁德时代 2025 年报官方摘要",
+      "url": "https://www.catl.com/en/news/6773.html",
+      "retrieved_on": "2026-10-13",
+      "report_period": "2025-FY",
+      "access_status": "verified",
+      "published_on": "2026-03-10"
+    },
+    {
+      "id": "eve",
+      "title": "亿纬锂能官网：公司与业务介绍",
+      "url": "https://www.evebattery.com/en/about",
+      "retrieved_on": "2026-10-13",
+      "report_period": null,
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "ganfeng",
+      "title": "赣锋锂业官网：锂生态业务",
+      "url": "https://www.ganfenglithium.com/Html/",
+      "retrieved_on": "2026-10-13",
+      "report_period": null,
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "tinci",
+      "title": "天赐材料官网：动力电池电解液",
+      "url": "https://tinci.com/list_205/",
+      "retrieved_on": "2026-10-13",
+      "report_period": null,
+      "access_status": "search_verified",
+      "published_on": null
+    },
+    {
+      "id": "semcorp",
+      "title": "恩捷股份 2024 年年度报告",
+      "url": "https://www.semcorp.com/Public/Uploads/uploadfile/files/20250610/enjiegufen2024nianniandubaogaoyingwenban.pdf",
+      "retrieved_on": "2026-10-13",
+      "report_period": "2024-FY",
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "easpring",
+      "title": "当升科技官网：电池材料",
+      "url": "https://www.easpring.com.cn/english/",
+      "retrieved_on": "2026-10-13",
+      "published_on": null,
+      "report_period": null,
+      "access_status": "search_verified"
+    },
+    {
+      "id": "putailai",
+      "title": "璞泰来官网：负极材料",
+      "url": "https://www.putailai.com/business-products/anode-materials-and-graphitization",
+      "retrieved_on": "2026-10-13",
+      "published_on": null,
+      "report_period": null,
+      "access_status": "verified"
+    },
+    {
+      "id": "byd",
+      "title": "比亚迪官网：汽车与电动平台",
+      "url": "https://www.byd.com/en/about-byd",
+      "retrieved_on": "2026-10-13",
+      "published_on": null,
+      "report_period": null,
+      "access_status": "verified"
+    },
+    {
+      "id": "lead",
+      "title": "先导智能官网：锂电池智能装备",
+      "url": "https://www.leadintelligent.com/",
+      "retrieved_on": "2026-10-13",
+      "published_on": null,
+      "report_period": null,
+      "access_status": "search_verified"
+    }
+  ],
+  "nodes": [
+    {
+      "key": "lithium",
+      "name": "锂资源与锂盐",
+      "stage": "资源",
+      "column": 0,
+      "description": "提供电池级锂原料。",
+      "variable": "锂盐价格",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "锂盐价格上涨",
+          "target": "锂资源与锂盐",
+          "direction": "混合",
+          "mechanism": "资源与加工环节的售价可能上升，同时增加下游材料采购成本。",
+          "conditions": "需区分外购矿、自有资源与合同价格；售价、成本和销量均须观察。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "锂盐售价",
+            "原料采购成本",
+            "材料合同重定价"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Supply Chain Overview",
+              "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "cathode",
+      "name": "正极材料",
+      "stage": "材料",
+      "column": 1,
+      "description": "决定部分容量与化学体系特征。",
+      "variable": "材料成本与产品结构",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "原料涨价或电池配方变化",
+          "target": "正极材料",
+          "direction": "混合",
+          "mechanism": "采购成本影响正极毛利；不同化学体系的需求变化可能改变产品结构。",
+          "conditions": "是否采用加工费模式、能否传导原料价格以及客户认证决定影响。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "材料售价与加工费",
+            "产品结构",
+            "原料库存"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Supply Chain Overview",
+              "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "anode",
+      "name": "负极材料",
+      "stage": "材料",
+      "column": 1,
+      "description": "提供储锂电极材料。",
+      "variable": "材料需求与认证",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "电芯需求与技术要求变化",
+          "target": "负极材料",
+          "direction": "混合",
+          "mechanism": "订单变化影响负极利用率；性能要求变化可能带来认证与研发投入。",
+          "conditions": "新材料能否量产并通过客户认证尚需验证，不把研发等同收入。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "出货量",
+            "产能利用率",
+            "新产品认证"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Supply Chain Overview",
+              "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "electrolyte",
+      "name": "电解液",
+      "stage": "材料",
+      "column": 1,
+      "description": "承担离子传导。",
+      "variable": "电解液价格与配方",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "电解液原料价格和配方需求变化",
+          "target": "电解液",
+          "direction": "混合",
+          "mechanism": "成本变化与产品配方共同影响电解液售价、订单和毛利。",
+          "conditions": "价格传导、配方认证和一体化程度不同，实际盈利方向可能不同。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "原料价格",
+            "产品售价",
+            "客户认证"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Supply Chain Overview",
+              "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "separator",
+      "name": "隔膜",
+      "stage": "材料",
+      "column": 1,
+      "description": "隔离电极并允许离子通过。",
+      "variable": "产品良率与单价",
+      "evidence": [
+        {
+          "source_id": "semcorp",
+          "locator": "Definitions / Section 3",
+          "summary": "报告解释隔膜功能及公司相关业务。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "需求增长或隔膜产能扩张",
+          "target": "隔膜",
+          "direction": "混合",
+          "mechanism": "需求增加可能提高利用率；供给扩张超过需求时可能加剧价格竞争。",
+          "conditions": "销量增长能否覆盖降价和折旧需结合良率及利用率核对。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "隔膜售价",
+            "良率",
+            "产能利用率"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "semcorp",
+              "locator": "Definitions / Section 3",
+              "summary": "报告解释隔膜功能及公司相关业务。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "cell",
+      "name": "电芯制造",
+      "stage": "制造",
+      "column": 2,
+      "description": "组装电芯并控制质量。",
+      "variable": "良率、出货与利用率",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "装车需求增长或原料涨价",
+          "target": "电芯制造",
+          "direction": "混合",
+          "mechanism": "订单增长可能提升利用率；采购成本上升且售价调整滞后时，毛利可能承压。",
+          "conditions": "需考虑销售合同、低价库存、客户结构及自供比例，不直接推断股价。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "订单与出货",
+            "销售均价",
+            "采购成本与毛利率"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Supply Chain Overview",
+              "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "pack",
+      "name": "电池系统集成",
+      "stage": "制造",
+      "column": 3,
+      "description": "将电芯集成为车用电池系统。",
+      "variable": "系统订单与安全要求",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "整车平台和系统安全要求变化",
+          "target": "电池系统集成",
+          "direction": "混合",
+          "mechanism": "平台需求影响系统订单；集成、安全与热管理要求影响开发和制造成本。",
+          "conditions": "定点不等同批量收入，需观察项目量产时间和实际交付。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "项目定点与交付",
+            "系统单价",
+            "质保与研发费用"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Supply Chain Overview",
+              "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "vehicle",
+      "name": "整车应用",
+      "stage": "应用",
+      "column": 4,
+      "description": "形成动力电池装车需求。",
+      "variable": "终端订单与装车量",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "终端销售及车型结构变化",
+          "target": "整车应用",
+          "direction": "混合",
+          "mechanism": "车型销售变化通过单车用量和订单影响电池系统需求。",
+          "conditions": "单车容量、库存、供应商份额和合同安排可能抵消销量变化。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "终端销量",
+            "装车量",
+            "渠道库存"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Supply Chain Overview",
+              "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "recycling",
+      "name": "电池回收",
+      "stage": "回收",
+      "column": 0,
+      "description": "回收利用退役电池中的材料。",
+      "variable": "回收量与材料价格",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ],
+      "main": false,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "退役电池供给或材料价格变化",
+          "target": "电池回收",
+          "direction": "混合",
+          "mechanism": "可回收量与再生材料价格影响回收经营；原料价格上涨也可能提高采购成本。",
+          "conditions": "需核对回收来源、采购定价、回收率和环保成本，不能只看金属价格。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "回收量",
+            "回收率",
+            "再生材料售价"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Supply Chain Overview",
+              "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "battery-equipment",
+      "name": "锂电池制造设备",
+      "stage": "设备",
+      "column": 1,
+      "description": "为制造环节提供工艺设备及产线服务。",
+      "variable": "资本开支、设备订单与验证进度",
+      "main": false,
+      "order": 0,
+      "evidence": [
+        {
+          "source_id": "lead",
+          "locator": "锂电池智能制造解决方案",
+          "summary": "官网列明电芯制造、组装、测试和 PACK 设备。"
+        }
+      ],
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "制造环节扩产或工艺升级",
+          "target": "锂电池制造设备",
+          "direction": "混合",
+          "mechanism": "资本开支形成设备需求；项目验证、安装与收入确认存在时差。",
+          "conditions": "订单需转化为交付及验收，技术升级也可能带来研发和改造成本。",
+          "horizon": "随客户建设、验证与验收进度体现，时间未量化。",
+          "indicators": [
+            "客户资本开支",
+            "设备订单",
+            "交付与验收"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "lead",
+              "locator": "锂电池智能制造解决方案",
+              "summary": "官网列明电芯制造、组装、测试和 PACK 设备。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "key": "lithium-cathode-supply",
+      "source": "lithium",
+      "target": "cathode",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ]
+    },
+    {
+      "key": "cathode-cell-supply",
+      "source": "cathode",
+      "target": "cell",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ]
+    },
+    {
+      "key": "anode-cell-supply",
+      "source": "anode",
+      "target": "cell",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ]
+    },
+    {
+      "key": "electrolyte-cell-supply",
+      "source": "electrolyte",
+      "target": "cell",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ]
+    },
+    {
+      "key": "separator-cell-supply",
+      "source": "separator",
+      "target": "cell",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ]
+    },
+    {
+      "key": "cell-pack-supply",
+      "source": "cell",
+      "target": "pack",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ]
+    },
+    {
+      "key": "pack-vehicle-supply",
+      "source": "pack",
+      "target": "vehicle",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ]
+    },
+    {
+      "key": "vehicle-cell-demand",
+      "source": "vehicle",
+      "target": "cell",
+      "kind": "需求反馈",
+      "description": "终端装车需求变化向电芯订单反馈；存在订单与库存时滞。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ]
+    },
+    {
+      "key": "vehicle-recycling-cycle",
+      "source": "vehicle",
+      "target": "recycling",
+      "kind": "循环",
+      "description": "退役电池进入回收环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ]
+    },
+    {
+      "key": "recycling-lithium-cycle",
+      "source": "recycling",
+      "target": "lithium",
+      "kind": "循环",
+      "description": "回收材料重新进入原料供给。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Supply Chain Overview",
+          "summary": "资料说明锂电池的材料、电芯、成组与应用环节。"
+        }
+      ]
+    },
+    {
+      "key": "battery-equipment-cell-supply",
+      "source": "battery-equipment",
+      "target": "cell",
+      "kind": "供给",
+      "description": "设备与产线服务支持制造环节。",
+      "conditions": "表示行业用途关系，不证明表中具体公司有供销合同。",
+      "evidence": [
+        {
+          "source_id": "lead",
+          "locator": "锂电池智能制造解决方案",
+          "summary": "官网列明电芯制造、组装、测试和 PACK 设备。"
+        }
+      ]
+    }
+  ],
+  "stocks": [
+    {
+      "key": "lithium-002460",
+      "node": "lithium",
+      "ts_code": "002460.SZ",
+      "subject": "赣锋锂业集团",
+      "business": "锂资源开发与锂盐加工",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "ganfeng",
+          "locator": "锂生态企业业务介绍",
+          "summary": "公司披露资源、加工、电池及回收业务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "锂资源开发与锂盐加工",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "ganfeng",
+              "locator": "锂生态企业业务介绍",
+              "summary": "公司披露资源、加工、电池及回收业务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "electrolyte-002709",
+      "node": "electrolyte",
+      "ts_code": "002709.SZ",
+      "subject": "天赐材料集团",
+      "business": "动力电池电解液",
+      "participation": "直接经营",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "tinci",
+          "locator": "Power lithium-ion Battery Electrolyte",
+          "summary": "官方产品页面列明动力电池电解液。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "动力电池电解液",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "tinci",
+              "locator": "Power lithium-ion Battery Electrolyte",
+              "summary": "官方产品页面列明动力电池电解液。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "separator-002812",
+      "node": "separator",
+      "ts_code": "002812.SZ",
+      "subject": "恩捷股份集团",
+      "business": "锂离子电池隔膜",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "semcorp",
+          "locator": "Section 3 / Main Business",
+          "summary": "公司年报披露隔膜业务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "锂离子电池隔膜",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "semcorp",
+              "locator": "Section 3 / Main Business",
+              "summary": "公司年报披露隔膜业务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "cell-300750",
+      "node": "cell",
+      "ts_code": "300750.SZ",
+      "subject": "宁德时代集团",
+      "business": "动力电池产品及系统",
+      "participation": "控股子公司",
+      "operating_stage": "已形成收入",
+      "evidence": [
+        {
+          "source_id": "catl-report",
+          "locator": "第 33 页（PDF 第 33 页），Revenue Analysis / By product",
+          "summary": "2025 年 EV batteries 收入 316,506,369 千元，占总收入 74.70%。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "份额龙头",
+          "product": "全球动力电池",
+          "geography": "全球",
+          "period": "2025 年",
+          "reason": "公司年报摘要转引 SNE Research，市场份额 39.2%、全球第一；此标签仅适用于该期间与口径。",
+          "evidence": [
+            {
+              "source_id": "catl-news",
+              "locator": "Global leadership strengthened",
+              "summary": "公司转引 SNE Research：2025 年全球动力电池市场份额 39.2%，排名第一。"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "period": "2025-FY",
+          "disclosed_on": "2026-03-10",
+          "subject": "宁德时代合并报表",
+          "basis": "EV batteries 产品口径（包含系统，不是仅电芯）",
+          "currency": "CNY",
+          "revenue": 316506369000,
+          "share": 74.7,
+          "denominator": 423701834000,
+          "missing_reason": "",
+          "evidence": [
+            {
+              "source_id": "catl-report",
+              "locator": "报告第 32 页（PDF 第 33 页），Revenue Analysis / By product",
+              "summary": "2025 年 EV batteries 收入 316,506,369 千元，占总收入 74.70%。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "cell-300014",
+      "node": "cell",
+      "ts_code": "300014.SZ",
+      "subject": "亿纬锂能集团",
+      "business": "动力电芯与电池系统",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "eve",
+          "locator": "Business structure / Power Battery",
+          "summary": "公司官网列明动力电芯及系统业务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "动力电芯与电池系统",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "eve",
+              "locator": "Business structure / Power Battery",
+              "summary": "公司官网列明动力电芯及系统业务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "pack-300750",
+      "node": "pack",
+      "ts_code": "300750.SZ",
+      "subject": "宁德时代集团",
+      "business": "动力电池系统",
+      "participation": "控股子公司",
+      "operating_stage": "已形成收入",
+      "evidence": [
+        {
+          "source_id": "catl-report",
+          "locator": "第 33 页（PDF 第 33 页），Revenue Analysis / By product",
+          "summary": "2025 年 EV batteries 收入 316,506,369 千元，占总收入 74.70%。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "动力电池系统",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "catl-report",
+              "locator": "第 33 页（PDF 第 33 页），Revenue Analysis / By product",
+              "summary": "2025 年 EV batteries 收入 316,506,369 千元，占总收入 74.70%。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "recycling-002460",
+      "node": "recycling",
+      "ts_code": "002460.SZ",
+      "subject": "赣锋锂业集团",
+      "business": "废旧电池综合回收利用",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "ganfeng",
+          "locator": "循环经济 / 锂生态企业",
+          "summary": "官网披露废旧电池材料回收利用。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "废旧电池综合回收利用",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "ganfeng",
+              "locator": "循环经济 / 锂生态企业",
+              "summary": "官网披露废旧电池材料回收利用。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "cathode-300073",
+      "node": "cathode",
+      "ts_code": "300073.SZ",
+      "subject": "当升科技集团",
+      "business": "锂电池正极材料",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "easpring",
+          "locator": "Battery materials / EV battery materials",
+          "summary": "官方材料介绍确认电池正极相关产品。"
+        }
+      ],
+      "metrics": [],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "锂电池正极材料",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认相关业务；不表示市场份额、技术或规模排名。",
+          "evidence": [
+            {
+              "source_id": "easpring",
+              "locator": "Battery materials / EV battery materials",
+              "summary": "官方材料介绍确认电池正极相关产品。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "anode-603659",
+      "node": "anode",
+      "ts_code": "603659.SH",
+      "subject": "璞泰来集团",
+      "business": "负极材料及石墨化",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "putailai",
+          "locator": "负极材料事业部",
+          "summary": "官方业务介绍列明负极材料与石墨化产品。"
+        }
+      ],
+      "metrics": [],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "负极材料及石墨化",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认相关业务；不表示市场份额、技术或规模排名。",
+          "evidence": [
+            {
+              "source_id": "putailai",
+              "locator": "负极材料事业部",
+              "summary": "官方业务介绍列明负极材料与石墨化产品。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "vehicle-002594",
+      "node": "vehicle",
+      "ts_code": "002594.SZ",
+      "subject": "比亚迪集团",
+      "business": "新能源汽车",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "byd",
+          "locator": "About BYD / e-Platform",
+          "summary": "官方介绍电动车平台与整车产品。"
+        }
+      ],
+      "metrics": [],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "新能源汽车",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认相关业务；不表示市场份额、技术或规模排名。",
+          "evidence": [
+            {
+              "source_id": "byd",
+              "locator": "About BYD / e-Platform",
+              "summary": "官方介绍电动车平台与整车产品。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "battery-equipment-300450",
+      "node": "battery-equipment",
+      "ts_code": "300450.SZ",
+      "subject": "先导智能集团",
+      "business": "锂电池制造设备",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "lead",
+          "locator": "锂电池智能制造解决方案",
+          "summary": "官网列明电芯制造、组装、测试和 PACK 设备。"
+        }
+      ],
+      "metrics": [],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "锂电池制造设备",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认相关业务；不表示市场份额、技术或规模排名。",
+          "evidence": [
+            {
+              "source_id": "lead",
+              "locator": "锂电池智能制造解决方案",
+              "summary": "官网列明电芯制造、组装、测试和 PACK 设备。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

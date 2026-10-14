@@ -2,6 +2,7 @@
 import { shallowRef, watch } from "vue";
 import { get, type Filters } from "../../api";
 import { percent, tone } from "../../utils/format";
+import { updateData } from "../../utils/updateData";
 const props = defineProps<{ filters: Filters; revision?: string | null }>();
 interface Summary {
   total: number;
@@ -27,15 +28,20 @@ watch(
     props.filters.board,
     props.revision,
   ],
-  async (_, __, cleanup) => {
+  async (current, previous, cleanup) => {
     const c = new AbortController();
     let timer: ReturnType<typeof setTimeout> | undefined;
     cleanup(() => {
       c.abort();
       clearTimeout(timer);
     });
-    data.value = null;
-    error.value = "";
+    const contextChanged =
+      !previous ||
+      current.slice(0, -1).some((value, i) => value !== previous[i]);
+    if (contextChanged) {
+      data.value = null;
+      error.value = "";
+    }
     const params = new URLSearchParams();
     for (const key of [
       "industry_id",
@@ -52,7 +58,13 @@ watch(
           c.signal,
         );
         if (c.signal.aborted) return;
-        data.value = result;
+        updateData(
+          data,
+          !contextChanged && data.value && result.index_pending
+            ? { ...result, index: data.value.index, index_pending: false }
+            : result,
+        );
+        error.value = "";
         if (result.index_pending) {
           if (attempt < 60)
             timer = setTimeout(() => fetchSummary(attempt + 1), 3000);
@@ -101,6 +113,15 @@ watch(
       >
     </template>
     <span v-else>{{ error || "正在读取市场概况…" }}</span>
+    <RouterLink
+      v-if="filters.view === 'industry' && filters.industry_id"
+      class="chain-entry"
+      :to="{
+        path: '/industry-chains',
+        query: { industry_id: filters.industry_id },
+      }"
+      >查看产业链 →</RouterLink
+    >
   </div>
 </template>
 <style scoped>
@@ -112,6 +133,10 @@ watch(
   border-bottom: 1px solid var(--line);
   font-size: 12px;
   align-items: center;
+}
+.chain-entry {
+  color: var(--accent);
+  font-size: 12px;
 }
 .index-stat {
   display: flex;

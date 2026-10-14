@@ -5,6 +5,7 @@ import { usePriceHistory } from "../../composables/usePriceHistory";
 import { useLibrary } from "../../composables/useLibrary";
 import { date, money, percent, price, tone } from "../../utils/format";
 import type { CandlePeriod } from "../stock/candlePeriods";
+import QuoteStamp from "../stock/QuoteStamp.vue";
 const CandlestickChart = defineAsyncComponent(
   () => import("../stock/CandlestickChart.vue"),
 );
@@ -49,8 +50,9 @@ const { isFavorite, toggle } = useLibrary();
       {{ price(stock.close) }}
     </div>
     <div :class="['preview-change', tone(stock.pct_chg)]">
-      {{ percent(stock.pct_chg) }} <span> / 收盘</span>
+      {{ percent(stock.pct_chg) }}
     </div>
+    <small class="muted"><QuoteStamp :stock="stock" /></small>
     <div class="preview-chart-heading">
       <span
         >{{

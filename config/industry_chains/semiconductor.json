@@ -1,0 +1,742 @@
+{
+  "schema_version": 1,
+  "id": "semiconductor",
+  "name": "半导体",
+  "aliases": [
+    "芯片",
+    "集成电路",
+    "电子"
+  ],
+  "industry_ids": [
+    "801081.SI",
+    "801080.SI"
+  ],
+  "scope": "集成电路设计、晶圆制造和封装测试的全链概览，辅助展示 EDA、材料与设备；不比较不同制程或产品的市场份额。",
+  "summary": "设计、制造和封装测试分工协作，材料、软件和设备支持制造。不同企业参与环节和商业模式不同。",
+  "demand": "消费电子、工业、汽车及计算等终端应用。",
+  "focus": [
+    "下游需求与库存",
+    "制程与产品结构",
+    "良率与产能利用率",
+    "设备订单与验证周期"
+  ],
+  "content_as_of": "2026-10-13",
+  "change_note": "首版公开资料样板：逐项登记官方或协会依据，补充核心节点公司；未知数值和排名留空。",
+  "gaps": [
+    "不同来源报告期各自标明；业务介绍页未注明披露日时不推定发布日期。",
+    "未取得同口径财务或排名的环节不填数值，不强制选出龙头。"
+  ],
+  "sources": [
+    {
+      "id": "sia",
+      "title": "SIA：半导体如何制造",
+      "url": "https://www.semiconductors.org/semiconductors-101/how-are-semiconductors-made/",
+      "retrieved_on": "2026-10-13",
+      "report_period": null,
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "sia-chain",
+      "title": "SIA：半导体生产阶段与商业模式",
+      "url": "https://www.semiconductors.org/semiconductor-industry-primer-the-stages-of-production-and-business-models/",
+      "retrieved_on": "2026-10-13",
+      "report_period": null,
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "smic",
+      "title": "中芯国际 2024 年年度报告",
+      "url": "https://www.smics.com/uploads/67f6423d/e00981.pdf",
+      "retrieved_on": "2026-10-13",
+      "report_period": "2024-FY",
+      "access_status": "search_verified",
+      "published_on": null
+    },
+    {
+      "id": "jcet",
+      "title": "长电科技 2024 年 ESG 报告",
+      "url": "https://www.jcetglobal.com/uploads/%26e8%268b%26b1%26e6%2696%2687%26e7%2689%2688_%26e9%2695%26bf%26e7%2694%26b5%26e7%26a7%2691%26e6%268a%2680ESG%26e6%268a%26a5%26e5%2691%268a20250506.pdf",
+      "retrieved_on": "2026-10-13",
+      "report_period": "2024",
+      "access_status": "search_verified",
+      "published_on": null
+    },
+    {
+      "id": "amec",
+      "title": "中微公司：产品创新与刻蚀设备",
+      "url": "https://www.amec-inc.com/uploads/files/20250611/17496080859885.pdf",
+      "retrieved_on": "2026-10-13",
+      "report_period": "2024",
+      "access_status": "search_verified",
+      "published_on": null
+    },
+    {
+      "id": "naura",
+      "title": "SEMI 展商资料：北方华创产品",
+      "url": "https://expo.semi.org/taiwan2025/Public/eBooth.aspx?BoothID=621543&FromPage=Exhibitors.aspx&IndexInList=118&ListByBooth=true&Nav=False&ParentBoothID=",
+      "retrieved_on": "2026-10-13",
+      "report_period": "2025",
+      "access_status": "search_verified",
+      "published_on": null
+    },
+    {
+      "id": "montage",
+      "title": "澜起科技官网：公司介绍",
+      "url": "https://www.montage-tech.com/About_Montage",
+      "retrieved_on": "2026-10-13",
+      "published_on": null,
+      "report_period": null,
+      "access_status": "verified"
+    },
+    {
+      "id": "nsig",
+      "title": "沪硅产业官网：公司介绍",
+      "url": "https://www.nsig.com/about",
+      "retrieved_on": "2026-10-13",
+      "published_on": null,
+      "report_period": null,
+      "access_status": "search_verified"
+    },
+    {
+      "id": "primarius",
+      "title": "概伦电子官网：公司介绍",
+      "url": "https://www.primarius-tech.com/en/aboutus/",
+      "retrieved_on": "2026-10-13",
+      "published_on": null,
+      "report_period": null,
+      "access_status": "verified"
+    }
+  ],
+  "nodes": [
+    {
+      "key": "design",
+      "name": "芯片设计",
+      "stage": "设计",
+      "column": 0,
+      "description": "定义电路与芯片功能。",
+      "variable": "设计订单与新品验证",
+      "evidence": [
+        {
+          "source_id": "sia",
+          "locator": "Stages 2–5",
+          "summary": "协会解释芯片设计、制造与封装测试环节。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "终端需求与产品规格变化",
+          "target": "芯片设计",
+          "direction": "混合",
+          "mechanism": "新品设计和客户订单影响芯片产品需求，再传递到制造和封测。",
+          "conditions": "设计导入、验证、库存和订单兑现之间有时滞。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "设计订单",
+            "产品验证",
+            "渠道库存"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "sia",
+              "locator": "Stages 2–5",
+              "summary": "协会解释芯片设计、制造与封装测试环节。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "fab",
+      "name": "晶圆制造",
+      "stage": "制造",
+      "column": 2,
+      "description": "通过工艺在晶圆上制造电路。",
+      "variable": "产能利用率与良率",
+      "evidence": [
+        {
+          "source_id": "sia",
+          "locator": "Stages 2–5",
+          "summary": "协会解释芯片设计、制造与封装测试环节。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "晶圆订单与制程结构变化",
+          "target": "晶圆制造",
+          "direction": "混合",
+          "mechanism": "订单和产品组合影响产能利用率、良率及制造收入。",
+          "conditions": "不同制程、产线折旧、合同和认证周期不能直接合并比较。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "产能利用率",
+            "晶圆出货",
+            "良率与产品结构"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "sia",
+              "locator": "Stages 2–5",
+              "summary": "协会解释芯片设计、制造与封装测试环节。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "packaging",
+      "name": "封装测试",
+      "stage": "制造",
+      "column": 3,
+      "description": "封装芯片并进行测试。",
+      "variable": "封测订单与产品结构",
+      "evidence": [
+        {
+          "source_id": "sia",
+          "locator": "Stages 2–5",
+          "summary": "协会解释芯片设计、制造与封装测试环节。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "芯片出货与封装技术需求变化",
+          "target": "封装测试",
+          "direction": "混合",
+          "mechanism": "制造出货影响封测订单；先进封装需求可能增加技术和资本投入。",
+          "conditions": "技术需求只有转化为有效订单、合格良率与回款才体现经营影响。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "封测订单",
+            "产品结构",
+            "利用率与良率"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "sia",
+              "locator": "Stages 2–5",
+              "summary": "协会解释芯片设计、制造与封装测试环节。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "applications",
+      "name": "终端应用",
+      "stage": "应用",
+      "column": 4,
+      "description": "将芯片用于电子产品。",
+      "variable": "终端需求与库存",
+      "evidence": [
+        {
+          "source_id": "sia",
+          "locator": "Stages 2–5",
+          "summary": "协会解释芯片设计、制造与封装测试环节。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "消费、工业或计算需求变化",
+          "target": "终端应用",
+          "direction": "混合",
+          "mechanism": "不同终端领域的需求向芯片设计、制造和封测反馈。",
+          "conditions": "终端库存、产品类型与补库存行为可能造成传导差异。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "终端销量",
+            "库存",
+            "芯片订单"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "sia",
+              "locator": "Stages 2–5",
+              "summary": "协会解释芯片设计、制造与封装测试环节。"
+            }
+          ]
+        }
+      ],
+      "gap": "终端应用涉及消费电子、汽车等多个行业，本样板尚未收录终端公司。"
+    },
+    {
+      "key": "equipment",
+      "name": "半导体设备",
+      "stage": "设备",
+      "column": 1,
+      "description": "支持制造工艺与产线建设。",
+      "variable": "资本开支与设备验证",
+      "evidence": [
+        {
+          "source_id": "sia-chain",
+          "locator": "Stages of production / Business models",
+          "summary": "说明设计、前端制造和后端封装测试分工。"
+        }
+      ],
+      "main": false,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "晶圆厂资本开支变化",
+          "target": "半导体设备",
+          "direction": "混合",
+          "mechanism": "产线扩建或工艺升级形成设备需求，验证周期影响订单兑现。",
+          "conditions": "招标、客户验证、安装和收入确认存在时差；替代能力需要证据。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "资本开支",
+            "设备订单",
+            "客户验证进度"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "sia-chain",
+              "locator": "Stages of production / Business models",
+              "summary": "说明设计、前端制造和后端封装测试分工。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "materials",
+      "name": "半导体材料",
+      "stage": "材料",
+      "column": 1,
+      "description": "为制造提供材料与耗材。",
+      "variable": "材料质量与认证",
+      "evidence": [
+        {
+          "source_id": "sia-chain",
+          "locator": "Stages of production / Business models",
+          "summary": "说明设计、前端制造和后端封装测试分工。"
+        }
+      ],
+      "main": false,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "产线利用率及材料认证变化",
+          "target": "半导体材料",
+          "direction": "混合",
+          "mechanism": "生产活动影响材料消耗量，认证要求影响供应商进入和产品结构。",
+          "conditions": "材料规格、制程适配、品质稳定性和认证周期决定经营结果。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "产线利用率",
+            "材料出货",
+            "认证与品质"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "sia-chain",
+              "locator": "Stages of production / Business models",
+              "summary": "说明设计、前端制造和后端封装测试分工。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "eda",
+      "name": "EDA 与 IP",
+      "stage": "服务",
+      "column": 0,
+      "description": "提供设计工具与知识产权。",
+      "variable": "授权及设计需求",
+      "evidence": [
+        {
+          "source_id": "sia-chain",
+          "locator": "Stages of production / Business models",
+          "summary": "说明设计、前端制造和后端封装测试分工。"
+        }
+      ],
+      "main": false,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "设计活动与授权需求变化",
+          "target": "EDA 与 IP",
+          "direction": "混合",
+          "mechanism": "设计需求及工艺复杂度影响工具和 IP 使用，授权模式影响收入节奏。",
+          "conditions": "授权、维护费和项目交付各有口径，不直接用芯片销量推算收入。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "设计活动",
+            "授权合同",
+            "交付与续费"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "sia-chain",
+              "locator": "Stages of production / Business models",
+              "summary": "说明设计、前端制造和后端封装测试分工。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "key": "eda-design-supply",
+      "source": "eda",
+      "target": "design",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "sia-chain",
+          "locator": "Stages of production / Business models",
+          "summary": "说明设计、前端制造和后端封装测试分工。"
+        }
+      ]
+    },
+    {
+      "key": "design-fab-supply",
+      "source": "design",
+      "target": "fab",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "sia",
+          "locator": "Stages 2–5",
+          "summary": "协会解释芯片设计、制造与封装测试环节。"
+        }
+      ]
+    },
+    {
+      "key": "materials-fab-supply",
+      "source": "materials",
+      "target": "fab",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "sia-chain",
+          "locator": "Stages of production / Business models",
+          "summary": "说明设计、前端制造和后端封装测试分工。"
+        }
+      ]
+    },
+    {
+      "key": "equipment-fab-supply",
+      "source": "equipment",
+      "target": "fab",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "sia-chain",
+          "locator": "Stages of production / Business models",
+          "summary": "说明设计、前端制造和后端封装测试分工。"
+        }
+      ]
+    },
+    {
+      "key": "fab-packaging-supply",
+      "source": "fab",
+      "target": "packaging",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "sia",
+          "locator": "Stages 2–5",
+          "summary": "协会解释芯片设计、制造与封装测试环节。"
+        }
+      ]
+    },
+    {
+      "key": "packaging-applications-supply",
+      "source": "packaging",
+      "target": "applications",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "sia",
+          "locator": "Stages 2–5",
+          "summary": "协会解释芯片设计、制造与封装测试环节。"
+        }
+      ]
+    },
+    {
+      "key": "applications-design-demand",
+      "source": "applications",
+      "target": "design",
+      "kind": "需求反馈",
+      "description": "终端需求向设计和制造订单反馈。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "sia",
+          "locator": "Stages 2–5",
+          "summary": "协会解释芯片设计、制造与封装测试环节。"
+        }
+      ]
+    }
+  ],
+  "stocks": [
+    {
+      "key": "fab-688981",
+      "node": "fab",
+      "ts_code": "688981.SH",
+      "subject": "中芯国际集团",
+      "business": "集成电路晶圆代工",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "smic",
+          "locator": "Management Discussion / Foundry model",
+          "summary": "官方年报检索摘录确认晶圆代工业务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "集成电路晶圆代工",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "smic",
+              "locator": "Management Discussion / Foundry model",
+              "summary": "官方年报检索摘录确认晶圆代工业务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "packaging-600584",
+      "node": "packaging",
+      "ts_code": "600584.SH",
+      "subject": "长电科技集团",
+      "business": "芯片封装及测试",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "jcet",
+          "locator": "Company Profile",
+          "summary": "公司报告介绍芯片封装、测试及相关服务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "芯片封装及测试",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "jcet",
+              "locator": "Company Profile",
+              "summary": "公司报告介绍芯片封装、测试及相关服务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "equipment-688012",
+      "node": "equipment",
+      "ts_code": "688012.SH",
+      "subject": "中微公司集团",
+      "business": "半导体刻蚀设备",
+      "participation": "直接经营",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "amec",
+          "locator": "Innovation Breakthroughs / Etching Systems",
+          "summary": "公司资料解释刻蚀设备产品。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "半导体刻蚀设备",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "amec",
+              "locator": "Innovation Breakthroughs / Etching Systems",
+              "summary": "公司资料解释刻蚀设备产品。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "equipment-002371",
+      "node": "equipment",
+      "ts_code": "002371.SZ",
+      "subject": "北方华创集团",
+      "business": "半导体工艺设备",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "naura",
+          "locator": "Exhibitor profile / Products",
+          "summary": "公司展商资料列明刻蚀、沉积和清洗等设备。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "半导体工艺设备",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "naura",
+              "locator": "Exhibitor profile / Products",
+              "summary": "公司展商资料列明刻蚀、沉积和清洗等设备。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "design-688008",
+      "node": "design",
+      "ts_code": "688008.SH",
+      "subject": "澜起科技集团",
+      "business": "互连类芯片设计",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "montage",
+          "locator": "About Us / fabless IC design",
+          "summary": "官网列明无晶圆厂芯片设计及互连产品业务。"
+        }
+      ],
+      "metrics": [],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "互连类芯片设计",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认相关业务；不表示市场份额、技术或规模排名。",
+          "evidence": [
+            {
+              "source_id": "montage",
+              "locator": "About Us / fabless IC design",
+              "summary": "官网列明无晶圆厂芯片设计及互连产品业务。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "materials-688126",
+      "node": "materials",
+      "ts_code": "688126.SH",
+      "subject": "沪硅产业集团",
+      "business": "半导体硅片",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "nsig",
+          "locator": "公司简介",
+          "summary": "官网说明半导体硅片业务。"
+        }
+      ],
+      "metrics": [],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "半导体硅片",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认相关业务；不表示市场份额、技术或规模排名。",
+          "evidence": [
+            {
+              "source_id": "nsig",
+              "locator": "公司简介",
+              "summary": "官网说明半导体硅片业务。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "eda-688206",
+      "node": "eda",
+      "ts_code": "688206.SH",
+      "subject": "概伦电子集团",
+      "business": "EDA 设计与制造工具",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "primarius",
+          "locator": "Company Profile / DTCO EDA",
+          "summary": "官网列明 EDA 工具与设计制造协同业务。"
+        }
+      ],
+      "metrics": [],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "EDA 设计与制造工具",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认相关业务；不表示市场份额、技术或规模排名。",
+          "evidence": [
+            {
+              "source_id": "primarius",
+              "locator": "Company Profile / DTCO EDA",
+              "summary": "官网列明 EDA 工具与设计制造协同业务。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

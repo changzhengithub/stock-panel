@@ -5,6 +5,7 @@ defineProps<{
   stock: Stock | null;
   navigation: StockResult["navigation"];
   error: string;
+  fromHot?: boolean;
 }>();
 const emit = defineEmits<{ navigate: [id: number | null | undefined] }>();
 const { isFavorite, toggle, storageError } = useLibrary();
@@ -12,17 +13,19 @@ const { isFavorite, toggle, storageError } = useLibrary();
 <template>
   <div class="stock-navigation">
     <el-button
+      v-if="!fromHot"
       :disabled="!navigation?.previous_id"
       @click="emit('navigate', navigation?.previous_id)"
       >← 上一只</el-button
     >
-    <span>{{
+    <span v-if="!fromHot">{{
       error ||
       (navigation?.position
         ? `${navigation.position} / ${navigation.total}`
         : "不在当前列表中")
     }}</span>
     <el-button
+      v-if="!fromHot"
       :disabled="!navigation?.next_id"
       @click="emit('navigate', navigation?.next_id)"
       >下一只 →</el-button

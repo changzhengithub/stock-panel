@@ -91,7 +91,7 @@ function rowClass({ row }: { row: Stock }) {
         <StockIndustryLabels :stock="row" /> </template
     ></el-table-column>
     <el-table-column
-      label="收盘价"
+      label="最新价"
       prop="close"
       sortable="custom"
       min-width="86"

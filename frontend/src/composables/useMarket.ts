@@ -1,4 +1,5 @@
-import { computed, onUnmounted, shallowRef, watch } from "vue";
+import { computed, shallowRef, watch } from "vue";
+import { useAutoRefresh } from "./useAutoRefresh";
 import { useRoute, useRouter } from "vue-router";
 import {
   get,
@@ -15,6 +16,7 @@ import {
   type Exchange,
 } from "../marketOptions";
 import { useLibrary } from "./useLibrary";
+import { updateData } from "../utils/updateData";
 export function useMarket() {
   const { favorites } = useLibrary();
   const route = useRoute(),
@@ -154,8 +156,10 @@ export function useMarket() {
       }
       const controller = new AbortController();
       cleanup(() => controller.abort());
-      loading.value = true;
-      error.value = "";
+      const background =
+        !!result.value && !!_old && _v[0] === _old[0] && _v[2] === _old[2];
+      loading.value = !background;
+      if (!background) error.value = "";
       const params = new URLSearchParams();
       Object.entries(filters.value).forEach(([k, v]) => {
         if (v !== "") params.set(k, String(v));
@@ -170,7 +174,7 @@ export function useMarket() {
         industryParams.set("board", filters.value.board);
       }
       try {
-        const [firstLevel, secondLevel, conceptRows, health] =
+        const [firstLevel, secondLevel, conceptRows, health, stockRows] =
           await Promise.all([
             get<Industry[]>(
               `/industries?level=1&${industryParams}`,
@@ -182,27 +186,33 @@ export function useMarket() {
             ),
             get<Concept[]>(`/concepts?${industryParams}`, controller.signal),
             get<DataStatus>("/data-status", controller.signal),
+            get<StockResult>("/stocks?" + params, controller.signal),
           ]);
         if (controller.signal.aborted) return;
-        level1Industries.value = firstLevel;
-        level2Industries.value = secondLevel;
-        concepts.value = conceptRows;
-        status.value = health;
-        result.value = await get<StockResult>(
-          "/stocks?" + params,
-          controller.signal,
-        );
+        updateData(level1Industries, firstLevel);
+        updateData(level2Industries, secondLevel);
+        updateData(concepts, conceptRows);
+        updateData(status, health);
+        updateData(result, stockRows);
+        error.value = "";
       } catch (e) {
-        if (!controller.signal.aborted)
-          error.value = e instanceof Error ? e.message : "加载失败";
+        if (!controller.signal.aborted) {
+          const message = e instanceof Error ? e.message : "加载失败";
+          if (background && status.value)
+            status.value = {
+              ...status.value,
+              stale: true,
+              quote_error: message,
+            };
+          else error.value = message;
+        }
       } finally {
         if (!controller.signal.aborted) loading.value = false;
       }
     },
     { immediate: true },
   );
-  const timer = setInterval(() => revision.value++, 30000);
-  onUnmounted(() => clearInterval(timer));
+  useAutoRefresh(() => revision.value++);
   function open(stockId: number) {
     router.push({
       path: `/stocks/${stockId}`,

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Stock } from "../../api";
-import { date, money } from "../../utils/format";
+import { money, price, quoteTime } from "../../utils/format";
 
 defineProps<{ stock: Stock; compact?: boolean }>();
 
@@ -21,9 +21,37 @@ function shares(value: number | null): string {
   <section class="stock-basics" :class="{ compact }" aria-label="股票基础数据">
     <header class="basics-heading">
       <h2>交易与估值</h2>
-      <span>{{ date(stock.quote_date) }}</span>
+      <span>{{ quoteTime(stock.quote_date, stock.quote_time) }}</span>
     </header>
     <dl class="basics-grid">
+      <template v-if="!compact">
+        <div>
+          <dt>昨收</dt>
+          <dd>{{ price(stock.pre_close) }}</dd>
+        </div>
+        <div>
+          <dt>今开</dt>
+          <dd>{{ price(stock.open) }}</dd>
+        </div>
+        <div>
+          <dt>最高</dt>
+          <dd>{{ price(stock.high) }}</dd>
+        </div>
+        <div>
+          <dt>最低</dt>
+          <dd>{{ price(stock.low) }}</dd>
+        </div>
+        <div>
+          <dt>成交量</dt>
+          <dd>
+            {{ stock.volume === null ? "—" : `${money(stock.volume)}手` }}
+          </dd>
+        </div>
+        <div>
+          <dt>成交额</dt>
+          <dd>{{ money(stock.amount) }}</dd>
+        </div>
+      </template>
       <div>
         <dt>流通市值</dt>
         <dd>{{ money(stock.float_market_cap) }}</dd>
@@ -54,7 +82,7 @@ function shares(value: number | null): string {
       </div>
     </dl>
     <p v-if="!compact" class="basics-note">
-      均为行情日期的快照数据；缺失字段显示“—”。不同数据源的市盈率口径以标签为准。
+      基础报价随免费行情自动更新，缺失字段显示“—”。估值口径以来源标签为准。
     </p>
   </section>
 </template>

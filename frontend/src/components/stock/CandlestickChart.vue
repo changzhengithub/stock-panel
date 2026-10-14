@@ -94,7 +94,7 @@ const initialStart = computed(() => {
   const index = allPoints.value.findIndex((point) => point.date >= from);
   return index < 0 ? 0 : index;
 });
-let zoom: { start: number; end: number } | null = null;
+let zoom: { startValue: string; endValue: string } | null = null;
 function resetView() {
   zoom = null;
   render();
@@ -316,8 +316,7 @@ function render() {
           ];
   chartInstance?.setOption(
     {
-      animation: !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
-      animationDuration: 250,
+      animation: false,
       grid: compact
         ? [
             { left: 4, right: 4, top: 14, height: 111 },
@@ -460,17 +459,42 @@ function render() {
 onMounted(() => {
   if (root.value) {
     chartInstance = init(root.value);
-    chartInstance.on("datazoom", (event: any) => {
-      const value = event.batch?.[0] ?? event;
-      if (typeof value.start === "number")
-        zoom = { start: value.start, end: value.end };
+    chartInstance.on("datazoom", () => {
+      const option = chartInstance?.getOption() as
+        | {
+            dataZoom?: {
+              startValue?: number | string;
+              endValue?: number | string;
+            }[];
+            xAxis?: { data: string[] }[];
+          }
+        | undefined;
+      const value = option?.dataZoom?.[0];
+      const labels = option?.xAxis?.[0]?.data ?? [];
+      const start =
+        typeof value?.startValue === "number"
+          ? labels[value.startValue]
+          : value?.startValue;
+      const end =
+        typeof value?.endValue === "number"
+          ? labels[value.endValue]
+          : value?.endValue;
+      if (start && end) zoom = { startValue: start, endValue: end };
     });
     observer = new ResizeObserver(() => chartInstance?.resize());
     observer.observe(root.value);
     render();
   }
 });
-watch([() => props.prices, () => props.range, () => props.period], resetView);
+watch([() => props.range, () => props.period], resetView);
+watch(
+  () => props.prices,
+  (current, previous) => {
+    if (!current || !previous || current.adjustment !== previous.adjustment)
+      resetView();
+    else render();
+  },
+);
 watch(selected, render);
 onUnmounted(() => {
   observer?.disconnect();

@@ -4,6 +4,9 @@ import { get, type Stock, type StockResult } from "../api";
 import { useLibrary } from "./useLibrary";
 import { useChartPreferences } from "./useChartPreferences";
 import { usePriceHistory } from "./usePriceHistory";
+import { useAutoRefresh } from "./useAutoRefresh";
+import { updateData } from "../utils/updateData";
+import { browseOrigin } from "../utils/browseOrigin";
 export function useStock() {
   const route = useRoute(),
     router = useRouter();
@@ -22,12 +25,9 @@ export function useStock() {
     range,
     adjustment,
   );
-  const back = computed(() =>
-    typeof route.query.from === "string" &&
-    /^\/market(?:\?|$)/.test(route.query.from)
-      ? route.query.from
-      : "/market",
-  );
+  const back = computed(() => browseOrigin(route.query.from));
+  const fromChain = computed(() => back.value.startsWith("/industry-chains"));
+  const fromHot = computed(() => back.value.startsWith("/hot-sectors"));
   const industryLevel = computed(() =>
     new URLSearchParams(back.value.split("?")[1] ?? "").get(
       "industry_level",
@@ -40,9 +40,10 @@ export function useStock() {
     async (_, __, cleanup) => {
       const c = new AbortController();
       cleanup(() => c.abort());
-      error.value = "";
-      stock.value = null;
-      loading.value = true;
+      const firstView = stock.value?.id !== id.value;
+      if (firstView) error.value = "";
+      if (stock.value?.id !== id.value) stock.value = null;
+      loading.value = !stock.value;
       try {
         for (let attempt = 0; attempt < 4 && !c.signal.aborted; attempt++) {
           const data = await get<Stock>(
@@ -50,15 +51,18 @@ export function useStock() {
             c.signal,
           );
           if (c.signal.aborted) return;
-          stock.value = data;
+          updateData(stock, data);
+          error.value = "";
           loading.value = false;
-          if (attempt === 0) remember(data);
+          if (attempt === 0 && firstView) remember(data);
           if (!data.profile_pending) break;
           await new Promise((resolve) => setTimeout(resolve, 3000));
         }
       } catch (e) {
-        if (!c.signal.aborted)
-          error.value = e instanceof Error ? e.message : "加载失败";
+        if (!c.signal.aborted) {
+          if (stock.value) stock.value = { ...stock.value, quote_stale: true };
+          else error.value = e instanceof Error ? e.message : "加载失败";
+        }
       } finally {
         if (!c.signal.aborted) loading.value = false;
       }
@@ -72,6 +76,7 @@ export function useStock() {
       cleanup(() => c.abort());
       navigation.value = undefined;
       navigationError.value = "";
+      if (fromHot.value || fromChain.value) return;
       const params = new URLSearchParams(back.value.split("?")[1] ?? "");
       params.set("neighbor_of", String(id.value));
       params.set("group_by", "none");
@@ -87,6 +92,7 @@ export function useStock() {
     },
     { immediate: true },
   );
+  useAutoRefresh(() => revision.value++);
   function navigate(nextId: number | null | undefined) {
     if (nextId)
       router.replace({
@@ -104,6 +110,8 @@ export function useStock() {
     chartError,
     loading,
     back,
+    fromHot,
+    fromChain,
     navigation,
     navigationError,
     navigate,

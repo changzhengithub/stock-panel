@@ -98,7 +98,7 @@ test("权重筛选共用股票列表、详情与价格区间", async ({ page }) 
     ),
   ).toBe(true);
   await expect(
-    page.locator(".stock-table th").filter({ hasText: "收盘价" }),
+    page.locator(".stock-table th").filter({ hasText: "最新价" }),
   ).toHaveCount(1);
 
   await page.screenshot({
@@ -740,4 +740,269 @@ test("图表滚轮缩放、拖动平移与恢复默认视图", async ({ page }) 
   await expect
     .poll(async () => (await chart.screenshot()).equals(initial))
     .toBe(true);
+});
+
+test("免费当日行情显示时间，并自动更新市场、速览和个股详情", async ({
+  page,
+}) => {
+  await page.clock.install();
+  let marketCalls = 0,
+    detailCalls = 0,
+    healthCalls = 0,
+    summaryCalls = 0;
+  await page.route("**/api/data-status", async (route) => {
+    const data = await (await route.fetch()).json();
+    healthCalls++;
+    await route.fulfill({
+      json: {
+        ...data,
+        quote_mode: "live",
+        trade_date: "20260106",
+        quote_time: "105959",
+        quote_oldest_time: "105950",
+        quote_error: null,
+        quote_fetched_at: `2026-01-06T11:00:${String(healthCalls).padStart(2, "0")}+08:00`,
+        quote_coverage: { SZSE: { valid: 56, total: 56 } },
+        stale: false,
+        source: "免费公开行情 · 腾讯",
+      },
+    });
+  });
+  await page.route("**/api/stocks?**", async (route) => {
+    const data = await (await route.fetch()).json();
+    marketCalls++;
+    await route.fulfill({
+      json: {
+        ...data,
+        trade_date: "20260106",
+        items: data.items.map((s: object) => ({
+          ...s,
+          quote_mode: "live",
+          quote_date: "20260106",
+          quote_time: "105959",
+          quote_stale: false,
+          close: 11 + marketCalls,
+        })),
+      },
+    });
+  });
+  await page.route("**/api/industry-summary?**", async (route) => {
+    summaryCalls++;
+    const data = await (await route.fetch()).json();
+    await route.fulfill({
+      json: { ...data, up: summaryCalls, index_pending: false },
+    });
+  });
+  await page.goto("/market");
+  await expect(page.locator(".data-date")).toContainText("2026-01-06 10:59:59");
+  await expect(page.locator(".data-state")).toContainText("自动更新");
+  await expect(page.locator(".preview-price")).toContainText("12.00");
+  await expect(page.locator(".market-overview .up")).toContainText(/上涨 \d+/);
+  const summaryBefore = summaryCalls;
+  await page.clock.fastForward(31000);
+  await expect(page.locator(".preview-price")).toContainText("13.00");
+  await expect.poll(() => summaryCalls).toBeGreaterThan(summaryBefore);
+  await page.route("**/api/stocks/1?**", async (route) => {
+    const data = await (await route.fetch()).json();
+    detailCalls++;
+    await route.fulfill({
+      json: {
+        ...data,
+        quote_mode: "live",
+        quote_date: "20260106",
+        quote_time: "105959",
+        quote_stale: false,
+        pre_close: 10,
+        open: 10,
+        high: 15,
+        low: 9,
+        volume: 1234,
+        close: 12 + detailCalls,
+        profile_pending: false,
+      },
+    });
+  });
+  await page.goto("/stocks/1");
+  await expect(page.locator(".detail-price strong")).toContainText("13.00");
+  await expect(page.locator(".detail-price small")).toContainText(
+    "最新价 · 2026-01-06 10:59:59",
+  );
+  await expect(
+    page
+      .getByRole("region", { name: "股票基础数据" })
+      .getByText("昨收", { exact: true }),
+  ).toBeVisible();
+  await page.clock.fastForward(31000);
+  await expect(page.locator(".detail-price strong")).toContainText("14.00");
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () => document.documentElement.scrollWidth <= window.innerWidth,
+      ),
+    )
+    .toBe(true);
+  await page.screenshot({
+    path: "test-results/realtime-mobile.png",
+    fullPage: true,
+  });
+});
+
+test("静默更新保留表格、统计、滚动位置和选中股票", async ({ page }) => {
+  await page.clock.install();
+  let stockCalls = 0,
+    healthCalls = 0;
+  let stockPending = false,
+    summaryPending = false,
+    holdSummary = false;
+  let releaseStocks!: () => void, releaseSummary!: () => void;
+  const stocksReady = new Promise<void>((resolve) => {
+    releaseStocks = resolve;
+  });
+  const summaryReady = new Promise<void>((resolve) => {
+    releaseSummary = resolve;
+  });
+  await page.route("**/api/data-status", async (route) => {
+    const data = await (await route.fetch()).json();
+    healthCalls++;
+    await route.fulfill({
+      json: { ...data, quote_fetched_at: `batch-${healthCalls}` },
+    });
+  });
+  await page.route("**/api/stocks?**", async (route) => {
+    const data = await (await route.fetch()).json();
+    stockCalls++;
+    if (stockCalls > 1) {
+      stockPending = true;
+      await stocksReady;
+    }
+    const items = data.items.map((stock: object) => ({
+      ...stock,
+      close: 11 + stockCalls,
+    }));
+    if (stockCalls > 1) [items[0], items[1]] = [items[1], items[0]];
+    await route.fulfill({ json: { ...data, items } });
+  });
+  await page.route("**/api/industry-summary?**", async (route) => {
+    const data = await (await route.fetch()).json();
+    if (holdSummary) {
+      summaryPending = true;
+      await summaryReady;
+    }
+    await route.fulfill({
+      json: { ...data, up: holdSummary ? 9 : 5, index_pending: false },
+    });
+  });
+  await page.goto("/market");
+  await expect(page.locator(".preview-price")).toHaveText("12.00");
+  await expect(page.locator(".market-overview .up")).toHaveText("上涨 5");
+  await expect(page.locator(".preview-chart-slot canvas")).toBeVisible();
+  const before = await page.evaluate(() => {
+    const scroll = document.querySelector<HTMLElement>(".result-scroll")!;
+    scroll.scrollTop = 320;
+    (window as any).silentTable = document.querySelector(".stock-table");
+    (window as any).silentOverview = document.querySelector(
+      ".market-overview .up",
+    );
+    (window as any).silentCanvas = document.querySelector(
+      ".preview-chart-slot canvas",
+    );
+    return scroll.scrollTop;
+  });
+  await page.getByRole("textbox", { name: "全市场搜索" }).focus();
+  holdSummary = true;
+  await page.clock.fastForward(31000);
+  await expect.poll(() => stockPending).toBe(true);
+  await expect(page.locator(".results-body")).toHaveAttribute(
+    "aria-busy",
+    "false",
+  );
+  expect(
+    await page
+      .locator(".results-body")
+      .evaluate((el) => getComputedStyle(el).opacity),
+  ).toBe("1");
+  await expect(page.locator(".el-skeleton")).toHaveCount(0);
+  await expect(page.locator(".preview-price")).toHaveText("12.00");
+  releaseStocks();
+  await expect(page.locator(".preview-price")).toHaveText("13.00");
+  await expect.poll(() => summaryPending).toBe(true);
+  await expect(page.locator(".market-overview .up")).toHaveText("上涨 5");
+  await expect(page.locator(".stock-preview > h2")).toHaveText("测试甲银行");
+  releaseSummary();
+  await expect(page.locator(".market-overview .up")).toHaveText("上涨 9");
+  const after = await page.evaluate(() => ({
+    scroll: document.querySelector<HTMLElement>(".result-scroll")!.scrollTop,
+    table:
+      (window as any).silentTable === document.querySelector(".stock-table"),
+    overview:
+      (window as any).silentOverview ===
+      document.querySelector(".market-overview .up"),
+    canvas:
+      (window as any).silentCanvas ===
+      document.querySelector(".preview-chart-slot canvas"),
+  }));
+  expect(after).toEqual({
+    scroll: before,
+    table: true,
+    overview: true,
+    canvas: true,
+  });
+  await expect(page.getByRole("textbox", { name: "全市场搜索" })).toBeFocused();
+});
+
+test("个股静默更新保留 K 线缩放且不显示加载占位", async ({ page }) => {
+  await page.clock.install();
+  let calls = 0,
+    pending = false;
+  let release!: () => void;
+  const ready = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await page.route("**/api/stocks/1?**", async (route) => {
+    const data = await (await route.fetch()).json();
+    calls++;
+    if (calls > 1) {
+      pending = true;
+      await ready;
+    }
+    await route.fulfill({
+      json: { ...data, close: 11 + calls, profile_pending: false },
+    });
+  });
+  await page.goto("/stocks/1");
+  await expect(page.locator(".detail-price strong")).toHaveText("12.00");
+  const chart = page.locator(".candlestick-chart");
+  await expect(chart.locator("canvas")).toBeVisible();
+  await chart.scrollIntoViewIfNeeded();
+  const initial = await chart.screenshot();
+  const box = (await chart.boundingBox())!;
+  await page.mouse.move(box.x + box.width * 0.65, box.y + 180);
+  await page.mouse.wheel(0, -500);
+  await page.mouse.move(0, 0);
+  await expect
+    .poll(async () => (await chart.screenshot()).equals(initial))
+    .toBe(false);
+  const zoomed = await chart.screenshot();
+  const scrollBefore = await page.evaluate(() => {
+    (window as any).silentDetailCanvas = document.querySelector(
+      ".candlestick-chart canvas",
+    );
+    return scrollY;
+  });
+  await page.clock.fastForward(31000);
+  await expect.poll(() => pending).toBe(true);
+  await expect(page.locator(".el-skeleton")).toHaveCount(0);
+  expect((await chart.screenshot()).equals(zoomed)).toBe(true);
+  release();
+  await expect(page.locator(".detail-price strong")).toHaveText("13.00");
+  expect(
+    await page.evaluate(
+      () =>
+        (window as any).silentDetailCanvas ===
+        document.querySelector(".candlestick-chart canvas"),
+    ),
+  ).toBe(true);
+  expect(await page.evaluate(() => scrollY)).toBe(scrollBefore);
+  expect((await chart.screenshot()).equals(zoomed)).toBe(true);
 });

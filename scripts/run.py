@@ -27,6 +27,11 @@ parser.add_argument(
         "sync-concepts",
         "backup",
         "migrate",
+        "collect-business", "build-industry-chains", "publish-chain-batch",
+        "validate-chain", "import-chain", "review-chain", "publish-chain", "doctor-chain",
+        "refresh-quotes",
+        "doctor-fund-flow",
+        "sync-fund-flow",
     ],
 )
 args, extra = parser.parse_known_args()

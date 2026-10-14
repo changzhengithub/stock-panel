@@ -4,6 +4,8 @@ import hashlib
 import importlib.util
 import io
 import json
+import os
+import pwd
 import sqlite3
 import tarfile
 import tempfile
@@ -209,7 +211,7 @@ class UpdateTests(unittest.TestCase):
         ):
             server.guard_database(self.root, db)
 
-    def exercise_deploy(self, sync_state, activate_error=None):
+    def exercise_deploy(self, sync_state, activate_error=None, migrate=False):
         previous = self.make_release("previous")
         self.make_release("candidate")
         (self.root / "current").symlink_to(previous)
@@ -234,14 +236,19 @@ class UpdateTests(unittest.TestCase):
             patch.object(server, "run"),
             patch.object(server, "configure_cache"),
             patch.object(server, "guard_database"),
+            patch.object(server, "migration_plan", return_value=["new"]),
+            patch.object(server, "rehearse_migration"),
             patch.object(server, "systemctl") as service,
             patch.object(server, "activate", side_effect=activate_error) as activate,
+            patch.object(
+                server, "activate_with_migration", side_effect=activate_error
+            ) as migration,
         ):
             try:
-                server.deploy("candidate", archive, digest)
+                server.deploy("candidate", archive, digest, migrate=migrate)
             except RuntimeError as error:
-                return service, activate, str(error)
-        return service, activate, None
+                return service, migration if migrate else activate, str(error)
+        return service, migration if migrate else activate, None
 
     def test_running_sync_aborts_without_switch_and_restores_timer(self):
         service, activate, error = self.exercise_deploy("activating")
@@ -289,12 +296,122 @@ class UpdateTests(unittest.TestCase):
 
         with patch.object(client.time, "sleep"):
             client.publish(
-                SimpleNamespace(command=command), archive.parent, "20261013-150000-12345678", digest
+                SimpleNamespace(command=command),
+                archive.parent,
+                "20261013-150000-12345678",
+                digest,
+                migrate=True,
             )
         launched = next(args for args in commands if "systemd-run" in args)
         self.assertIn("--no-block", launched)
         self.assertIn("--property=RemainAfterExit=yes", launched)
+        self.assertEqual(launched[-1], "--migrate")
         self.assertEqual(sum("show" in args for args in commands), 3)
+
+    def test_explicit_migration_allows_new_revisions_and_metadata(self):
+        previous, candidate = self.make_release("previous"), self.make_release("candidate")
+        (candidate / "backend/migrations/versions/0002_new.py").write_text("new schema")
+        (candidate / "backend/migrations/env.py").write_text("new metadata")
+        server.guard_schema(previous, candidate, migrate=True)
+        (candidate / "backend/migrations/versions/0001_initial.py").write_text("rewrite history")
+        with self.assertRaisesRegex(RuntimeError, "重写"):
+            server.guard_schema(previous, candidate, migrate=True)
+
+    def test_migration_failure_does_not_resume_sync(self):
+        service, migration, error = self.exercise_deploy(
+            "inactive", RuntimeError("migration failed"), migrate=True
+        )
+        self.assertEqual(error, "migration failed")
+        migration.assert_called_once()
+        self.assertNotIn(("start", server.TIMER), [call.args for call in service.call_args_list])
+
+    def test_successful_migration_resumes_sync(self):
+        service, migration, error = self.exercise_deploy("inactive", migrate=True)
+        self.assertIsNone(error)
+        migration.assert_called_once()
+        self.assertEqual(service.call_args_list[-1].args, ("start", server.TIMER))
+
+    def test_partial_migration_keeps_backup_and_does_not_start_old_code(self):
+        previous, candidate = self.make_release("previous"), self.make_release("candidate")
+        (self.root / "current").symlink_to(previous)
+        db = self.make_db()
+        backup = self.root / "before.sqlite3"
+
+        def broken_migration(*args):
+            with database(db) as connection:
+                connection.execute("CREATE TABLE partial_migration (id INTEGER)")
+            raise RuntimeError("DDL failed")
+
+        with (
+            patch.object(server, "BASE", self.root),
+            patch.object(server, "systemctl") as service,
+            patch.object(server, "run_migration", side_effect=broken_migration),
+        ):
+            with self.assertRaisesRegex(RuntimeError, "DDL failed"):
+                server.activate_with_migration(previous, candidate, db, backup)
+        self.assertEqual((self.root / "current").resolve(), previous)
+        self.assertFalse(any(call.args[0] == "start" for call in service.call_args_list))
+        with database(backup) as connection:
+            self.assertIsNone(
+                connection.execute(
+                    "SELECT name FROM sqlite_master WHERE name='partial_migration'"
+                ).fetchone()
+            )
+        with database(db) as connection:
+            self.assertIsNotNone(
+                connection.execute(
+                    "SELECT name FROM sqlite_master WHERE name='partial_migration'"
+                ).fetchone()
+            )
+
+    def test_new_service_failure_after_migration_keeps_new_database(self):
+        previous, candidate = self.make_release("previous"), self.make_release("candidate")
+        (self.root / "current").symlink_to(previous)
+        db = self.make_db()
+
+        def migrate(*args):
+            with database(db) as connection:
+                connection.execute("UPDATE quotes SET price=200")
+
+        with (
+            patch.object(server, "BASE", self.root),
+            patch.object(server, "systemctl") as service,
+            patch.object(server, "run_migration", side_effect=migrate),
+            patch.object(server, "guard_database"),
+            patch.object(server, "check_integrity"),
+            patch.object(server, "health", side_effect=RuntimeError("bad new app")),
+        ):
+            with self.assertRaisesRegex(RuntimeError, "bad new app"):
+                server.activate_with_migration(
+                    previous, candidate, db, self.root / "before.sqlite3"
+                )
+        self.assertEqual((self.root / "current").resolve(), candidate)
+        self.assertEqual(service.call_args_list[-1].args, ("stop", server.SERVICE))
+        with database(db) as connection:
+            self.assertEqual(connection.execute("SELECT price FROM quotes").fetchone()[0], 200)
+
+    def test_rehearsal_failure_only_modifies_disposable_copy(self):
+        db = self.make_db()
+        before = db.read_bytes()
+        account = pwd.getpwuid(os.getuid())
+
+        def broken_migration(candidate, snapshot):
+            self.assertNotEqual(snapshot, db)
+            with database(snapshot) as connection:
+                connection.execute("UPDATE quotes SET price=300")
+            raise RuntimeError("rehearsal failed")
+
+        with (
+            patch.object(server, "DATA", self.root),
+            patch.object(server.pwd, "getpwnam", return_value=account),
+            patch.object(server, "run_migration", side_effect=broken_migration),
+            patch.object(server, "systemctl") as service,
+        ):
+            with self.assertRaisesRegex(RuntimeError, "rehearsal failed"):
+                server.rehearse_migration(self.root, db)
+        service.assert_not_called()
+        self.assertEqual(db.read_bytes(), before)
+        self.assertFalse(list(self.root.glob(".migration-*")))
 
 
 if __name__ == "__main__":

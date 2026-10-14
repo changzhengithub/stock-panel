@@ -2,7 +2,7 @@
 import { computed } from "vue";
 import { ElPopover } from "element-plus";
 import type { DataStatus } from "../../api";
-import { date } from "../../utils/format";
+import { date, quoteTime } from "../../utils/format";
 const props = defineProps<{ status: DataStatus | null }>();
 const industryFetchedAt = computed(() => {
   const value = props.status?.industry_synced_at;
@@ -23,6 +23,9 @@ const industryFetchedAt = computed(() => {
 const stateLabel = computed(() => {
   const status = props.status;
   if (!status) return "";
+  if (status.quote_error) return "行情更新异常";
+  if (status.quote_mode === "live")
+    return status.stale ? "行情更新延迟" : "自动更新";
   if (status.last_run?.state === "running") return "同步中";
   if (!status.available) return "待初始化";
   if (status.stale) return "旧数据";
@@ -36,7 +39,9 @@ const stateLabel = computed(() => {
 </script>
 <template>
   <div v-if="status" class="data-status">
-    <span class="data-date">行情 {{ date(status.trade_date) }}</span>
+    <span class="data-date"
+      >行情 {{ quoteTime(status.trade_date, status.quote_time) }}</span
+    >
     <span class="coverage-label"
       >有效 {{ status.stock_count - status.missing_quote_count }} /
       {{ status.stock_count }} · 行情缺失 {{ status.missing_quote_count }}</span
@@ -56,6 +61,25 @@ const stateLabel = computed(() => {
       <div class="data-details">
         <h3>数据详情</h3>
         <p>{{ status.source }}<br />{{ status.industry_source }}</p>
+        <template v-if="status.quote_mode === 'live'">
+          <p>
+            免费行情自动更新。来源时间范围 {{ status.quote_oldest_time }}～{{
+              status.quote_time
+            }}，以各股票实际行情时间为准。
+          </p>
+          <p v-for="(coverage, market) in status.quote_coverage" :key="market">
+            {{
+              { SSE: "沪市", SZSE: "深市", BSE: "北交所" }[market] ?? market
+            }}：{{ coverage.valid }} / {{ coverage.total }} 只有效报价
+          </p>
+          <p>
+            历史与盘后快照截至
+            {{ date(status.daily_trade_date) }}，与最新报价分别更新。
+          </p>
+        </template>
+        <p v-if="status.quote_error" class="warning-text">
+          {{ status.quote_error }}。保留上次有效行情，日期未改写。
+        </p>
         <p v-if="status.industry_l2_available">
           SW2021：31 个一级、{{ status.industry_l2_count }} 个二级行业。<br />
           分类文件获取于 {{ industryFetchedAt }}；来源最近变动
@@ -71,7 +95,7 @@ const stateLabel = computed(() => {
           正在同步：{{ status.last_run.progress }}
         </p>
         <p v-if="status.stale" class="warning-text">
-          当前展示上一份有效行情，最近交易日尚未发布。
+          当前展示上一份有效行情，请以标注的行情日期和时间为准。
         </p>
         <p
           v-if="status.missing_quote_count || status.missing_cap_count"

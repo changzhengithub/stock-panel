@@ -1,0 +1,3122 @@
+{
+  "as_of": "2026-10-14",
+  "coverage": {
+    "items": [
+      {
+        "id": "801010.SI",
+        "name": "农林牧渔",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 108,
+        "business_count": 108,
+        "financial_count": 108,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801010",
+            "name": "农林牧渔",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801030.SI",
+        "name": "基础化工",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 442,
+        "business_count": 442,
+        "financial_count": 442,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801030",
+            "name": "基础化工",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801040.SI",
+        "name": "钢铁",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 43,
+        "business_count": 43,
+        "financial_count": 43,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801040",
+            "name": "钢铁",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801050.SI",
+        "name": "有色金属",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 146,
+        "business_count": 146,
+        "financial_count": 146,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801050",
+            "name": "有色金属",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801080.SI",
+        "name": "电子",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 510,
+        "business_count": 510,
+        "financial_count": 510,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801080",
+            "name": "电子",
+            "coverage_level": "baseline"
+          },
+          {
+            "id": "semiconductor",
+            "name": "半导体",
+            "coverage_level": "curated"
+          }
+        ]
+      },
+      {
+        "id": "801110.SI",
+        "name": "家用电器",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 101,
+        "business_count": 101,
+        "financial_count": 101,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801110",
+            "name": "家用电器",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801120.SI",
+        "name": "食品饮料",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 115,
+        "business_count": 115,
+        "financial_count": 115,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801120",
+            "name": "食品饮料",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801130.SI",
+        "name": "纺织服饰",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 99,
+        "business_count": 99,
+        "financial_count": 99,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801130",
+            "name": "纺织服饰",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801140.SI",
+        "name": "轻工制造",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 161,
+        "business_count": 161,
+        "financial_count": 161,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801140",
+            "name": "轻工制造",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801150.SI",
+        "name": "医药生物",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 487,
+        "business_count": 487,
+        "financial_count": 486,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801150",
+            "name": "医药生物",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801160.SI",
+        "name": "公用事业",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 138,
+        "business_count": 138,
+        "financial_count": 138,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801160",
+            "name": "公用事业",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801170.SI",
+        "name": "交通运输",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 124,
+        "business_count": 124,
+        "financial_count": 124,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801170",
+            "name": "交通运输",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801180.SI",
+        "name": "房地产",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 86,
+        "business_count": 86,
+        "financial_count": 86,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801180",
+            "name": "房地产",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801200.SI",
+        "name": "商贸零售",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 97,
+        "business_count": 97,
+        "financial_count": 97,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801200",
+            "name": "商贸零售",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801210.SI",
+        "name": "社会服务",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 80,
+        "business_count": 80,
+        "financial_count": 80,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801210",
+            "name": "社会服务",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801230.SI",
+        "name": "综合",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 19,
+        "business_count": 19,
+        "financial_count": 19,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801230",
+            "name": "综合",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801710.SI",
+        "name": "建筑材料",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 72,
+        "business_count": 72,
+        "financial_count": 72,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801710",
+            "name": "建筑材料",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801720.SI",
+        "name": "建筑装饰",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 139,
+        "business_count": 139,
+        "financial_count": 139,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801720",
+            "name": "建筑装饰",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801730.SI",
+        "name": "电力设备",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 405,
+        "business_count": 405,
+        "financial_count": 405,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801730",
+            "name": "电力设备",
+            "coverage_level": "baseline"
+          },
+          {
+            "id": "photovoltaic",
+            "name": "光伏",
+            "coverage_level": "curated"
+          },
+          {
+            "id": "power-battery",
+            "name": "动力电池",
+            "coverage_level": "curated"
+          }
+        ]
+      },
+      {
+        "id": "801740.SI",
+        "name": "国防军工",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 137,
+        "business_count": 137,
+        "financial_count": 137,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801740",
+            "name": "国防军工",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801750.SI",
+        "name": "计算机",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 338,
+        "business_count": 338,
+        "financial_count": 338,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801750",
+            "name": "计算机",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801760.SI",
+        "name": "传媒",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 126,
+        "business_count": 126,
+        "financial_count": 126,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801760",
+            "name": "传媒",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801770.SI",
+        "name": "通信",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 122,
+        "business_count": 122,
+        "financial_count": 122,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801770",
+            "name": "通信",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801780.SI",
+        "name": "银行",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 42,
+        "business_count": 42,
+        "financial_count": 42,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801780",
+            "name": "银行",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801790.SI",
+        "name": "非银金融",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 78,
+        "business_count": 78,
+        "financial_count": 78,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801790",
+            "name": "非银金融",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801880.SI",
+        "name": "汽车",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 320,
+        "business_count": 320,
+        "financial_count": 320,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801880",
+            "name": "汽车",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801890.SI",
+        "name": "机械设备",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 597,
+        "business_count": 597,
+        "financial_count": 596,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801890",
+            "name": "机械设备",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801950.SI",
+        "name": "煤炭",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 33,
+        "business_count": 33,
+        "financial_count": 33,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801950",
+            "name": "煤炭",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801960.SI",
+        "name": "石油石化",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 45,
+        "business_count": 45,
+        "financial_count": 45,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801960",
+            "name": "石油石化",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801970.SI",
+        "name": "环保",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 130,
+        "business_count": 130,
+        "financial_count": 130,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801970",
+            "name": "环保",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801980.SI",
+        "name": "美容护理",
+        "level": 1,
+        "parent_id": null,
+        "company_count": 31,
+        "business_count": 31,
+        "financial_count": 31,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801980",
+            "name": "美容护理",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801011.SI",
+        "name": "林业Ⅱ",
+        "level": 2,
+        "parent_id": "801010.SI",
+        "company_count": 3,
+        "business_count": 3,
+        "financial_count": 3,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801011",
+            "name": "林业Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801012.SI",
+        "name": "农产品加工",
+        "level": 2,
+        "parent_id": "801010.SI",
+        "company_count": 24,
+        "business_count": 24,
+        "financial_count": 24,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801012",
+            "name": "农产品加工",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801014.SI",
+        "name": "饲料",
+        "level": 2,
+        "parent_id": "801010.SI",
+        "company_count": 19,
+        "business_count": 19,
+        "financial_count": 19,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801014",
+            "name": "饲料",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801015.SI",
+        "name": "渔业",
+        "level": 2,
+        "parent_id": "801010.SI",
+        "company_count": 6,
+        "business_count": 6,
+        "financial_count": 6,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801015",
+            "name": "渔业",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801016.SI",
+        "name": "种植业",
+        "level": 2,
+        "parent_id": "801010.SI",
+        "company_count": 20,
+        "business_count": 20,
+        "financial_count": 20,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801016",
+            "name": "种植业",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801017.SI",
+        "name": "养殖业",
+        "level": 2,
+        "parent_id": "801010.SI",
+        "company_count": 21,
+        "business_count": 21,
+        "financial_count": 21,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801017",
+            "name": "养殖业",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801018.SI",
+        "name": "动物保健Ⅱ",
+        "level": 2,
+        "parent_id": "801010.SI",
+        "company_count": 12,
+        "business_count": 12,
+        "financial_count": 12,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801018",
+            "name": "动物保健Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801019.SI",
+        "name": "农业综合Ⅱ",
+        "level": 2,
+        "parent_id": "801010.SI",
+        "company_count": 3,
+        "business_count": 3,
+        "financial_count": 3,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801019",
+            "name": "农业综合Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801032.SI",
+        "name": "化学纤维",
+        "level": 2,
+        "parent_id": "801030.SI",
+        "company_count": 25,
+        "business_count": 25,
+        "financial_count": 25,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801032",
+            "name": "化学纤维",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801033.SI",
+        "name": "化学原料",
+        "level": 2,
+        "parent_id": "801030.SI",
+        "company_count": 57,
+        "business_count": 57,
+        "financial_count": 57,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801033",
+            "name": "化学原料",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801034.SI",
+        "name": "化学制品",
+        "level": 2,
+        "parent_id": "801030.SI",
+        "company_count": 184,
+        "business_count": 184,
+        "financial_count": 184,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801034",
+            "name": "化学制品",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801036.SI",
+        "name": "塑料",
+        "level": 2,
+        "parent_id": "801030.SI",
+        "company_count": 78,
+        "business_count": 78,
+        "financial_count": 78,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801036",
+            "name": "塑料",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801037.SI",
+        "name": "橡胶",
+        "level": 2,
+        "parent_id": "801030.SI",
+        "company_count": 23,
+        "business_count": 23,
+        "financial_count": 23,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801037",
+            "name": "橡胶",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801038.SI",
+        "name": "农化制品",
+        "level": 2,
+        "parent_id": "801030.SI",
+        "company_count": 61,
+        "business_count": 61,
+        "financial_count": 61,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801038",
+            "name": "农化制品",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801039.SI",
+        "name": "非金属材料Ⅱ",
+        "level": 2,
+        "parent_id": "801030.SI",
+        "company_count": 14,
+        "business_count": 14,
+        "financial_count": 14,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801039",
+            "name": "非金属材料Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801043.SI",
+        "name": "冶钢原料",
+        "level": 2,
+        "parent_id": "801040.SI",
+        "company_count": 10,
+        "business_count": 10,
+        "financial_count": 10,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801043",
+            "name": "冶钢原料",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801044.SI",
+        "name": "普钢",
+        "level": 2,
+        "parent_id": "801040.SI",
+        "company_count": 21,
+        "business_count": 21,
+        "financial_count": 21,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801044",
+            "name": "普钢",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801045.SI",
+        "name": "特钢Ⅱ",
+        "level": 2,
+        "parent_id": "801040.SI",
+        "company_count": 12,
+        "business_count": 12,
+        "financial_count": 12,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801045",
+            "name": "特钢Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801051.SI",
+        "name": "金属新材料",
+        "level": 2,
+        "parent_id": "801050.SI",
+        "company_count": 35,
+        "business_count": 35,
+        "financial_count": 35,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801051",
+            "name": "金属新材料",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801053.SI",
+        "name": "贵金属",
+        "level": 2,
+        "parent_id": "801050.SI",
+        "company_count": 11,
+        "business_count": 11,
+        "financial_count": 11,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801053",
+            "name": "贵金属",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801054.SI",
+        "name": "小金属",
+        "level": 2,
+        "parent_id": "801050.SI",
+        "company_count": 29,
+        "business_count": 29,
+        "financial_count": 29,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801054",
+            "name": "小金属",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801055.SI",
+        "name": "工业金属",
+        "level": 2,
+        "parent_id": "801050.SI",
+        "company_count": 59,
+        "business_count": 59,
+        "financial_count": 59,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801055",
+            "name": "工业金属",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801056.SI",
+        "name": "能源金属",
+        "level": 2,
+        "parent_id": "801050.SI",
+        "company_count": 12,
+        "business_count": 12,
+        "financial_count": 12,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801056",
+            "name": "能源金属",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801072.SI",
+        "name": "通用设备",
+        "level": 2,
+        "parent_id": "801890.SI",
+        "company_count": 242,
+        "business_count": 242,
+        "financial_count": 241,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801072",
+            "name": "通用设备",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801074.SI",
+        "name": "专用设备",
+        "level": 2,
+        "parent_id": "801890.SI",
+        "company_count": 197,
+        "business_count": 197,
+        "financial_count": 197,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801074",
+            "name": "专用设备",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801076.SI",
+        "name": "轨交设备Ⅱ",
+        "level": 2,
+        "parent_id": "801890.SI",
+        "company_count": 30,
+        "business_count": 30,
+        "financial_count": 30,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801076",
+            "name": "轨交设备Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801077.SI",
+        "name": "工程机械",
+        "level": 2,
+        "parent_id": "801890.SI",
+        "company_count": 35,
+        "business_count": 35,
+        "financial_count": 35,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801077",
+            "name": "工程机械",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801078.SI",
+        "name": "自动化设备",
+        "level": 2,
+        "parent_id": "801890.SI",
+        "company_count": 93,
+        "business_count": 93,
+        "financial_count": 93,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801078",
+            "name": "自动化设备",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801081.SI",
+        "name": "半导体",
+        "level": 2,
+        "parent_id": "801080.SI",
+        "company_count": 185,
+        "business_count": 185,
+        "financial_count": 185,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801081",
+            "name": "半导体",
+            "coverage_level": "baseline"
+          },
+          {
+            "id": "semiconductor",
+            "name": "半导体",
+            "coverage_level": "curated"
+          }
+        ]
+      },
+      {
+        "id": "801082.SI",
+        "name": "其他电子Ⅱ",
+        "level": 2,
+        "parent_id": "801080.SI",
+        "company_count": 34,
+        "business_count": 34,
+        "financial_count": 34,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801082",
+            "name": "其他电子Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801083.SI",
+        "name": "元件",
+        "level": 2,
+        "parent_id": "801080.SI",
+        "company_count": 66,
+        "business_count": 66,
+        "financial_count": 66,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801083",
+            "name": "元件",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801084.SI",
+        "name": "光学光电子",
+        "level": 2,
+        "parent_id": "801080.SI",
+        "company_count": 91,
+        "business_count": 91,
+        "financial_count": 91,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801084",
+            "name": "光学光电子",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801085.SI",
+        "name": "消费电子",
+        "level": 2,
+        "parent_id": "801080.SI",
+        "company_count": 97,
+        "business_count": 97,
+        "financial_count": 97,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801085",
+            "name": "消费电子",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801086.SI",
+        "name": "电子化学品Ⅱ",
+        "level": 2,
+        "parent_id": "801080.SI",
+        "company_count": 37,
+        "business_count": 37,
+        "financial_count": 37,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801086",
+            "name": "电子化学品Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801092.SI",
+        "name": "汽车服务",
+        "level": 2,
+        "parent_id": "801880.SI",
+        "company_count": 10,
+        "business_count": 10,
+        "financial_count": 10,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801092",
+            "name": "汽车服务",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801093.SI",
+        "name": "汽车零部件",
+        "level": 2,
+        "parent_id": "801880.SI",
+        "company_count": 272,
+        "business_count": 272,
+        "financial_count": 272,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801093",
+            "name": "汽车零部件",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801095.SI",
+        "name": "乘用车",
+        "level": 2,
+        "parent_id": "801880.SI",
+        "company_count": 8,
+        "business_count": 8,
+        "financial_count": 8,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801095",
+            "name": "乘用车",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801096.SI",
+        "name": "商用车",
+        "level": 2,
+        "parent_id": "801880.SI",
+        "company_count": 13,
+        "business_count": 13,
+        "financial_count": 13,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801096",
+            "name": "商用车",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801101.SI",
+        "name": "计算机设备",
+        "level": 2,
+        "parent_id": "801750.SI",
+        "company_count": 83,
+        "business_count": 83,
+        "financial_count": 83,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801101",
+            "name": "计算机设备",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801102.SI",
+        "name": "通信设备",
+        "level": 2,
+        "parent_id": "801770.SI",
+        "company_count": 87,
+        "business_count": 87,
+        "financial_count": 87,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801102",
+            "name": "通信设备",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801103.SI",
+        "name": "IT服务Ⅱ",
+        "level": 2,
+        "parent_id": "801750.SI",
+        "company_count": 124,
+        "business_count": 124,
+        "financial_count": 124,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801103",
+            "name": "IT服务Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801104.SI",
+        "name": "软件开发",
+        "level": 2,
+        "parent_id": "801750.SI",
+        "company_count": 131,
+        "business_count": 131,
+        "financial_count": 131,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801104",
+            "name": "软件开发",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801111.SI",
+        "name": "白色家电",
+        "level": 2,
+        "parent_id": "801110.SI",
+        "company_count": 10,
+        "business_count": 10,
+        "financial_count": 10,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801111",
+            "name": "白色家电",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801112.SI",
+        "name": "黑色家电",
+        "level": 2,
+        "parent_id": "801110.SI",
+        "company_count": 9,
+        "business_count": 9,
+        "financial_count": 9,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801112",
+            "name": "黑色家电",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801113.SI",
+        "name": "小家电",
+        "level": 2,
+        "parent_id": "801110.SI",
+        "company_count": 23,
+        "business_count": 23,
+        "financial_count": 23,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801113",
+            "name": "小家电",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801114.SI",
+        "name": "厨卫电器",
+        "level": 2,
+        "parent_id": "801110.SI",
+        "company_count": 8,
+        "business_count": 8,
+        "financial_count": 8,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801114",
+            "name": "厨卫电器",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801115.SI",
+        "name": "照明设备Ⅱ",
+        "level": 2,
+        "parent_id": "801110.SI",
+        "company_count": 14,
+        "business_count": 14,
+        "financial_count": 14,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801115",
+            "name": "照明设备Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801116.SI",
+        "name": "家电零部件Ⅱ",
+        "level": 2,
+        "parent_id": "801110.SI",
+        "company_count": 34,
+        "business_count": 34,
+        "financial_count": 34,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801116",
+            "name": "家电零部件Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801117.SI",
+        "name": "其他家电Ⅱ",
+        "level": 2,
+        "parent_id": "801110.SI",
+        "company_count": 3,
+        "business_count": 3,
+        "financial_count": 3,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801117",
+            "name": "其他家电Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801124.SI",
+        "name": "食品加工",
+        "level": 2,
+        "parent_id": "801120.SI",
+        "company_count": 23,
+        "business_count": 23,
+        "financial_count": 23,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801124",
+            "name": "食品加工",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801125.SI",
+        "name": "白酒Ⅱ",
+        "level": 2,
+        "parent_id": "801120.SI",
+        "company_count": 19,
+        "business_count": 19,
+        "financial_count": 19,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801125",
+            "name": "白酒Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801126.SI",
+        "name": "非白酒",
+        "level": 2,
+        "parent_id": "801120.SI",
+        "company_count": 12,
+        "business_count": 12,
+        "financial_count": 12,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801126",
+            "name": "非白酒",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801127.SI",
+        "name": "饮料乳品",
+        "level": 2,
+        "parent_id": "801120.SI",
+        "company_count": 27,
+        "business_count": 27,
+        "financial_count": 27,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801127",
+            "name": "饮料乳品",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801128.SI",
+        "name": "休闲食品",
+        "level": 2,
+        "parent_id": "801120.SI",
+        "company_count": 20,
+        "business_count": 20,
+        "financial_count": 20,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801128",
+            "name": "休闲食品",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801129.SI",
+        "name": "调味发酵品Ⅱ",
+        "level": 2,
+        "parent_id": "801120.SI",
+        "company_count": 14,
+        "business_count": 14,
+        "financial_count": 14,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801129",
+            "name": "调味发酵品Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801131.SI",
+        "name": "纺织制造",
+        "level": 2,
+        "parent_id": "801130.SI",
+        "company_count": 33,
+        "business_count": 33,
+        "financial_count": 33,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801131",
+            "name": "纺织制造",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801132.SI",
+        "name": "服装家纺",
+        "level": 2,
+        "parent_id": "801130.SI",
+        "company_count": 54,
+        "business_count": 54,
+        "financial_count": 54,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801132",
+            "name": "服装家纺",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801133.SI",
+        "name": "饰品",
+        "level": 2,
+        "parent_id": "801130.SI",
+        "company_count": 12,
+        "business_count": 12,
+        "financial_count": 12,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801133",
+            "name": "饰品",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801141.SI",
+        "name": "包装印刷",
+        "level": 2,
+        "parent_id": "801140.SI",
+        "company_count": 45,
+        "business_count": 45,
+        "financial_count": 45,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801141",
+            "name": "包装印刷",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801142.SI",
+        "name": "家居用品",
+        "level": 2,
+        "parent_id": "801140.SI",
+        "company_count": 72,
+        "business_count": 72,
+        "financial_count": 72,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801142",
+            "name": "家居用品",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801143.SI",
+        "name": "造纸",
+        "level": 2,
+        "parent_id": "801140.SI",
+        "company_count": 24,
+        "business_count": 24,
+        "financial_count": 24,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801143",
+            "name": "造纸",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801145.SI",
+        "name": "文娱用品",
+        "level": 2,
+        "parent_id": "801140.SI",
+        "company_count": 20,
+        "business_count": 20,
+        "financial_count": 20,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801145",
+            "name": "文娱用品",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801151.SI",
+        "name": "化学制药",
+        "level": 2,
+        "parent_id": "801150.SI",
+        "company_count": 152,
+        "business_count": 152,
+        "financial_count": 151,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801151",
+            "name": "化学制药",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801152.SI",
+        "name": "生物制品",
+        "level": 2,
+        "parent_id": "801150.SI",
+        "company_count": 54,
+        "business_count": 54,
+        "financial_count": 54,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801152",
+            "name": "生物制品",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801153.SI",
+        "name": "医疗器械",
+        "level": 2,
+        "parent_id": "801150.SI",
+        "company_count": 137,
+        "business_count": 137,
+        "financial_count": 137,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801153",
+            "name": "医疗器械",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801154.SI",
+        "name": "医药商业",
+        "level": 2,
+        "parent_id": "801150.SI",
+        "company_count": 31,
+        "business_count": 31,
+        "financial_count": 31,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801154",
+            "name": "医药商业",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801155.SI",
+        "name": "中药Ⅱ",
+        "level": 2,
+        "parent_id": "801150.SI",
+        "company_count": 62,
+        "business_count": 62,
+        "financial_count": 62,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801155",
+            "name": "中药Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801156.SI",
+        "name": "医疗服务",
+        "level": 2,
+        "parent_id": "801150.SI",
+        "company_count": 51,
+        "business_count": 51,
+        "financial_count": 51,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801156",
+            "name": "医疗服务",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801161.SI",
+        "name": "电力",
+        "level": 2,
+        "parent_id": "801160.SI",
+        "company_count": 109,
+        "business_count": 109,
+        "financial_count": 109,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801161",
+            "name": "电力",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801163.SI",
+        "name": "燃气Ⅱ",
+        "level": 2,
+        "parent_id": "801160.SI",
+        "company_count": 29,
+        "business_count": 29,
+        "financial_count": 29,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801163",
+            "name": "燃气Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801178.SI",
+        "name": "物流",
+        "level": 2,
+        "parent_id": "801170.SI",
+        "company_count": 44,
+        "business_count": 44,
+        "financial_count": 44,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801178",
+            "name": "物流",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801179.SI",
+        "name": "铁路公路",
+        "level": 2,
+        "parent_id": "801170.SI",
+        "company_count": 33,
+        "business_count": 33,
+        "financial_count": 33,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801179",
+            "name": "铁路公路",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801181.SI",
+        "name": "房地产开发",
+        "level": 2,
+        "parent_id": "801180.SI",
+        "company_count": 76,
+        "business_count": 76,
+        "financial_count": 76,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801181",
+            "name": "房地产开发",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801183.SI",
+        "name": "房地产服务",
+        "level": 2,
+        "parent_id": "801180.SI",
+        "company_count": 10,
+        "business_count": 10,
+        "financial_count": 10,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801183",
+            "name": "房地产服务",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801191.SI",
+        "name": "多元金融",
+        "level": 2,
+        "parent_id": "801790.SI",
+        "company_count": 23,
+        "business_count": 23,
+        "financial_count": 23,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801191",
+            "name": "多元金融",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801193.SI",
+        "name": "证券Ⅱ",
+        "level": 2,
+        "parent_id": "801790.SI",
+        "company_count": 50,
+        "business_count": 50,
+        "financial_count": 50,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801193",
+            "name": "证券Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801194.SI",
+        "name": "保险Ⅱ",
+        "level": 2,
+        "parent_id": "801790.SI",
+        "company_count": 5,
+        "business_count": 5,
+        "financial_count": 5,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801194",
+            "name": "保险Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801202.SI",
+        "name": "贸易Ⅱ",
+        "level": 2,
+        "parent_id": "801200.SI",
+        "company_count": 12,
+        "business_count": 12,
+        "financial_count": 12,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801202",
+            "name": "贸易Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801203.SI",
+        "name": "一般零售",
+        "level": 2,
+        "parent_id": "801200.SI",
+        "company_count": 59,
+        "business_count": 59,
+        "financial_count": 59,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801203",
+            "name": "一般零售",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801204.SI",
+        "name": "专业连锁Ⅱ",
+        "level": 2,
+        "parent_id": "801200.SI",
+        "company_count": 7,
+        "business_count": 7,
+        "financial_count": 7,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801204",
+            "name": "专业连锁Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801206.SI",
+        "name": "互联网电商",
+        "level": 2,
+        "parent_id": "801200.SI",
+        "company_count": 17,
+        "business_count": 17,
+        "financial_count": 17,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801206",
+            "name": "互联网电商",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801207.SI",
+        "name": "旅游零售Ⅱ",
+        "level": 2,
+        "parent_id": "801200.SI",
+        "company_count": 2,
+        "business_count": 2,
+        "financial_count": 2,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801207",
+            "name": "旅游零售Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801216.SI",
+        "name": "体育Ⅱ",
+        "level": 2,
+        "parent_id": "801210.SI",
+        "company_count": 2,
+        "business_count": 2,
+        "financial_count": 2,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801216",
+            "name": "体育Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801217.SI",
+        "name": "本地生活服务Ⅱ",
+        "level": 2,
+        "parent_id": "801210.SI",
+        "company_count": 0,
+        "business_count": 0,
+        "financial_count": 0,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801217",
+            "name": "本地生活服务Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801218.SI",
+        "name": "专业服务",
+        "level": 2,
+        "parent_id": "801210.SI",
+        "company_count": 33,
+        "business_count": 33,
+        "financial_count": 33,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801218",
+            "name": "专业服务",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801219.SI",
+        "name": "酒店餐饮",
+        "level": 2,
+        "parent_id": "801210.SI",
+        "company_count": 8,
+        "business_count": 8,
+        "financial_count": 8,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801219",
+            "name": "酒店餐饮",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801223.SI",
+        "name": "通信服务",
+        "level": 2,
+        "parent_id": "801770.SI",
+        "company_count": 35,
+        "business_count": 35,
+        "financial_count": 35,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801223",
+            "name": "通信服务",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801231.SI",
+        "name": "综合Ⅱ",
+        "level": 2,
+        "parent_id": "801230.SI",
+        "company_count": 19,
+        "business_count": 19,
+        "financial_count": 19,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801231",
+            "name": "综合Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801711.SI",
+        "name": "水泥",
+        "level": 2,
+        "parent_id": "801710.SI",
+        "company_count": 20,
+        "business_count": 20,
+        "financial_count": 20,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801711",
+            "name": "水泥",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801712.SI",
+        "name": "玻璃玻纤",
+        "level": 2,
+        "parent_id": "801710.SI",
+        "company_count": 16,
+        "business_count": 16,
+        "financial_count": 16,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801712",
+            "name": "玻璃玻纤",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801713.SI",
+        "name": "装修建材",
+        "level": 2,
+        "parent_id": "801710.SI",
+        "company_count": 36,
+        "business_count": 36,
+        "financial_count": 36,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801713",
+            "name": "装修建材",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801721.SI",
+        "name": "房屋建设Ⅱ",
+        "level": 2,
+        "parent_id": "801720.SI",
+        "company_count": 7,
+        "business_count": 7,
+        "financial_count": 7,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801721",
+            "name": "房屋建设Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801722.SI",
+        "name": "装修装饰Ⅱ",
+        "level": 2,
+        "parent_id": "801720.SI",
+        "company_count": 17,
+        "business_count": 17,
+        "financial_count": 17,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801722",
+            "name": "装修装饰Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801723.SI",
+        "name": "基础建设",
+        "level": 2,
+        "parent_id": "801720.SI",
+        "company_count": 35,
+        "business_count": 35,
+        "financial_count": 35,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801723",
+            "name": "基础建设",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801724.SI",
+        "name": "专业工程",
+        "level": 2,
+        "parent_id": "801720.SI",
+        "company_count": 35,
+        "business_count": 35,
+        "financial_count": 35,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801724",
+            "name": "专业工程",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801726.SI",
+        "name": "工程咨询服务Ⅱ",
+        "level": 2,
+        "parent_id": "801720.SI",
+        "company_count": 45,
+        "business_count": 45,
+        "financial_count": 45,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801726",
+            "name": "工程咨询服务Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801731.SI",
+        "name": "电机Ⅱ",
+        "level": 2,
+        "parent_id": "801730.SI",
+        "company_count": 28,
+        "business_count": 28,
+        "financial_count": 28,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801731",
+            "name": "电机Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801733.SI",
+        "name": "其他电源设备Ⅱ",
+        "level": 2,
+        "parent_id": "801730.SI",
+        "company_count": 31,
+        "business_count": 31,
+        "financial_count": 31,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801733",
+            "name": "其他电源设备Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801735.SI",
+        "name": "光伏设备",
+        "level": 2,
+        "parent_id": "801730.SI",
+        "company_count": 68,
+        "business_count": 68,
+        "financial_count": 68,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801735",
+            "name": "光伏设备",
+            "coverage_level": "baseline"
+          },
+          {
+            "id": "photovoltaic",
+            "name": "光伏",
+            "coverage_level": "curated"
+          }
+        ]
+      },
+      {
+        "id": "801736.SI",
+        "name": "风电设备",
+        "level": 2,
+        "parent_id": "801730.SI",
+        "company_count": 32,
+        "business_count": 32,
+        "financial_count": 32,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801736",
+            "name": "风电设备",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801737.SI",
+        "name": "电池",
+        "level": 2,
+        "parent_id": "801730.SI",
+        "company_count": 106,
+        "business_count": 106,
+        "financial_count": 106,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801737",
+            "name": "电池",
+            "coverage_level": "baseline"
+          },
+          {
+            "id": "power-battery",
+            "name": "动力电池",
+            "coverage_level": "curated"
+          }
+        ]
+      },
+      {
+        "id": "801738.SI",
+        "name": "电网设备",
+        "level": 2,
+        "parent_id": "801730.SI",
+        "company_count": 140,
+        "business_count": 140,
+        "financial_count": 140,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801738",
+            "name": "电网设备",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801741.SI",
+        "name": "航天装备Ⅱ",
+        "level": 2,
+        "parent_id": "801740.SI",
+        "company_count": 9,
+        "business_count": 9,
+        "financial_count": 9,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801741",
+            "name": "航天装备Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801742.SI",
+        "name": "航空装备Ⅱ",
+        "level": 2,
+        "parent_id": "801740.SI",
+        "company_count": 48,
+        "business_count": 48,
+        "financial_count": 48,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801742",
+            "name": "航空装备Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801743.SI",
+        "name": "地面兵装Ⅱ",
+        "level": 2,
+        "parent_id": "801740.SI",
+        "company_count": 12,
+        "business_count": 12,
+        "financial_count": 12,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801743",
+            "name": "地面兵装Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801744.SI",
+        "name": "航海装备Ⅱ",
+        "level": 2,
+        "parent_id": "801740.SI",
+        "company_count": 10,
+        "business_count": 10,
+        "financial_count": 10,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801744",
+            "name": "航海装备Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801745.SI",
+        "name": "军工电子Ⅱ",
+        "level": 2,
+        "parent_id": "801740.SI",
+        "company_count": 58,
+        "business_count": 58,
+        "financial_count": 58,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801745",
+            "name": "军工电子Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801764.SI",
+        "name": "游戏Ⅱ",
+        "level": 2,
+        "parent_id": "801760.SI",
+        "company_count": 26,
+        "business_count": 26,
+        "financial_count": 26,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801764",
+            "name": "游戏Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801765.SI",
+        "name": "广告营销",
+        "level": 2,
+        "parent_id": "801760.SI",
+        "company_count": 26,
+        "business_count": 26,
+        "financial_count": 26,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801765",
+            "name": "广告营销",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801766.SI",
+        "name": "影视院线",
+        "level": 2,
+        "parent_id": "801760.SI",
+        "company_count": 18,
+        "business_count": 18,
+        "financial_count": 18,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801766",
+            "name": "影视院线",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801767.SI",
+        "name": "数字媒体",
+        "level": 2,
+        "parent_id": "801760.SI",
+        "company_count": 13,
+        "business_count": 13,
+        "financial_count": 13,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801767",
+            "name": "数字媒体",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801768.SI",
+        "name": "社交Ⅱ",
+        "level": 2,
+        "parent_id": "801760.SI",
+        "company_count": 0,
+        "business_count": 0,
+        "financial_count": 0,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801768",
+            "name": "社交Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801769.SI",
+        "name": "出版",
+        "level": 2,
+        "parent_id": "801760.SI",
+        "company_count": 28,
+        "business_count": 28,
+        "financial_count": 28,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801769",
+            "name": "出版",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801782.SI",
+        "name": "国有大型银行Ⅱ",
+        "level": 2,
+        "parent_id": "801780.SI",
+        "company_count": 6,
+        "business_count": 6,
+        "financial_count": 6,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801782",
+            "name": "国有大型银行Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801783.SI",
+        "name": "股份制银行Ⅱ",
+        "level": 2,
+        "parent_id": "801780.SI",
+        "company_count": 9,
+        "business_count": 9,
+        "financial_count": 9,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801783",
+            "name": "股份制银行Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801784.SI",
+        "name": "城商行Ⅱ",
+        "level": 2,
+        "parent_id": "801780.SI",
+        "company_count": 17,
+        "business_count": 17,
+        "financial_count": 17,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801784",
+            "name": "城商行Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801785.SI",
+        "name": "农商行Ⅱ",
+        "level": 2,
+        "parent_id": "801780.SI",
+        "company_count": 10,
+        "business_count": 10,
+        "financial_count": 10,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801785",
+            "name": "农商行Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801786.SI",
+        "name": "其他银行Ⅱ",
+        "level": 2,
+        "parent_id": "801780.SI",
+        "company_count": 0,
+        "business_count": 0,
+        "financial_count": 0,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801786",
+            "name": "其他银行Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801881.SI",
+        "name": "摩托车及其他",
+        "level": 2,
+        "parent_id": "801880.SI",
+        "company_count": 17,
+        "business_count": 17,
+        "financial_count": 17,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801881",
+            "name": "摩托车及其他",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801951.SI",
+        "name": "煤炭开采",
+        "level": 2,
+        "parent_id": "801950.SI",
+        "company_count": 26,
+        "business_count": 26,
+        "financial_count": 26,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801951",
+            "name": "煤炭开采",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801952.SI",
+        "name": "焦炭Ⅱ",
+        "level": 2,
+        "parent_id": "801950.SI",
+        "company_count": 7,
+        "business_count": 7,
+        "financial_count": 7,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801952",
+            "name": "焦炭Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801961.SI",
+        "name": "油气开采Ⅱ",
+        "level": 2,
+        "parent_id": "801960.SI",
+        "company_count": 3,
+        "business_count": 3,
+        "financial_count": 3,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801961",
+            "name": "油气开采Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801962.SI",
+        "name": "油服工程",
+        "level": 2,
+        "parent_id": "801960.SI",
+        "company_count": 13,
+        "business_count": 13,
+        "financial_count": 13,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801962",
+            "name": "油服工程",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801963.SI",
+        "name": "炼化及贸易",
+        "level": 2,
+        "parent_id": "801960.SI",
+        "company_count": 29,
+        "business_count": 29,
+        "financial_count": 29,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801963",
+            "name": "炼化及贸易",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801971.SI",
+        "name": "环境治理",
+        "level": 2,
+        "parent_id": "801970.SI",
+        "company_count": 103,
+        "business_count": 103,
+        "financial_count": 103,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801971",
+            "name": "环境治理",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801972.SI",
+        "name": "环保设备Ⅱ",
+        "level": 2,
+        "parent_id": "801970.SI",
+        "company_count": 27,
+        "business_count": 27,
+        "financial_count": 27,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801972",
+            "name": "环保设备Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801981.SI",
+        "name": "个护用品",
+        "level": 2,
+        "parent_id": "801980.SI",
+        "company_count": 12,
+        "business_count": 12,
+        "financial_count": 12,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801981",
+            "name": "个护用品",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801982.SI",
+        "name": "化妆品",
+        "level": 2,
+        "parent_id": "801980.SI",
+        "company_count": 16,
+        "business_count": 16,
+        "financial_count": 16,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801982",
+            "name": "化妆品",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801983.SI",
+        "name": "医疗美容",
+        "level": 2,
+        "parent_id": "801980.SI",
+        "company_count": 3,
+        "business_count": 3,
+        "financial_count": 3,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801983",
+            "name": "医疗美容",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801991.SI",
+        "name": "航空机场",
+        "level": 2,
+        "parent_id": "801170.SI",
+        "company_count": 12,
+        "business_count": 12,
+        "financial_count": 12,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801991",
+            "name": "航空机场",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801992.SI",
+        "name": "航运港口",
+        "level": 2,
+        "parent_id": "801170.SI",
+        "company_count": 35,
+        "business_count": 35,
+        "financial_count": 35,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801992",
+            "name": "航运港口",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801993.SI",
+        "name": "旅游及景区",
+        "level": 2,
+        "parent_id": "801210.SI",
+        "company_count": 24,
+        "business_count": 24,
+        "financial_count": 24,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801993",
+            "name": "旅游及景区",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801994.SI",
+        "name": "教育",
+        "level": 2,
+        "parent_id": "801210.SI",
+        "company_count": 13,
+        "business_count": 13,
+        "financial_count": 13,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801994",
+            "name": "教育",
+            "coverage_level": "baseline"
+          }
+        ]
+      },
+      {
+        "id": "801995.SI",
+        "name": "电视广播Ⅱ",
+        "level": 2,
+        "parent_id": "801760.SI",
+        "company_count": 15,
+        "business_count": 15,
+        "financial_count": 15,
+        "analysis_ready": true,
+        "status": "行业专属分析已生成；资料分项核验",
+        "chains": [
+          {
+            "id": "sw-801995",
+            "name": "电视广播Ⅱ",
+            "coverage_level": "baseline"
+          }
+        ]
+      }
+    ],
+    "total": 165,
+    "l1_count": 31,
+    "l2_count": 134,
+    "covered_count": 165,
+    "analysed_count": 165,
+    "company_count": 5371,
+    "business_count": 5371,
+    "financial_count": 5369,
+    "collection": {
+      "run_id": "512b715c95734d889c9685fc6a08bcac",
+      "universe": 5371,
+      "profile_count": 5371,
+      "business_count": 5371,
+      "financial_count": 5369,
+      "financial_rows": 104068,
+      "missing_profiles": [],
+      "missing_financials": [
+        "688759.SH",
+        "688808.SH"
+      ],
+      "periods": [
+        "2025-12-31",
+        "2026-06-30"
+      ],
+      "available_other_periods": {
+        "688759.SH": [],
+        "688808.SH": [
+          "2025-09-30",
+          "2025-03-31",
+          "2024-12-31",
+          "2023-12-31",
+          "2022-12-31"
+        ]
+      },
+      "source": "东方财富 F10 汇总，未逐份核验原始公告",
+      "collected_at": "2026-10-13T16:25:05.800919+00:00",
+      "pages": 377
+    }
+  },
+  "collection": {
+    "run_id": "512b715c95734d889c9685fc6a08bcac",
+    "universe": 5371,
+    "profile_count": 5371,
+    "business_count": 5371,
+    "financial_count": 5369,
+    "financial_rows": 104068,
+    "missing_profiles": [],
+    "missing_financials": [
+      "688759.SH",
+      "688808.SH"
+    ],
+    "periods": [
+      "2025-12-31",
+      "2026-06-30"
+    ],
+    "available_other_periods": {
+      "688759.SH": [],
+      "688808.SH": [
+        "2025-09-30",
+        "2025-03-31",
+        "2024-12-31",
+        "2023-12-31",
+        "2022-12-31"
+      ]
+    },
+    "source": "东方财富 F10 汇总，未逐份核验原始公告",
+    "collected_at": "2026-10-13T16:25:05.800919+00:00",
+    "pages": 377
+  },
+  "baseline": {
+    "industries": 165,
+    "nodes": 1179,
+    "edges": 3232,
+    "stock_node_links": 61533,
+    "mapped_companies": 5371,
+    "classification_candidates": 2241,
+    "business_word_candidates": 5296,
+    "original_report_verified_companies": 1,
+    "unassigned_companies": 2241
+  },
+  "limitations": [
+    "所有行业具备专属经营逻辑及条件关系分析；尚未逐一取得企业交易或供销合同证据。",
+    "业务文字及产品分部匹配提供可追溯的研究候选；不能由分类或关键词认定经营主体和阶段。",
+    "多数分部数字未核验原始公告披露日、主体与币种；禁止自动财务排名。",
+    "688759.SH 目标期分部源缺失；688808.SH 源仅有其他报告期，均不宣称公司未披露。",
+    "龙头独立市场份额和原始公告逐公司核验尚未全行业完成。"
+  ],
+  "verification": {
+    "backend_tests": 143,
+    "frontend_unit_tests": 10,
+    "build": "passed",
+    "ruff": "passed",
+    "prettier": "passed",
+    "browser": "37 scenarios: chains 9 final rerun passed; market 23 and hot sectors 5 passed",
+    "real_browser": {
+      "desktop": 1440,
+      "mobile": 390,
+      "horizontal_overflow": false,
+      "all_industries_home": "专属经营分析 165/165 已在真实页面核对，默认行业按分类排序，不优先展示搜索案例"
+    }
+  },
+  "analysis": {
+    "version": 2,
+    "industry_count": 165,
+    "sectors": 31,
+    "subindustries": 134,
+    "passed_count": 165,
+    "nodes": 1179,
+    "analysed_nodes": 1064,
+    "analysis_paths": 2128,
+    "company_links": 61533,
+    "unassigned_companies": 2241,
+    "company_count": 5371,
+    "edges": 3232
+  },
+  "implementation_scope": "全部31个一级、134个二级行业统一实现，无搜索案例优先级"
+}

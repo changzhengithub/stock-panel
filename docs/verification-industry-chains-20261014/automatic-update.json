@@ -1,0 +1,444 @@
+{
+  "verification_date": "2026-10-14",
+  "scope": "本机真实公开数据采集与发布；未部署生产",
+  "update": {
+    "enabled": true,
+    "interval_hours": 24,
+    "state": "published",
+    "started_at": "2026-10-14T02:46:48.192227+00:00",
+    "finished_at": "2026-10-14T02:51:48.967506+00:00",
+    "last_success_at": "2026-10-14T02:51:48.967506+00:00",
+    "next_check_at": "2026-10-15T02:51:48.967506+00:00",
+    "error": null,
+    "phase": "complete",
+    "published_count": 165,
+    "logic_reviewed_on": "2026-10-14",
+    "logic_review_due_on": "2027-01-12",
+    "logic_review_overdue": false,
+    "maintenance": {
+      "leader_review_count": 31,
+      "leader_reviews": [
+        {
+          "chain_id": "photovoltaic",
+          "ts_code": "600438.SH",
+          "node": "silicon",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "photovoltaic",
+          "ts_code": "600438.SH",
+          "node": "solar-cell",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "photovoltaic",
+          "ts_code": "600438.SH",
+          "node": "module",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "photovoltaic",
+          "ts_code": "601012.SH",
+          "node": "wafer",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "photovoltaic",
+          "ts_code": "601012.SH",
+          "node": "solar-cell",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "photovoltaic",
+          "ts_code": "601012.SH",
+          "node": "module",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "photovoltaic",
+          "ts_code": "688223.SH",
+          "node": "module",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "photovoltaic",
+          "ts_code": "300274.SZ",
+          "node": "inverter",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "photovoltaic",
+          "ts_code": "601865.SH",
+          "node": "glass",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "photovoltaic",
+          "ts_code": "601865.SH",
+          "node": "plant",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "photovoltaic",
+          "ts_code": "300450.SZ",
+          "node": "pv-equipment",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "power-battery",
+          "ts_code": "002460.SZ",
+          "node": "lithium",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "power-battery",
+          "ts_code": "002709.SZ",
+          "node": "electrolyte",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "power-battery",
+          "ts_code": "002812.SZ",
+          "node": "separator",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "power-battery",
+          "ts_code": "300750.SZ",
+          "node": "cell",
+          "period": "2025 年",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "power-battery",
+          "ts_code": "300014.SZ",
+          "node": "cell",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "power-battery",
+          "ts_code": "300750.SZ",
+          "node": "pack",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "power-battery",
+          "ts_code": "002460.SZ",
+          "node": "recycling",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "power-battery",
+          "ts_code": "300073.SZ",
+          "node": "cathode",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "power-battery",
+          "ts_code": "603659.SH",
+          "node": "anode",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "power-battery",
+          "ts_code": "002594.SZ",
+          "node": "vehicle",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "power-battery",
+          "ts_code": "300450.SZ",
+          "node": "battery-equipment",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "semiconductor",
+          "ts_code": "688981.SH",
+          "node": "fab",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "semiconductor",
+          "ts_code": "600584.SH",
+          "node": "packaging",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "semiconductor",
+          "ts_code": "688012.SH",
+          "node": "equipment",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "semiconductor",
+          "ts_code": "002371.SZ",
+          "node": "equipment",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "semiconductor",
+          "ts_code": "688008.SH",
+          "node": "design",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "semiconductor",
+          "ts_code": "688126.SH",
+          "node": "materials",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "semiconductor",
+          "ts_code": "688206.SH",
+          "node": "eda",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "sw-801153",
+          "ts_code": "300760.SZ",
+          "node": "n1",
+          "period": "2025-H1",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        },
+        {
+          "chain_id": "sw-801153",
+          "ts_code": "300760.SZ",
+          "node": "n2",
+          "period": "2025-H1",
+          "reason": "龙头依据早于最新目标报告期，需复核"
+        }
+      ],
+      "evidence_checked_at": "2026-10-14T02:50:55.697371+00:00",
+      "source_checks": [
+        {
+          "url": "https://en.tongwei.cn/knowus.html",
+          "source_id": "tongwei",
+          "checked_at": "2026-10-14T02:49:03.253276+00:00",
+          "observed_hash": "5c5a8a9bace6e9b3aa2bd4cb552b7bcd11cff50fee1238e14058c9b0b381b88e",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.longi.com/en/news/longi-2024-annual-report/",
+          "source_id": "longi",
+          "checked_at": "2026-10-14T02:49:03.761614+00:00",
+          "observed_hash": "c130b31a4c215662925c08f219a7ba7b424ebf60ea5ded9c4bf0b6fc5c24bf23",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.jinkosolar.com/en/site/aboutus",
+          "source_id": "jinko",
+          "checked_at": "2026-10-14T02:49:04.122824+00:00",
+          "observed_hash": "6637b638b0bb42552c31bf9debde47fb87204d3f0287709ac943ce09deb6b041",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://us.sungrowpower.com/aboutsungrow/1/introduction",
+          "source_id": "sungrow",
+          "checked_at": "2026-10-14T02:49:04.235361+00:00",
+          "observed_hash": "e290266254cbdc8d8c0a53c0c9212ec0fc7e7903db047140559fa6bc4865b989",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.flatgroup.com.cn/about",
+          "source_id": "flat",
+          "checked_at": "2026-10-14T02:49:06.292635+00:00",
+          "observed_hash": "804e1304a7142c20bb7899a230753c91b18d17e95c7a0b287e9ddb20e35c735d",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.leadintelligent.com/",
+          "source_id": "lead",
+          "checked_at": "2026-10-14T02:49:06.631083+00:00",
+          "observed_hash": "215cd88f9ed5fff2759f173de016b2c8d038b671cc51d7e87f480cab004528e2",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.ganfenglithium.com/Html/",
+          "source_id": "ganfeng",
+          "checked_at": "2026-10-14T02:49:07.180313+00:00",
+          "observed_hash": "84dbc43f0e2f6512dea4fbd97c510ce06aa38b6f3ba6ea2278cf3eff6aaad047",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://tinci.com/list_205/",
+          "source_id": "tinci",
+          "checked_at": "2026-10-14T02:49:08.278542+00:00",
+          "state": "unavailable",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tinci.com'. (_ssl.c:1010)"
+        },
+        {
+          "url": "https://www.semcorp.com/Public/Uploads/uploadfile/files/20250610/enjiegufen2024nianniandubaogaoyingwenban.pdf",
+          "source_id": "semcorp",
+          "checked_at": "2026-10-14T02:49:08.382859+00:00",
+          "observed_hash": "4f26ee76acda28fa09c6869fd7cc358000f9aa1af0f32f872cba8e7438a08950",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.catl.com/en/news/6773.html",
+          "source_id": "catl-news",
+          "checked_at": "2026-10-14T02:49:21.220903+00:00",
+          "observed_hash": "8500c39ba6bc0b6c8b291209e23f22e8bb60dd8f6de2df36afb009ee66e819ae",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.evebattery.com/en/about",
+          "source_id": "eve",
+          "checked_at": "2026-10-14T02:49:21.650226+00:00",
+          "observed_hash": "d1115a948b801a3d5d619237c02152b885a711759bfbc53dc3d7b67067c37f5a",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.catl.com/en/uploads/1/file/public/202603/20260310105310_46xjbwckvn.pdf",
+          "source_id": "catl-report",
+          "checked_at": "2026-10-14T02:49:24.400864+00:00",
+          "observed_hash": "b3250cb8eb62b5abc73183390b40f8d2cf6012f08db42aa1e8a334d32ae13e37",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.easpring.com.cn/english/",
+          "source_id": "easpring",
+          "checked_at": "2026-10-14T02:49:25.185166+00:00",
+          "state": "unavailable",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.easpring.com.cn'. (_ssl.c:1010)"
+        },
+        {
+          "url": "https://www.putailai.com/business-products/anode-materials-and-graphitization",
+          "source_id": "putailai",
+          "checked_at": "2026-10-14T02:49:25.283277+00:00",
+          "observed_hash": "d934394371fc20ceeb783280c6440aca38ae32e676f658ebd0a9e5885bf78fc2",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.byd.com/en/about-byd",
+          "source_id": "byd",
+          "checked_at": "2026-10-14T02:49:25.519675+00:00",
+          "observed_hash": "5e9a460a5413d922a7d27184aeb8a3e63e837589687b686112422bf9a06c1473",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.smics.com/uploads/67f6423d/e00981.pdf",
+          "source_id": "smic",
+          "checked_at": "2026-10-14T02:49:25.632082+00:00",
+          "observed_hash": "b184a848a948b236497cabddc4d3c8bf943abeeaeccd2bb4e8dd4a2785213eca",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.jcetglobal.com/uploads/%26e8%268b%26b1%26e6%2696%2687%26e7%2689%2688_%26e9%2695%26bf%26e7%2694%26b5%26e7%26a7%2691%26e6%268a%2680ESG%26e6%268a%26a5%26e5%2691%268a20250506.pdf",
+          "source_id": "jcet",
+          "checked_at": "2026-10-14T02:49:29.340846+00:00",
+          "observed_hash": "05a5efce897dcf9fe71bc5463cd2bb527370760be09ea662af8574130b125be0",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.amec-inc.com/uploads/files/20250611/17496080859885.pdf",
+          "source_id": "amec",
+          "checked_at": "2026-10-14T02:49:58.487063+00:00",
+          "state": "unavailable",
+          "error": "证据文件超过检查大小限制"
+        },
+        {
+          "url": "https://expo.semi.org/taiwan2025/Public/eBooth.aspx?BoothID=621543&FromPage=Exhibitors.aspx&IndexInList=118&ListByBooth=true&Nav=False&ParentBoothID=",
+          "source_id": "naura",
+          "checked_at": "2026-10-14T02:50:41.508112+00:00",
+          "observed_hash": "f74634e84f2cb1af981f42c37396c40038f6e211d5899d40fc23faa499161d9a",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.montage-tech.com/About_Montage",
+          "source_id": "montage",
+          "checked_at": "2026-10-14T02:50:43.356974+00:00",
+          "observed_hash": "eaeaa60506482855ea8e2a3927ea85312b388ebbaae6e5cf615aa03e28b7272e",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://www.nsig.com/about",
+          "source_id": "nsig",
+          "checked_at": "2026-10-14T02:50:53.898506+00:00",
+          "state": "unavailable",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.nsig.com'. (_ssl.c:1010)"
+        },
+        {
+          "url": "https://www.primarius-tech.com/en/aboutus/",
+          "source_id": "primarius",
+          "checked_at": "2026-10-14T02:50:53.960691+00:00",
+          "observed_hash": "7c23c62b6f3d8c47028515164f942383df7583b758b8437081d40fce0d99de24",
+          "state": "needs_review"
+        },
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2025-08-28/1224595033.PDF",
+          "source_id": "mindray-h1-original",
+          "checked_at": "2026-10-14T02:50:55.430107+00:00",
+          "observed_hash": "c9baf15ab61b7541971e0b3c1fde75791797485697c706a972ef2d9d34835d46",
+          "state": "unchanged"
+        }
+      ],
+      "source_review_count": 22
+    },
+    "periods": [
+      "2025-12-31",
+      "2026-06-30"
+    ]
+  },
+  "collection": {
+    "run_id": "67330dc9a6fb46f9b4a69e66aab1df17",
+    "universe": 5371,
+    "profile_count": 5371,
+    "business_count": 5371,
+    "financial_count": 5369,
+    "financial_rows": 104068,
+    "missing_profiles": [],
+    "missing_financials": [
+      "688759.SH",
+      "688808.SH"
+    ],
+    "periods": [
+      "2025-12-31",
+      "2026-06-30"
+    ],
+    "available_other_periods": {
+      "688759.SH": [],
+      "688808.SH": [
+        "2025-09-30",
+        "2025-03-31",
+        "2024-12-31",
+        "2023-12-31",
+        "2022-12-31"
+      ]
+    },
+    "source": "东方财富 F10 汇总，未逐份核验原始公告",
+    "collected_at": "2026-10-14T02:48:58.655083+00:00",
+    "pages": 377
+  },
+  "published_revisions": 367,
+  "backend_tests": 158,
+  "frontend_unit_tests": 10,
+  "industry_browser_tests": 12
+}

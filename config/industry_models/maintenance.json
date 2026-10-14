@@ -1,0 +1,6 @@
+{
+  "logic_reviewed_on": "2026-10-14",
+  "logic_review_interval_days": 90,
+  "evidence_check_interval_days": 7,
+  "note": "经营逻辑为人工编写的条件分析；日期表示规则维护日期，不表示公司事实、政策或龙头证据已经全量核验。"
+}

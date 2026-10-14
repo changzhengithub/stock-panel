@@ -803,10 +803,6 @@ button:disabled {
 .skeleton {
   padding: 30px;
 }
-.is-refreshing {
-  opacity: 0.65;
-  transition: opacity 0.2s;
-}
 .stock-workspace {
   padding: 22px 30px 35px;
   max-width: 1440px;

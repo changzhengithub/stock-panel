@@ -204,3 +204,38 @@ class IndustryIndexQuote(Base):
     pct_chg: Mapped[float | None]
     error: Mapped[str | None]
     fetched_at: Mapped[str] = mapped_column(default=utcnow)
+
+
+class FundBoard(Base):
+    __tablename__ = "fund_boards"
+    id: Mapped[str] = mapped_column(String, primary_key=True)
+    source: Mapped[str]
+    kind: Mapped[str]
+    code: Mapped[str]
+    name: Mapped[str]
+
+
+class FundCache(Base):
+    """An atomically replaced dataset: ranks, a board's members, or history."""
+    __tablename__ = "fund_caches"
+    key: Mapped[str] = mapped_column(String, primary_key=True)
+    batch_id: Mapped[str]
+    payload: Mapped[str] = mapped_column(Text)
+    fetched_at: Mapped[str]
+
+
+class FundDaily(Base):
+    __tablename__ = "fund_daily"
+    board_id: Mapped[str] = mapped_column(ForeignKey("fund_boards.id"), primary_key=True)
+    trade_date: Mapped[str] = mapped_column(String, primary_key=True)
+    payload: Mapped[str] = mapped_column(Text)
+    fetched_at: Mapped[str]
+
+
+class FundRun(Base):
+    __tablename__ = "fund_runs"
+    key: Mapped[str] = mapped_column(String, primary_key=True)
+    started_at: Mapped[str]
+    finished_at: Mapped[str | None]
+    error: Mapped[str | None] = mapped_column(Text)
+    retry_at: Mapped[str | None]

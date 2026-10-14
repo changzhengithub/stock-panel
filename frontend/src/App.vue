@@ -10,14 +10,24 @@ const route = useRoute();
       <header class="topbar">
         <RouterLink class="brand" to="/market"
           ><span class="brand-mark">观</span>观市<span class="brand-sub"
-            >A 股盘后</span
+            >A 股行情</span
           ></RouterLink
         >
         <nav class="primary-nav" aria-label="主导航">
           <RouterLink
             to="/market"
-            :class="{ active: !route.path.startsWith('/stocks') }"
+            :class="{ active: route.path.startsWith('/market') }"
             >市场浏览</RouterLink
+          >
+          <RouterLink
+            to="/hot-sectors"
+            :class="{ active: route.path.startsWith('/hot-sectors') }"
+            >热门板块</RouterLink
+          >
+          <RouterLink
+            to="/industry-chains"
+            :class="{ active: route.path.startsWith('/industry-chains') }"
+            >产业链分析</RouterLink
           >
           <span v-if="route.path.startsWith('/stocks')" class="active"
             >股票详情</span
@@ -28,7 +38,11 @@ const route = useRoute();
       <main class="main-content"><RouterView /></main>
       <footer class="page-footer">
         <span>观市 · 个人市场看板</span
-        ><span>龙头股按 SW2021 行业指数权重筛选，非投资评级</span
+        ><span>{{
+          route.path.startsWith("/industry-chains")
+            ? "节点龙头依资料口径认定，经营影响按条件分析"
+            : "龙头股按 SW2021 行业指数权重筛选，非投资评级"
+        }}</span
         ><span class="market-legend"
           >红涨绿跌 <i class="up-dot"></i><i class="down-dot"></i
         ></span>

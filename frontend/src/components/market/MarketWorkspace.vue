@@ -39,11 +39,15 @@ const {
   stopResize,
   resizeWithKeyboard,
 } = usePreviewResize(marketContent);
+const selectedId = shallowRef<number | null>(null);
 watch(filters, () => {
   resultScroll.value?.scrollTo({ top: 0, left: 0 });
+  selectedId.value = null;
 });
-const selectedId = shallowRef<number | null>(null);
 const visibleStocks = computed(() => result.value?.items ?? []);
+watch(visibleStocks, (stocks) => {
+  if (selectedId.value === null && stocks[0]) selectedId.value = stocks[0].id;
+});
 const selectedStock = computed(
   () =>
     visibleStocks.value.find((stock) => stock.id === selectedId.value) ??
@@ -123,7 +127,10 @@ const scopeTitle = computed(() => {
         <small>自选与最近查看记录保存在当前浏览器</small>
       </div>
       <p v-if="storageError" role="alert">{{ storageError }}</p>
-      <MarketOverview :filters="filters" :revision="status?.trade_date" />
+      <MarketOverview
+        :filters="filters"
+        :revision="status?.quote_fetched_at ?? status?.trade_date"
+      />
       <MarketFilters
         :filters="filters"
         :level1-industries="level1Industries"
@@ -185,12 +192,7 @@ const scopeTitle = computed(() => {
             animated
             class="panel skeleton"
           />
-          <div
-            v-else-if="result"
-            class="results-body"
-            :aria-busy="loading"
-            :class="{ 'is-refreshing': loading }"
-          >
+          <div v-else-if="result" class="results-body" :aria-busy="loading">
             <div
               ref="resultScroll"
               class="result-scroll"

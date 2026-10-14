@@ -4,6 +4,7 @@ import { money, price, percent, tone, date } from "../../utils/format";
 import CandlestickChart from "./CandlestickChart.vue";
 import StockNavigation from "./StockNavigation.vue";
 import StockBasics from "./StockBasics.vue";
+import QuoteStamp from "./QuoteStamp.vue";
 const {
   stock,
   prices,
@@ -17,16 +18,23 @@ const {
   chartError,
   loading,
   back,
+  fromHot,
+  fromChain,
   retry,
 } = useStock();
 </script>
 <template>
   <div class="workspace stock-workspace">
-    <RouterLink class="back-link" :to="back">← 返回市场浏览</RouterLink>
+    <RouterLink class="back-link" :to="back"
+      >← 返回{{
+        fromChain ? "产业链分析" : fromHot ? "热门板块" : "市场浏览"
+      }}</RouterLink
+    >
     <StockNavigation
       :stock="stock"
       :navigation="navigation"
       :error="navigationError"
+      :from-hot="fromHot || fromChain"
       @navigate="navigate"
     />
     <el-alert v-if="error" :title="error" type="error" :closable="false"
@@ -61,10 +69,7 @@ const {
         <div class="detail-price">
           <strong :class="tone(stock.pct_chg)">{{ price(stock.close) }}</strong
           ><span :class="tone(stock.pct_chg)">{{ percent(stock.pct_chg) }}</span
-          ><small
-            >{{ stock.status === "suspended" ? "停牌 · " : "" }}收盘价 ·
-            {{ date(stock.quote_date) }}</small
-          >
+          ><small><QuoteStamp :stock="stock" /></small>
         </div>
       </div>
       <div class="metric-grid">
@@ -180,7 +185,7 @@ const {
           <section class="panel detail-tip">
             <h2>行情口径</h2>
             <p>
-              列表与摘要展示实际收盘价；周 K、月 K
+              列表与摘要自动更新免费最新报价；行情时间以来源返回为准。周 K、月 K
               按自然周、自然月由所选复权口径的日线汇总，成交量为原始日成交量（手）的周期合计。MA5/10/20/60
               按所选周期的连续收盘价计算，均量线也按所选周期计算。MACD 与 RSI
               根据所选周期收盘价计算。已确认停牌日不计入有效交易记录；未知日线缺口不绘制该周期

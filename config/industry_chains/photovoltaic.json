@@ -1,0 +1,920 @@
+{
+  "schema_version": 1,
+  "id": "photovoltaic",
+  "name": "光伏",
+  "aliases": [
+    "太阳能",
+    "晶硅光伏",
+    "新能源"
+  ],
+  "industry_ids": [
+    "801735.SI",
+    "801730.SI"
+  ],
+  "scope": "晶硅光伏的硅料、硅片、电池片、组件、逆变器及电站应用；不将薄膜路线混入同一比较口径。",
+  "summary": "晶硅产品经过加工与组件制造，配合逆变器应用于发电系统。各环节供需与技术路线影响价格及盈利。",
+  "demand": "电站建设、工商业和户用发电系统需求。",
+  "focus": [
+    "产业链价格与产能",
+    "转换效率与制造良率",
+    "组件订单与项目建设",
+    "逆变器适配和系统成本"
+  ],
+  "content_as_of": "2026-10-13",
+  "change_note": "首版公开资料样板：逐项登记官方或协会依据，补充核心节点公司；未知数值和排名留空。",
+  "gaps": [
+    "不同来源报告期各自标明；业务介绍页未注明披露日时不推定发布日期。",
+    "未取得同口径财务或排名的环节不填数值，不强制选出龙头。"
+  ],
+  "sources": [
+    {
+      "id": "doe",
+      "title": "DOE 光伏制造基础",
+      "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-manufacturing-basics",
+      "retrieved_on": "2026-10-13",
+      "report_period": null,
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "doe-chain",
+      "title": "DOE 太阳能供应链事实说明",
+      "url": "https://www.energy.gov/sites/default/files/2022-02/Solar%20Energy%20Supply%20Chain%20Fact%20Sheet.pdf",
+      "retrieved_on": "2026-10-13",
+      "report_period": "2022",
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "longi",
+      "title": "隆基绿能 2024 年报官方介绍",
+      "url": "https://www.longi.com/en/news/longi-2024-annual-report/",
+      "retrieved_on": "2026-10-13",
+      "report_period": "2024-FY",
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "tongwei",
+      "title": "通威股份官网：公司介绍",
+      "url": "https://en.tongwei.cn/knowus.html",
+      "retrieved_on": "2026-10-13",
+      "report_period": null,
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "jinko",
+      "title": "晶科能源官网：公司介绍（A 股 688223）",
+      "url": "https://www.jinkosolar.com/en/site/aboutus",
+      "retrieved_on": "2026-10-13",
+      "report_period": null,
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "sungrow",
+      "title": "阳光电源官网：公司及逆变器介绍",
+      "url": "https://us.sungrowpower.com/aboutsungrow/1/introduction",
+      "retrieved_on": "2026-10-13",
+      "report_period": null,
+      "access_status": "verified",
+      "published_on": null
+    },
+    {
+      "id": "flat",
+      "title": "福莱特官网：集团与光伏玻璃业务",
+      "url": "https://www.flatgroup.com.cn/about",
+      "retrieved_on": "2026-10-13",
+      "published_on": null,
+      "report_period": null,
+      "access_status": "verified"
+    },
+    {
+      "id": "lead",
+      "title": "先导智能官网：光伏智能制造",
+      "url": "https://www.leadintelligent.com/",
+      "retrieved_on": "2026-10-13",
+      "published_on": null,
+      "report_period": null,
+      "access_status": "search_verified"
+    }
+  ],
+  "nodes": [
+    {
+      "key": "silicon",
+      "name": "高纯硅料",
+      "stage": "资源",
+      "column": 0,
+      "description": "晶硅制造的主要原料。",
+      "variable": "硅料供需与价格",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+          "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "硅料价格或供需变化",
+          "target": "高纯硅料",
+          "direction": "混合",
+          "mechanism": "硅料售价影响上游收入并传递到硅片采购成本，扩产可能改变供需。",
+          "conditions": "电力和原料成本、库存及长期合同影响实际利润。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "硅料售价",
+            "单位成本",
+            "库存与产能"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+              "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "wafer",
+      "name": "硅片",
+      "stage": "材料",
+      "column": 1,
+      "description": "将晶体切片供电池制造。",
+      "variable": "硅片价格与尺寸",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+          "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "硅料价格与硅片需求变化",
+          "target": "硅片",
+          "direction": "混合",
+          "mechanism": "硅料成本与硅片售价共同影响利润；尺寸及薄片化影响产品适配。",
+          "conditions": "制造良率和成本下降速度必须与售价变化同时观察。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "硅料采购价格",
+            "硅片售价",
+            "良率"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+              "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "solar-cell",
+      "name": "电池片",
+      "stage": "制造",
+      "column": 2,
+      "description": "加工形成光电转换器件。",
+      "variable": "转换效率与良率",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+          "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "电池技术迭代或价格竞争",
+          "target": "电池片",
+          "direction": "混合",
+          "mechanism": "效率和良率影响成本；新路线可能带来投资、认证与旧产线调整。",
+          "conditions": "不能将实验室效率直接当量产优势，需确认量产成本和实际订单。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "量产效率",
+            "良率",
+            "电池片价格"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+              "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "module",
+      "name": "光伏组件",
+      "stage": "制造",
+      "column": 3,
+      "description": "封装电池片形成发电组件。",
+      "variable": "组件价格与订单",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+          "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "组件订单或售价变化",
+          "target": "光伏组件",
+          "direction": "混合",
+          "mechanism": "终端项目需求影响组件订单；降价可能增加销量但压缩单位利润。",
+          "conditions": "原料成本、项目回款、海外业务和贸易条件可能改变盈利结果。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "组件售价",
+            "订单与出货",
+            "库存与回款"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+              "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "plant",
+      "name": "电站与分布式应用",
+      "stage": "应用",
+      "column": 4,
+      "description": "发电系统部署与运营。",
+      "variable": "项目装机与建设",
+      "evidence": [
+        {
+          "source_id": "doe-chain",
+          "locator": "Solar energy supply chain / PV inverters",
+          "summary": "资料列出晶硅制造环节及逆变器在系统中的作用。"
+        }
+      ],
+      "main": true,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "装机与项目收益条件变化",
+          "target": "电站与分布式应用",
+          "direction": "混合",
+          "mechanism": "建设需求向组件和逆变器反馈；系统成本和发电收益影响项目推进。",
+          "conditions": "项目审批、并网、电价和融资条件决定需求兑现速度。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "新增装机",
+            "项目进度",
+            "系统成本"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe-chain",
+              "locator": "Solar energy supply chain / PV inverters",
+              "summary": "资料列出晶硅制造环节及逆变器在系统中的作用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "inverter",
+      "name": "逆变器",
+      "stage": "设备",
+      "column": 3,
+      "description": "完成电力转换并接入系统。",
+      "variable": "逆变器订单与适配",
+      "evidence": [
+        {
+          "source_id": "doe-chain",
+          "locator": "Solar energy supply chain / PV inverters",
+          "summary": "资料列出晶硅制造环节及逆变器在系统中的作用。"
+        }
+      ],
+      "main": false,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "装机结构与并网要求变化",
+          "target": "逆变器",
+          "direction": "混合",
+          "mechanism": "项目订单与产品适配影响逆变器销售，技术要求影响开发成本。",
+          "conditions": "不同应用场景、区域认证和售后条件不可混为同一业务。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "逆变器订单",
+            "产品结构",
+            "认证与售后成本"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe-chain",
+              "locator": "Solar energy supply chain / PV inverters",
+              "summary": "资料列出晶硅制造环节及逆变器在系统中的作用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "glass",
+      "name": "玻璃及封装材料",
+      "stage": "材料",
+      "column": 2,
+      "description": "保护并封装电池片。",
+      "variable": "材料价格与质量",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+          "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+        }
+      ],
+      "main": false,
+      "order": 0,
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "组件需求与辅材价格变化",
+          "target": "玻璃及封装材料",
+          "direction": "混合",
+          "mechanism": "组件制造需求影响玻璃及封装材料订单；采购成本影响组件制造。",
+          "conditions": "辅材规格、质量、良率与供给变化需要分别核验。",
+          "horizon": "在订单、库存消化或合同重定价后体现，时间未量化。",
+          "indicators": [
+            "材料售价",
+            "订单",
+            "制造良率"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "doe",
+              "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+              "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "pv-equipment",
+      "name": "光伏制造设备",
+      "stage": "设备",
+      "column": 2,
+      "description": "为制造环节提供工艺设备及产线服务。",
+      "variable": "资本开支、设备订单与验证进度",
+      "main": false,
+      "order": 0,
+      "evidence": [
+        {
+          "source_id": "lead",
+          "locator": "光伏智能制造解决方案",
+          "summary": "官网列明光伏电池和组件整线设备。"
+        }
+      ],
+      "analyses": [
+        {
+          "id": "operating-impact",
+          "trigger": "制造环节扩产或工艺升级",
+          "target": "光伏制造设备",
+          "direction": "混合",
+          "mechanism": "资本开支形成设备需求；项目验证、安装与收入确认存在时差。",
+          "conditions": "订单需转化为交付及验收，技术升级也可能带来研发和改造成本。",
+          "horizon": "随客户建设、验证与验收进度体现，时间未量化。",
+          "indicators": [
+            "客户资本开支",
+            "设备订单",
+            "交付与验收"
+          ],
+          "kind": "分析判断",
+          "evidence": [
+            {
+              "source_id": "lead",
+              "locator": "光伏智能制造解决方案",
+              "summary": "官网列明光伏电池和组件整线设备。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "key": "silicon-wafer-supply",
+      "source": "silicon",
+      "target": "wafer",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+          "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+        }
+      ]
+    },
+    {
+      "key": "wafer-solar-cell-supply",
+      "source": "wafer",
+      "target": "solar-cell",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+          "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+        }
+      ]
+    },
+    {
+      "key": "solar-cell-module-supply",
+      "source": "solar-cell",
+      "target": "module",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+          "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+        }
+      ]
+    },
+    {
+      "key": "module-plant-supply",
+      "source": "module",
+      "target": "plant",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe-chain",
+          "locator": "Solar energy supply chain / PV inverters",
+          "summary": "资料列出晶硅制造环节及逆变器在系统中的作用。"
+        }
+      ]
+    },
+    {
+      "key": "inverter-plant-supply",
+      "source": "inverter",
+      "target": "plant",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe-chain",
+          "locator": "Solar energy supply chain / PV inverters",
+          "summary": "资料列出晶硅制造环节及逆变器在系统中的作用。"
+        }
+      ]
+    },
+    {
+      "key": "glass-module-supply",
+      "source": "glass",
+      "target": "module",
+      "kind": "供给",
+      "description": "该环节的产品或服务用于下一环节。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe",
+          "locator": "Ingot and Wafer Production / Cell Fabrication / Module Assembly",
+          "summary": "介绍硅料到硅片、电池片和组件的制造过程。"
+        }
+      ]
+    },
+    {
+      "key": "plant-module-demand",
+      "source": "plant",
+      "target": "module",
+      "kind": "需求反馈",
+      "description": "项目建设需求向组件订单反馈。",
+      "conditions": "表示行业环节关系，不证明表中具体公司之间存在供销合同。",
+      "evidence": [
+        {
+          "source_id": "doe-chain",
+          "locator": "Solar energy supply chain / PV inverters",
+          "summary": "资料列出晶硅制造环节及逆变器在系统中的作用。"
+        }
+      ]
+    },
+    {
+      "key": "pv-equipment-module-supply",
+      "source": "pv-equipment",
+      "target": "module",
+      "kind": "供给",
+      "description": "设备与产线服务支持制造环节。",
+      "conditions": "表示行业用途关系，不证明表中具体公司有供销合同。",
+      "evidence": [
+        {
+          "source_id": "lead",
+          "locator": "光伏智能制造解决方案",
+          "summary": "官网列明光伏电池和组件整线设备。"
+        }
+      ]
+    }
+  ],
+  "stocks": [
+    {
+      "key": "silicon-600438",
+      "node": "silicon",
+      "ts_code": "600438.SH",
+      "subject": "通威股份集团",
+      "business": "高纯晶硅",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "tongwei",
+          "locator": "About Tongwei / 新能源业务",
+          "summary": "上市公司官网列明高纯硅料、电池片和组件相关业务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "高纯晶硅",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "tongwei",
+              "locator": "About Tongwei / 新能源业务",
+              "summary": "上市公司官网列明高纯硅料、电池片和组件相关业务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "solar-cell-600438",
+      "node": "solar-cell",
+      "ts_code": "600438.SH",
+      "subject": "通威股份集团",
+      "business": "高效太阳能电池片",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "tongwei",
+          "locator": "About Tongwei / 新能源业务",
+          "summary": "上市公司官网列明高纯硅料、电池片和组件相关业务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "高效太阳能电池片",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "tongwei",
+              "locator": "About Tongwei / 新能源业务",
+              "summary": "上市公司官网列明高纯硅料、电池片和组件相关业务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "module-600438",
+      "node": "module",
+      "ts_code": "600438.SH",
+      "subject": "通威股份集团",
+      "business": "光伏组件",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "tongwei",
+          "locator": "About Tongwei / 新能源业务",
+          "summary": "上市公司官网列明高纯硅料、电池片和组件相关业务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "光伏组件",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "tongwei",
+              "locator": "About Tongwei / 新能源业务",
+              "summary": "上市公司官网列明高纯硅料、电池片和组件相关业务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "wafer-601012",
+      "node": "wafer",
+      "ts_code": "601012.SH",
+      "subject": "隆基绿能集团",
+      "business": "单晶硅片",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "longi",
+          "locator": "Business sectors",
+          "summary": "官方年报介绍列明单晶硅片、电池与组件业务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "单晶硅片",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "longi",
+              "locator": "Business sectors",
+              "summary": "官方年报介绍列明单晶硅片、电池与组件业务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "solar-cell-601012",
+      "node": "solar-cell",
+      "ts_code": "601012.SH",
+      "subject": "隆基绿能集团",
+      "business": "太阳能电池片",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "longi",
+          "locator": "Business sectors",
+          "summary": "官方年报介绍列明单晶硅片、电池与组件业务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "太阳能电池片",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "longi",
+              "locator": "Business sectors",
+              "summary": "官方年报介绍列明单晶硅片、电池与组件业务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "module-601012",
+      "node": "module",
+      "ts_code": "601012.SH",
+      "subject": "隆基绿能集团",
+      "business": "光伏组件",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "longi",
+          "locator": "Business sectors",
+          "summary": "官方年报介绍列明单晶硅片、电池与组件业务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "光伏组件",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "longi",
+              "locator": "Business sectors",
+              "summary": "官方年报介绍列明单晶硅片、电池与组件业务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "module-688223",
+      "node": "module",
+      "ts_code": "688223.SH",
+      "subject": "晶科能源集团",
+      "business": "光伏组件",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "jinko",
+          "locator": "Company Profile",
+          "summary": "官网明确 A 股代码 688223 及光伏制造业务。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "光伏组件",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "jinko",
+              "locator": "Company Profile",
+              "summary": "官网明确 A 股代码 688223 及光伏制造业务。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "inverter-300274",
+      "node": "inverter",
+      "ts_code": "300274.SZ",
+      "subject": "阳光电源集团",
+      "business": "光伏逆变器",
+      "participation": "直接经营",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "sungrow",
+          "locator": "About Sungrow / Introduction",
+          "summary": "官方公司介绍说明光伏逆变器产品。"
+        }
+      ],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "光伏逆变器",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认开展相关业务；代表企业标签不表示市场份额或规模排名。",
+          "evidence": [
+            {
+              "source_id": "sungrow",
+              "locator": "About Sungrow / Introduction",
+              "summary": "官方公司介绍说明光伏逆变器产品。"
+            }
+          ]
+        }
+      ],
+      "metrics": []
+    },
+    {
+      "key": "glass-601865",
+      "node": "glass",
+      "ts_code": "601865.SH",
+      "subject": "福莱特集团",
+      "business": "太阳能光伏玻璃",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "flat",
+          "locator": "集团简介 / 主要产品",
+          "summary": "公司官网列明太阳能光伏玻璃及电站建设业务。"
+        }
+      ],
+      "metrics": [],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "太阳能光伏玻璃",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认相关业务；不表示市场份额、技术或规模排名。",
+          "evidence": [
+            {
+              "source_id": "flat",
+              "locator": "集团简介 / 主要产品",
+              "summary": "公司官网列明太阳能光伏玻璃及电站建设业务。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "plant-601865",
+      "node": "plant",
+      "ts_code": "601865.SH",
+      "subject": "福莱特集团",
+      "business": "太阳能光伏电站建设",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "flat",
+          "locator": "集团简介 / 主要产品",
+          "summary": "公司官网列明太阳能光伏玻璃及电站建设业务。"
+        }
+      ],
+      "metrics": [],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "太阳能光伏电站建设",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认相关业务；不表示市场份额、技术或规模排名。",
+          "evidence": [
+            {
+              "source_id": "flat",
+              "locator": "集团简介 / 主要产品",
+              "summary": "公司官网列明太阳能光伏玻璃及电站建设业务。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "pv-equipment-300450",
+      "node": "pv-equipment",
+      "ts_code": "300450.SZ",
+      "subject": "先导智能集团",
+      "business": "光伏制造设备",
+      "participation": "控股子公司",
+      "operating_stage": "已开展经营",
+      "evidence": [
+        {
+          "source_id": "lead",
+          "locator": "光伏智能制造解决方案",
+          "summary": "官网列明光伏电池和组件整线设备。"
+        }
+      ],
+      "metrics": [],
+      "leaders": [
+        {
+          "kind": "代表企业",
+          "product": "光伏制造设备",
+          "geography": "未据此认定市场排名",
+          "period": "官网业务介绍（未标报告期）",
+          "reason": "官方资料确认相关业务；不表示市场份额、技术或规模排名。",
+          "evidence": [
+            {
+              "source_id": "lead",
+              "locator": "光伏智能制造解决方案",
+              "summary": "官网列明光伏电池和组件整线设备。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

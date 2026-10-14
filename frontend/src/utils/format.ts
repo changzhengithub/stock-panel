@@ -21,3 +21,14 @@ export function date(value: string | null | undefined) {
     ? `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6)}`
     : (value ?? "尚未更新");
 }
+
+export function quoteTime(
+  day: string | null | undefined,
+  clock?: string | null,
+) {
+  const time =
+    clock?.length === 6
+      ? `${clock.slice(0, 2)}:${clock.slice(2, 4)}:${clock.slice(4, 6)}`
+      : "";
+  return [date(day), time].filter(Boolean).join(" ");
+}

@@ -36,6 +36,15 @@ export interface Stock {
   total_shares: number | null;
   float_shares: number | null;
   quote_date: string | null;
+  quote_time: string | null;
+  quote_source: string | null;
+  quote_mode: "daily" | "live";
+  quote_stale: boolean;
+  pre_close: number | null;
+  open: number | null;
+  high: number | null;
+  low: number | null;
+  volume: number | null;
   status: string;
   is_st: boolean;
   st_source: string;
@@ -81,6 +90,13 @@ export interface StockResult {
   trade_date: string | null;
 }
 export interface DataStatus {
+  quote_mode: "daily" | "live";
+  quote_time: string | null;
+  quote_oldest_time: string | null;
+  quote_fetched_at: string | null;
+  quote_error: string | null;
+  daily_trade_date: string | null;
+  quote_coverage: Record<string, { valid: number; total: number }>;
   available: boolean;
   trade_date: string | null;
   expected_date: string | null;

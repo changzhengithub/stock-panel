@@ -22,7 +22,7 @@ def search_stocks(session, keyword):
     if not key:
         return []
     found = []
-    for stock in session.scalars(select(Stock).where(visible_stock())):
+    for stock in session.scalars(select(Stock).where(visible_stock(session))):
         candidates = (
             stock.symbol,
             stock.ts_code.lower(),

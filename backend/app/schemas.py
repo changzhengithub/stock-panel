@@ -40,6 +40,15 @@ class StockInfo(BaseModel):
     total_shares: float | None
     float_shares: float | None
     quote_date: str | None
+    quote_time: str | None = None
+    quote_source: str | None = None
+    quote_mode: Literal["daily", "live"] = "daily"
+    quote_stale: bool = False
+    pre_close: float | None = None
+    open: float | None = None
+    high: float | None = None
+    low: float | None = None
+    volume: float | None = None
     status: Literal["trading", "suspended", "unavailable"]
     is_st: bool
     st_source: str
@@ -125,6 +134,13 @@ class RunStatus(BaseModel):
 
 
 class DataStatus(BaseModel):
+    quote_mode: Literal["daily", "live"] = "daily"
+    quote_time: str | None = None
+    quote_oldest_time: str | None = None
+    quote_fetched_at: str | None = None
+    quote_error: str | None = None
+    quote_coverage: dict = {}
+    daily_trade_date: str | None = None
     available: bool
     trade_date: str | None
     expected_date: str | None
